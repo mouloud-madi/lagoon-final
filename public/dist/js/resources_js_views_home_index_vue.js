@@ -72,7 +72,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
-      app_url: "http://127.0.0.1:8000"
+      app_url: "https://demo.socialm.tv"
     };
   },
   methods: {
@@ -189,8 +189,11 @@ __webpack_require__.r(__webpack_exports__);
       }, {
         active: false,
         to: '#section4'
+      }, {
+        active: false,
+        to: '#section5'
       }],
-      app_url: "http://127.0.0.1:8000"
+      app_url: "https://demo.socialm.tv"
     };
   },
   methods: {
@@ -429,11 +432,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({});
 
 /***/ }),
@@ -448,6 +446,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -1526,65 +1530,73 @@ var render = function() {
         ]
       ),
       _vm._v(" "),
-      _c("header", { staticClass: "shadow", attrs: { id: "header" } }, [
-        _c("div", { staticClass: "d-flex flex-column" }, [
-          _c("div", { staticClass: "profile mt-4" }, [
-            _c(
-              "a",
-              {
-                attrs: { href: "javascript:void(0)" },
-                on: {
-                  click: function($event) {
-                    return _vm.showNavbar()
+      _c(
+        "header",
+        {
+          staticClass: "shadow",
+          staticStyle: { "background-image": "url('/images/sidebar.png')" },
+          attrs: { id: "header" }
+        },
+        [
+          _c("div", { staticClass: "d-flex flex-column" }, [
+            _c("div", { staticClass: "profile mt-4" }, [
+              _c(
+                "a",
+                {
+                  attrs: { href: "javascript:void(0)" },
+                  on: {
+                    click: function($event) {
+                      return _vm.showNavbar()
+                    }
                   }
-                }
+                },
+                [
+                  _c("i", {
+                    staticClass: "bi bi-text-paragraph",
+                    staticStyle: {
+                      "font-size": "28px",
+                      padding: "14px",
+                      color: "#fff"
+                    }
+                  })
+                ]
+              )
+            ]),
+            _vm._v(" "),
+            _c(
+              "nav",
+              {
+                staticClass: "nav-menu navbar",
+                staticStyle: { "margin-top": "140px" },
+                attrs: { id: "navbar" }
               },
               [
-                _c("i", {
-                  staticClass: "bi bi-text-paragraph",
-                  staticStyle: {
-                    "font-size": "28px",
-                    padding: "14px",
-                    color: "#fff"
-                  }
-                })
+                _c(
+                  "ul",
+                  [
+                    _c(
+                      "scrollactive",
+                      { staticClass: "my-nav" },
+                      _vm._l(_vm.links, function(link) {
+                        return _c(
+                          "a",
+                          {
+                            staticClass: "scrollactive-item nav-link",
+                            attrs: { href: link.to }
+                          },
+                          [_c("i", { staticClass: "bx bi-circle-fill" })]
+                        )
+                      }),
+                      0
+                    )
+                  ],
+                  1
+                )
               ]
             )
-          ]),
-          _vm._v(" "),
-          _c(
-            "nav",
-            {
-              staticClass: "nav-menu navbar",
-              staticStyle: { "margin-top": "140px" },
-              attrs: { id: "navbar" }
-            },
-            [
-              _c(
-                "ul",
-                [
-                  _c(
-                    "scrollactive",
-                    { staticClass: "my-nav" },
-                    _vm._l(_vm.links, function(link) {
-                      return _c(
-                        "a",
-                        {
-                          staticClass: "scrollactive-item nav-link",
-                          attrs: { href: link.to }
-                        },
-                        [_c("i", { staticClass: "bx bi-circle-fill" })]
-                      )
-                    }),
-                    0
-                  )
-                ],
-                1
-              )
-            ]
-          )
-        ])
-      ])
+          ])
+        ]
+      )
     ],
     1
   )
@@ -1637,7 +1649,9 @@ var render = function() {
           _vm._v(" "),
           _c("section3"),
           _vm._v(" "),
-          _c("section4")
+          _c("section4"),
+          _vm._v(" "),
+          _c("section5")
         ],
         1
       ),
@@ -1657,7 +1671,7 @@ var staticRenderFns = [
         "div",
         { staticClass: "container", staticStyle: { padding: "0 23px" } },
         [
-          _c("a", { attrs: { href: "#section4" } }, [
+          _c("a", { attrs: { href: "#section5" } }, [
             _c("i", { staticClass: "bi bi-chevron-double-down" })
           ])
         ]
@@ -2016,29 +2030,6 @@ var staticRenderFns = [
                     attrs: { src: "images/ABOUT.jpg", alt: "" }
                   })
                 ]
-              ),
-              _vm._v(" "),
-              _c(
-                "div",
-                { staticClass: "col-lg-4", attrs: { "data-aos": "fade-left" } },
-                [
-                  _c(
-                    "video",
-                    {
-                      staticClass: "video",
-                      staticStyle: { height: "481.5px", width: "100%" },
-                      attrs: { controls: "" }
-                    },
-                    [
-                      _c("source", {
-                        attrs: {
-                          src: "site/vedios/vedio.mp4",
-                          type: "video/mp4"
-                        }
-                      })
-                    ]
-                  )
-                ]
               )
             ])
           ])
@@ -2082,13 +2073,35 @@ var staticRenderFns = [
             _c(
               "div",
               {
-                staticClass: "col-lg-12",
-                attrs: { "data-aos": "fade-up", "data-aos-delay": "100" }
+                staticClass: "col-md-6 mt-5",
+                attrs: { "data-aos": "fade-left" }
+              },
+              [
+                _c("h3", [_vm._v("About")]),
+                _vm._v(
+                  "\n                    It’s all about what looks good. A calculated and balanced blend of form and"
+                ),
+                _c("br"),
+                _vm._v(
+                  "\n                    function that serves a specific purpose and ultimately results in a final "
+                ),
+                _c("br"),
+                _vm._v(
+                  "\n                    outcome that is modern, stylish and unique.\n                "
+                )
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              {
+                staticClass: "col-md-6",
+                attrs: { "data-aos": "fade-right", "data-aos-delay": "100" }
               },
               [
                 _c(
                   "video",
-                  { attrs: { controls: "", width: "50%", height: "50%" } },
+                  { attrs: { controls: "", width: "70%", height: "80%" } },
                   [
                     _c("source", {
                       attrs: { src: "site/vedios/vedio.mp4", type: "video/mp4" }

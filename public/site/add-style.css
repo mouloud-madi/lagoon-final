@@ -16,7 +16,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #footer {
     width: 100px;
-    background: #a19e9e;
+    background: transparent;
     z-index: 9997;
 }
 
@@ -115,3 +115,4 @@ section {
     height: 30px;
     border-radius: 50%;
 }
+.

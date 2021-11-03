@@ -6,6 +6,12 @@
                 <span class="menu-title">Home</span>
             </a>
         </li>
+        <li class="nav-item {{request()->routeIs('section*')? 'active' :''}}">
+            <a class="nav-link" href="{{route('section.index')}}">
+                <i class="ti-list-ol  menu-icon"></i>
+                <span class="menu-title">Sections</span>
+            </a>
+        </li>
         <li class="nav-item {{request()->routeIs('service*')? 'active' :''}}">
             <a class="nav-link" href="{{route('service.index')}}">
                 <i class="icon-grid menu-icon"></i>

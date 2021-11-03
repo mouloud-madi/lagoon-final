@@ -9,6 +9,7 @@ use App\Http\Controllers\{
     GalleryController,
     AccountController,
     SliderController,
+    SectionController
 };
 
 Route::get('/', function () {
@@ -38,6 +39,8 @@ Route::prefix('admin')->group(function () {
 Route::middleware(['auth'])->prefix('admin')->group(function () {
     Route::get('/home', [HomeController::class, 'index'])->name('home');
     Route::resource('/service', ServiceController::class);
+    Route::get('/section', [SectionController::class,'index'])->name('section.index');
+    Route::post('/section', [SectionController::class,'update'])->name('section.update');
     Route::resource('/category', CategoryController::class);
     Route::resource('/gallery', GalleryController::class);
     Route::resource('/slider', SliderController::class);

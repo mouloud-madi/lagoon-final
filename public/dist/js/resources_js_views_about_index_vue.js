@@ -123,7 +123,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
-      app_url: "http://127.0.0.1:8000"
+      app_url: "https://demo.socialm.tv"
     };
   },
   methods: {
@@ -366,7 +366,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   data: function data() {
     return {
-      url: "http://127.0.0.1:8000",
+      url: "https://demo.socialm.tv",
       clients: this.$store.state.siteInfo.clients,
       projects: this.$store.state.siteInfo.projects,
       projects_in_progress: this.$store.state.siteInfo.projects_in_progress

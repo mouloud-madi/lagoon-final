@@ -51,7 +51,7 @@
                 </div>
             </div>
         </nav>
-        <header id="header" class="shadow">
+        <header id="header" class="shadow" style="background-image: url('/images/sidebar.png')">
             <div class="d-flex flex-column">
                 <div class="profile mt-4">
                     <a href="javascript:void(0)" @click="showNavbar()">
@@ -94,6 +94,10 @@ export default {
                 {
                     active: false,
                     to: '#section4',
+                },
+                {
+                    active: false,
+                    to: '#section5',
                 },
             ],
             app_url: process.env.MIX_APP_URL
