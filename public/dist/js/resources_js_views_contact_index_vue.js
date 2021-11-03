@@ -39,13 +39,53 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
       youtube: this.$store.state.siteInfo.youtube,
       facebook: this.$store.state.siteInfo.facebook,
       instagram: this.$store.state.siteInfo.instagram,
-      linkedin: this.$store.state.siteInfo.linkedin
+      linkedin: this.$store.state.siteInfo.linkedin,
+      app_url: "https://demo.socialm.tv"
     };
   }
 });
@@ -343,7 +383,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.btn-link[data-v-a9f4693e] {\n    background-color: #f3f3f3;\n    color: #b99658;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.btn-link[data-v-a9f4693e] {\n    background-color: #f3f3f3;\n    color: #b99658;\n}\na[data-v-a9f4693e]:hover {\n    color: #b17c1f;\n}\na[data-v-a9f4693e] {\n    color: #272829;\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -682,66 +722,279 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", [
-    _c("div", { staticClass: "container" }, [
-      _c("div", { staticClass: "row" }, [
-        _c("div", { staticClass: "col-6 p-3" }, [
-          _vm._v(
-            "\n                © Copyright 2021 - All Rights Reserved\n            "
-          )
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "col-6 p-3", attrs: { align: "right" } }, [
-          _c("div", { staticClass: "flex-column" }, [
-            _vm.facebook
-              ? _c(
-                  "a",
-                  {
-                    staticClass: "btn btn-link",
-                    attrs: { href: _vm.facebook, target: "_blank" }
-                  },
-                  [_c("i", { staticClass: "bi bi-facebook" })]
-                )
-              : _vm._e(),
+    _c(
+      "div",
+      { style: _vm.$route.name === "home" ? "background: #f5f8fd" : "" },
+      [
+        _c("div", { staticClass: "container" }, [
+          _c("div", { staticClass: "row" }, [
+            _c("div", { staticClass: "text-center col-md-3 my-5" }, [
+              _c("img", {
+                attrs: {
+                  src: _vm.app_url + "/images/logo.png",
+                  width: "100",
+                  "data-aos": "fade-up"
+                }
+              }),
+              _vm._v(" "),
+              _c(
+                "p",
+                { attrs: { "data-aos": "fade-up", "data-aos-delay": "200" } },
+                [
+                  _vm._v(
+                    "\n                        Lagoon Design is a premium interior design studio in Qatar specialized in quality,\n                        innovative solutions and efficient performance.\n                    "
+                  )
+                ]
+              )
+            ]),
             _vm._v(" "),
-            _vm.instagram
-              ? _c(
-                  "a",
+            _c(
+              "div",
+              { staticClass: "text-center col-md-3 my-5" },
+              [
+                _c("h4", { attrs: { "data-aos": "fade-up" } }, [
+                  _vm._v("Navigation")
+                ]),
+                _vm._v(" "),
+                _c(
+                  "router-link",
                   {
-                    staticClass: "btn btn-link",
-                    attrs: { href: _vm.instagram, target: "_blank" }
+                    attrs: {
+                      "data-aos": "fade-up",
+                      "data-aos-delay": "200",
+                      to: "/"
+                    }
                   },
-                  [_c("i", { staticClass: "bi bi-instagram" })]
-                )
-              : _vm._e(),
+                  [_vm._v("Home")]
+                ),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(" "),
+                _c(
+                  "router-link",
+                  {
+                    attrs: {
+                      "data-aos": "fade-up",
+                      "data-aos-delay": "300",
+                      to: "/about-us"
+                    }
+                  },
+                  [_vm._v("About Us")]
+                ),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(" "),
+                _c(
+                  "router-link",
+                  {
+                    attrs: {
+                      "data-aos": "fade-up",
+                      "data-aos-delay": "400",
+                      to: "/our-services"
+                    }
+                  },
+                  [_vm._v("Our Services")]
+                ),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(" "),
+                _c(
+                  "router-link",
+                  {
+                    attrs: {
+                      "data-aos": "fade-up",
+                      "data-aos-delay": "500",
+                      to: "/gallery"
+                    }
+                  },
+                  [_vm._v("Gallery")]
+                ),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(" "),
+                _c(
+                  "router-link",
+                  {
+                    attrs: {
+                      "data-aos": "fade-up",
+                      "data-aos-delay": "600",
+                      to: "/contact-us"
+                    }
+                  },
+                  [_vm._v("Contact Us")]
+                ),
+                _vm._v(" "),
+                _c("br")
+              ],
+              1
+            ),
             _vm._v(" "),
-            _vm.linkedin
-              ? _c(
-                  "a",
-                  {
-                    staticClass: "btn btn-link",
-                    attrs: { href: _vm.linkedin, target: "_blank" }
-                  },
-                  [_c("i", { staticClass: "bi bi-linkedin" })]
-                )
-              : _vm._e(),
+            _c("div", { staticClass: "text-center col-md-3 my-5" }, [
+              _c("h4", { attrs: { "data-aos": "fade-up" } }, [
+                _vm._v("Contact Us")
+              ]),
+              _vm._v(" "),
+              _c(
+                "span",
+                { attrs: { "data-aos": "fade-up", "data-aos-delay": "200" } },
+                [
+                  _c("i", { staticClass: "bi bi-telephone" }),
+                  _vm._v("  " + _vm._s(this.$store.state.siteInfo.phone1))
+                ]
+              ),
+              _vm._v(" "),
+              _c("br"),
+              _vm._v(" "),
+              this.$store.state.siteInfo.phone2
+                ? _c(
+                    "span",
+                    {
+                      attrs: { "data-aos": "fade-up", "data-aos-delay": "300" }
+                    },
+                    [
+                      _c("i", { staticClass: "bi bi-telephone" }),
+                      _vm._v(" " + _vm._s(this.$store.state.siteInfo.phone2))
+                    ]
+                  )
+                : _vm._e(),
+              _vm._v(" "),
+              _c("br"),
+              _vm._v(" "),
+              _c(
+                "span",
+                { attrs: { "data-aos": "fade-up", "data-aos-delay": "400" } },
+                [
+                  _c("i", { staticClass: "bi bi-envelope" }),
+                  _vm._v(
+                    "  " + _vm._s(this.$store.state.siteInfo.contact_email1)
+                  )
+                ]
+              ),
+              _vm._v(" "),
+              _c("br"),
+              _vm._v(" "),
+              this.$store.state.siteInfo.contact_email2
+                ? _c(
+                    "span",
+                    {
+                      attrs: { "data-aos": "fade-up", "data-aos-delay": "500" }
+                    },
+                    [
+                      _c("i", { staticClass: "bi bi-envelope" }),
+                      _vm._v(
+                        "  " + _vm._s(this.$store.state.siteInfo.contact_email2)
+                      )
+                    ]
+                  )
+                : _vm._e(),
+              _vm._v(" "),
+              _c("br")
+            ]),
             _vm._v(" "),
-            _vm.youtube
-              ? _c(
-                  "a",
-                  {
-                    staticClass: "btn btn-link",
-                    attrs: { href: _vm.youtube, target: "_blank" }
-                  },
-                  [_c("i", { staticClass: "bi bi-youtube" })]
-                )
-              : _vm._e()
+            _c("div", { staticClass: "text-center col-md-3 my-5" }, [
+              _c("h4", { attrs: { "data-aos": "fade-up" } }, [
+                _vm._v("Address")
+              ]),
+              _vm._v(" "),
+              _c(
+                "p",
+                { attrs: { "data-aos": "fade-up", "data-aos-delay": "100" } },
+                [
+                  _c("i", { staticClass: "bi bi-pin-map" }),
+                  _vm._v(
+                    " " +
+                      _vm._s(this.$store.state.siteInfo.address_en) +
+                      "\n                    "
+                  )
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass: "flex-column",
+                  attrs: { "data-aos": "fade-up", "data-aos-delay": "200" }
+                },
+                [
+                  _vm.facebook
+                    ? _c(
+                        "a",
+                        {
+                          staticClass: "btn btn-link",
+                          attrs: { href: _vm.facebook, target: "_blank" }
+                        },
+                        [_c("i", { staticClass: "bi bi-facebook" })]
+                      )
+                    : _vm._e(),
+                  _vm._v(" "),
+                  _vm.instagram
+                    ? _c(
+                        "a",
+                        {
+                          staticClass: "btn btn-link",
+                          attrs: { href: _vm.instagram, target: "_blank" }
+                        },
+                        [_c("i", { staticClass: "bi bi-instagram" })]
+                      )
+                    : _vm._e(),
+                  _vm._v(" "),
+                  _vm.linkedin
+                    ? _c(
+                        "a",
+                        {
+                          staticClass: "btn btn-link",
+                          attrs: { href: _vm.linkedin, target: "_blank" }
+                        },
+                        [_c("i", { staticClass: "bi bi-linkedin" })]
+                      )
+                    : _vm._e(),
+                  _vm._v(" "),
+                  _vm.youtube
+                    ? _c(
+                        "a",
+                        {
+                          staticClass: "btn btn-link",
+                          attrs: { href: _vm.youtube, target: "_blank" }
+                        },
+                        [_c("i", { staticClass: "bi bi-youtube" })]
+                      )
+                    : _vm._e()
+                ]
+              )
+            ])
           ])
+        ])
+      ]
+    ),
+    _vm._v(" "),
+    _c(
+      "div",
+      {
+        style:
+          _vm.$route.name === "home"
+            ? "background: #fff"
+            : "background: #f5f8fd"
+      },
+      [_vm._m(0)]
+    )
+  ])
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "container" }, [
+      _c("div", { staticClass: "row justify-content-center" }, [
+        _c("div", { staticClass: "col-6 p-3 text-center" }, [
+          _vm._v(
+            "\n                    © Copyright 2021 - All Rights Reserved\n                "
+          )
         ])
       ])
     ])
-  ])
-}
-var staticRenderFns = []
+  }
+]
 render._withStripped = true
 
 
@@ -804,7 +1057,7 @@ var render = function() {
                         { staticClass: "nav-link", attrs: { to: "/" } },
                         [
                           _vm._v(
-                            "\n                                Home\n                            "
+                            "\n                                    Home\n                                "
                           )
                         ]
                       )
@@ -821,7 +1074,7 @@ var render = function() {
                         { staticClass: "nav-link", attrs: { to: "/about-us" } },
                         [
                           _vm._v(
-                            "\n                                About Us\n                            "
+                            "\n                                    About Us\n                                "
                           )
                         ]
                       )
@@ -841,7 +1094,7 @@ var render = function() {
                         },
                         [
                           _vm._v(
-                            "\n                                Our Services\n                            "
+                            "\n                                    Our Services\n                                "
                           )
                         ]
                       )
@@ -858,7 +1111,7 @@ var render = function() {
                         { staticClass: "nav-link", attrs: { to: "/gallery" } },
                         [
                           _vm._v(
-                            "\n                                Gallery\n                            "
+                            "\n                                    Gallery\n                                "
                           )
                         ]
                       )
@@ -878,7 +1131,7 @@ var render = function() {
                         },
                         [
                           _vm._v(
-                            "\n                                Contact Us\n                            "
+                            "\n                                    Contact Us\n                                "
                           )
                         ]
                       )
@@ -886,19 +1139,7 @@ var render = function() {
                     1
                   ),
                   _vm._v(" "),
-                  _vm._m(1),
-                  _vm._v(" "),
-                  _c("li", { staticClass: "nav-item" }, [
-                    _c("a", { staticClass: "nav-link", attrs: { href: "#" } }, [
-                      _c("img", {
-                        staticClass: "flag",
-                        attrs: { src: _vm.app_url + "/images/flagar.png" }
-                      }),
-                      _vm._v(
-                        "\n                                AR\n                            "
-                      )
-                    ])
-                  ])
+                  _vm._m(1)
                 ])
               ])
             ]

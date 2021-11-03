@@ -7,6 +7,7 @@ import VueScrollactive from 'vue-scrollactive';
 import * as VueGoogleMaps from 'vue2-google-maps'
 
 store.dispatch('siteInfo', window.Laravel.siteInfo)
+store.dispatch('section', window.Laravel.section)
 Vue.use(VueGoogleMaps, {
     load: {
         key: store.state.siteInfo.maps_key,

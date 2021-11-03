@@ -1,11 +1,11 @@
 body {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Libre Caslon Text', serif;
     font-size: 17px;
     line-height: 40px;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Libre Caslon Text', serif;
 }
 
 #header {
@@ -78,6 +78,7 @@ section {
 .center-section {
     margin-top: 50px;
 }
+
 .router-link-exact-active.router-link-active {
     color: #b99658 !important;
 }
@@ -88,13 +89,18 @@ section {
     }
 
     .img-gif {
-        width: 400px !important;
-        margin-left: -22px !important;
-        margin-top: -140px;
+        width: 300px !important;
+        margin-left: -15px !important;
+        margin-top: -190px;
+    }
+
+    .img-gif-2 {
+        margin-bottom: 30px;
     }
 
     .paragraph {
-        margin-top: -50px !important;
+        margin-top: -75px !important;
+        font-size: 19px !important;
     }
 
     .video {
@@ -108,11 +114,26 @@ section {
     .section-title h2::after {
         left: 45% !important;
     }
+    .img-about{
+        margin-top: 0 !important;
+    }
+    .section-5{
+        margin-top: 0 !important;
+    }
+    .vedio{
+        width: 100%;
+        margin-top: 10px !important;
+    }
 }
-
-.flag{
+.flag {
     width: 30px;
     height: 30px;
     border-radius: 50%;
+}
+.vedio{
+    margin-top: 50px;
+}
+.section-5{
+    margin-top: 150px;
 }
 .

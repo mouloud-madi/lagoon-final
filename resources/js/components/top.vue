@@ -2,10 +2,10 @@
     <div>
         <navbar class="mobile-navbar" style="display: none"/>
         <nav id="nav" class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow"
-             style="z-index: 9998;display: none; transition: all 5s ease-in;">
+             style="z-index: 9998;display: block; transition: all 5s ease-in;">
             <div class="container-fluid">
                 <a class="navbar-brand" href="javascript:void(0)" @click="hideNavbar()">
-                    <i class="bi bi-x-lg" style="color: #b99658;margin-right: 23px;margin-left: 23px"></i>
+                    <i class="bi bi-text-paragraph" style="color: #b99658;margin-right: 23px;margin-left: 23px"></i>
                     <img src="images/logo.png" width="100">
                 </a>
                 <div class="collapse navbar-collapse">
@@ -37,15 +37,15 @@
                                     Contact Us
                          </router-link>
                       </li>
-                     <li class="nav-item">
-                                <span class="nav-link"></span>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">
-                                            <img class="flag" :src="app_url+'/images/flagar.png'">
-                                     AR
-                                </a>
-                            </li>
+<!--                     <li class="nav-item">-->
+<!--                                <span class="nav-link"></span>-->
+<!--                            </li>-->
+<!--                            <li class="nav-item">-->
+<!--                                <a class="nav-link" href="#">-->
+<!--                                            <img class="flag" :src="app_url+'/images/flagar.png'">-->
+<!--                                     AR-->
+<!--                                </a>-->
+<!--                            </li>-->
             </ul>
             </span>
                 </div>

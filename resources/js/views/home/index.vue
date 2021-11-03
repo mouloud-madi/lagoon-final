@@ -8,6 +8,7 @@
             <section3/>
             <section4/>
             <section5/>
+            <app-footer/>
         </main>
         <footer id="footer">
             <div class="container" style=" padding: 0 23px">
@@ -24,9 +25,10 @@ import Section3 from "./sections/section3";
 import Section4 from "./sections/section4";
 import Section5 from "./sections/section5";
 import Top from "../../components/top";
+import AppFooter from "../../components/appFooter";
 
 export default {
-    components: {Top, Section5, Section4, Section3, Section2, Section1},
+    components: {AppFooter, Top, Section5, Section4, Section3, Section2, Section1},
     mounted() {
         setTimeout(function () {
             document.getElementById('loader').style.display = 'none'

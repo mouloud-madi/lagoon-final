@@ -34,7 +34,7 @@
         </div>
         <div class="row">
             <div class="col-md-12">
-                <form method="post" action="{{route('section.update')}}" enctype="multipart/form-data">
+                <form method="post" action="{{route('section_update')}}" enctype="multipart/form-data">
                     @csrf
                     <div class="card mb-3">
                         <div class="card-body">

@@ -46,8 +46,7 @@
                             <div class="form-group">
                                 <label>Gallery <span class="text-danger">*</span></label>
                                 <input type="file" class="form-control @error('image_url') is-invalid @enderror"
-                                       name="image_url"
-                                       value="{{old('image_url')}}">
+                                       name="image_url">
                                 @error('image_url')
                                 <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>

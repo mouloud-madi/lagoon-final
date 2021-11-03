@@ -6,8 +6,7 @@
                     <div class="col-lg-7 pt-4 pt-lg-0 content" data-aos="fade-left">
                         <img class="img-gif" src="images/gif1.gif" width="600" style="margin-left: -40px">
                         <p class="paragraph" style="margin-top: -90px;font-size: 22px">
-                            Our mission is to go beyond our clients’ expectations and deliver the most
-                            luxurious yet cozy designs.
+                           {{$store.state.section.section_one_description_en}}
                         </p>
                     </div>
                     <div class="col-lg-5" data-aos="fade-right">

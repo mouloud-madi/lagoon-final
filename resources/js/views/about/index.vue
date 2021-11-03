@@ -173,9 +173,7 @@
                         <div class="text-center">
                             <i class="bi bi-journal-richtext" style="font-size: 44px;color: #b99658;"></i>
                             <span class="purecounter my-2"
-                                  style="font-size: 48px;line-height: 40px;display: block;font-weight: 700;">{{
-                                    projects
-                                }} +</span>
+                                  style="font-size: 48px;line-height: 40px;display: block;font-weight: 700;">{{projects}} +</span>
                             <p><strong>Completed Projects</strong></p>
                         </div>
                     </div>
@@ -183,9 +181,7 @@
                         <div class="text-center">
                             <i class="bi bi-emoji-smile" style="font-size: 44px;color: #b99658;"></i>
                             <span class="purecounter my-2"
-                                  style="font-size: 48px;line-height: 40px;display: block;font-weight: 700;">{{
-                                    clients
-                                }} +</span>
+                                  style="font-size: 48px;line-height: 40px;display: block;font-weight: 700;">{{clients }} +</span>
                             <p><strong>Happy Clients</strong></p>
                         </div>
                     </div>
@@ -194,9 +190,7 @@
                         <div class="text-center">
                             <i class="bi bi-journal-richtext" style="font-size: 44px;color: #b99658;"></i>
                             <span class="purecounter my-2"
-                                  style="font-size: 48px;line-height: 40px;display: block;font-weight: 700;">{{
-                                    projects_in_progress
-                                }} +</span>
+                                  style="font-size: 48px;line-height: 40px;display: block;font-weight: 700;">{{projects_in_progress }} +</span>
                             <p><strong>Projects in Progress</strong></p>
                         </div>
                     </div>

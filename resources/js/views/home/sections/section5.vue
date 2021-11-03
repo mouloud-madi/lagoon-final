@@ -1,16 +1,16 @@
 <template>
     <div>
-        <section id="section5" class="section4">
+        <section style="padding: 5px 0;">
             <div class="container">
-                <div class="row">
-                    <div class="col-md-6 mt-5" data-aos="fade-left">
-                        <h3>About</h3>
-                        It’s all about what looks good. A calculated and balanced blend of form and<br>
-                        function that serves a specific purpose and ultimately results in a final <br>
-                        outcome that is modern, stylish and unique.
+                <div class="row" id="section5">
+                    <div class="col-md-6" data-aos="fade-left">
+                        <h2 class="section-5">{{ $store.state.section.section_four_title_en }}</h2>
+                        <p style="color: rgb(185, 150, 88);font-size: 20px">{{ $store.state.section.section_four_description_en }}</p>
+                        <router-link style="margin-top: -100px" to="/about-us"> Read more <i
+                            class="bi bi-arrow-right"></i></router-link>
                     </div>
                     <div class="col-md-6" data-aos="fade-right" data-aos-delay="100">
-                        <video controls width="70%" height="80%">
+                        <video class="vedio" controls width="600" height="500">
                             <source src="site/vedios/vedio.mp4" type="video/mp4">
                         </video>
                     </div>
@@ -25,5 +25,11 @@ export default {}
 </script>
 
 <style scoped>
+a {
+    color: #272829;
+}
 
+a:hover {
+    color: rgb(185, 150, 88);
+}
 </style>

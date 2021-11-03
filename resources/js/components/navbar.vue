@@ -42,12 +42,12 @@
                             <li class="nav-item">
                                 <span class="nav-link"></span>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">
-                                <img class="flag" :src="app_url+'/images/flagar.png'">
-                                    AR
-                                </a>
-                            </li>
+<!--                            <li class="nav-item">-->
+<!--                                <a class="nav-link" href="#">-->
+<!--                                <img class="flag" :src="app_url+'/images/flagar.png'">-->
+<!--                                    AR-->
+<!--                                </a>-->
+<!--                            </li>-->
                         </ul>
                     </div>
                 </div>

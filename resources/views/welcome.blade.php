@@ -8,7 +8,7 @@
     <meta content="Lagoon Design" name="keywords">
     <link href="{{asset('images/logo.png')}}" rel="icon">
     <link href="{{asset('images/logo.png')}}" rel="apple-touch-icon">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text&display=swap" rel="stylesheet">
     <link href="{{asset('site/assets/vendor/aos/aos.css')}}" rel="stylesheet">
     <link href="{{asset('site/assets/vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
     <link href="{{asset('site/assets/vendor/bootstrap-icons/bootstrap-icons.css')}}" rel="stylesheet">
@@ -16,9 +16,19 @@
     <link href="{{asset('site/add-style.css')}}" rel="stylesheet">
     <script type="text/javascript">
         window.Laravel = {
-            siteInfo: {!! \App\Models\SiteInformation::find(1) !!}
+            siteInfo: {!! \App\Models\SiteInformation::find(1) !!},
+            section: {!! \App\Models\Section::find(1) !!}
         }
     </script>
+    <style>
+        .section-title h2 {
+            color: #b99658 !important;
+        }
+        .section-title h2::after {
+            content: "" !important;
+            background: none;
+        }
+    </style>
 </head>
 <body>
 <div id="app"></div>

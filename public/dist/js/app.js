@@ -2099,6 +2099,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 _store__WEBPACK_IMPORTED_MODULE_2__["default"].dispatch('siteInfo', window.Laravel.siteInfo);
+_store__WEBPACK_IMPORTED_MODULE_2__["default"].dispatch('section', window.Laravel.section);
 vue__WEBPACK_IMPORTED_MODULE_6__["default"].use(vue2_google_maps__WEBPACK_IMPORTED_MODULE_5__, {
   load: {
     key: _store__WEBPACK_IMPORTED_MODULE_2__["default"].state.siteInfo.maps_key,
@@ -2254,17 +2255,25 @@ vue__WEBPACK_IMPORTED_MODULE_1__["default"].use(vuex__WEBPACK_IMPORTED_MODULE_2_
 var store = new vuex__WEBPACK_IMPORTED_MODULE_2__["default"].Store({
   plugins: [(0,vuex_persistedstate__WEBPACK_IMPORTED_MODULE_0__["default"])()],
   state: {
-    siteInfo: {}
+    siteInfo: {},
+    section: {}
   },
   mutations: {
     SITE_INFO: function SITE_INFO(state, data) {
       state.siteInfo = data;
+    },
+    SECTION: function SECTION(state, data) {
+      state.section = data;
     }
   },
   actions: {
     siteInfo: function siteInfo(_ref, userData) {
       var commit = _ref.commit;
       commit("SITE_INFO", userData);
+    },
+    section: function section(_ref2, data) {
+      var commit = _ref2.commit;
+      commit("SECTION", data);
     }
   }
 });
