@@ -34,7 +34,7 @@
         </div>
         <div class="row">
             <div class="col-md-12">
-                <form method="post" action="{{route('section_update')}}" enctype="multipart/form-data">
+                <form method="post" enctype="multipart/form-data" action="{{route('section_update')}}">
                     @csrf
                     <div class="card mb-3">
                         <div class="card-body">
@@ -43,7 +43,14 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label>Gif(AR) <span class="text-danger">*</span></label>
+                                        <label>Gif(AR) <span class="text-danger">*</span>
+                                            @if($data->section_one_gif_ar)
+                                                <a href="{{$data->section_one_gif_ar}}" target="-_blank">
+                                                    <img src="{{$data->section_one_gif_ar}}" class="img-thumbnail ml-3"
+                                                         width="100">
+                                                </a>
+                                            @endif
+                                        </label>
                                         <input type="file"
                                                class="form-control @error('section_one_gif_ar') is-invalid @enderror"
                                                name="section_one_gif_ar">
@@ -56,7 +63,14 @@
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label>Gif(EN) <span class="text-danger">*</span></label>
+                                        <label>Gif(EN) <span class="text-danger">*</span>
+                                            @if($data->section_one_gif_en)
+                                                <a href="{{$data->section_one_gif_en}}" target="-_blank">
+                                                    <img src="{{$data->section_one_gif_en}}" class="img-thumbnail ml-3"
+                                                         width="100">
+                                                </a>
+                                            @endif
+                                        </label>
                                         <input type="file"
                                                class="form-control @error('section_one_gif_en') is-invalid @enderror"
                                                name="section_one_gif_en">
@@ -69,7 +83,14 @@
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label>Image(1) <span class="text-danger">*</span></label>
+                                        <label>Image(1) <span class="text-danger">*</span>
+                                            @if($data->section_one_image1)
+                                                <a href="{{$data->section_one_image1}}" target="-_blank">
+                                                    <img src="{{$data->section_one_image1}}" class="img-thumbnail ml-3"
+                                                         width="100">
+                                                </a>
+                                            @endif
+                                        </label>
                                         <input type="file"
                                                class="form-control @error('section_one_image1') is-invalid @enderror"
                                                name="section_one_image1">
@@ -82,7 +103,14 @@
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label>Image(2) <span class="text-danger">*</span></label>
+                                        <label>Image(2) <span class="text-danger">*</span>
+                                            @if($data->section_one_image2)
+                                                <a href="{{$data->section_one_image2}}" target="-_blank">
+                                                    <img src="{{$data->section_one_image2}}" class="img-thumbnail ml-3"
+                                                         width="100">
+                                                </a>
+                                            @endif
+                                        </label>
                                         <input type="file"
                                                class="form-control @error('section_one_image2') is-invalid @enderror"
                                                name="section_one_image2">
@@ -131,7 +159,14 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label>Gif(AR) <span class="text-danger">*</span></label>
+                                        <label>Gif(AR) <span class="text-danger">*</span>
+                                            @if($data->section_two_gif_ar)
+                                                <a href="{{$data->section_two_gif_ar}}" target="-_blank">
+                                                    <img src="{{$data->section_two_gif_ar}}" class="img-thumbnail ml-3"
+                                                         width="100">
+                                                </a>
+                                            @endif
+                                        </label>
                                         <input type="file"
                                                class="form-control @error('section_two_gif_ar') is-invalid @enderror"
                                                name="section_two_gif_ar">
@@ -144,7 +179,14 @@
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label>Gif(AR) <span class="text-danger">*</span></label>
+                                        <label>Gif(AR) <span class="text-danger">*</span>
+                                            @if($data->section_two_gif_en)
+                                                <a href="{{$data->section_two_gif_en}}" target="-_blank">
+                                                    <img src="{{$data->section_two_gif_en}}" class="img-thumbnail ml-3"
+                                                         width="100">
+                                                </a>
+                                            @endif
+                                        </label>
                                         <input type="file"
                                                class="form-control @error('section_two_gif_en') is-invalid @enderror"
                                                name="section_two_gif_en">
@@ -185,7 +227,14 @@
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label>Image <span class="text-danger">*</span></label>
+                                        <label>Image <span class="text-danger">*</span>
+                                            @if($data->section_two_image)
+                                                <a href="{{$data->section_two_image}}" target="-_blank">
+                                                    <img src="{{$data->section_two_image}}" class="img-thumbnail ml-3"
+                                                         width="100">
+                                                </a>
+                                            @endif
+                                        </label>
                                         <input type="file"
                                                class="form-control @error('section_two_image') is-invalid @enderror"
                                                name="section_two_image">
@@ -234,7 +283,7 @@
                                     <div class="form-group">
                                         <label>Content(AR) <span class="text-danger">*</span></label>
                                         <textarea rows="4"
-                                               class="form-control @error('section_three_description_ar') is-invalid @enderror"
+                                                  class="form-control @error('section_three_description_ar') is-invalid @enderror"
                                                   name="section_three_description_ar">{{$data->section_three_description_ar}}</textarea>
                                         @error('section_three_description_ar')
                                         <span class="invalid-feedback" role="alert">
@@ -247,7 +296,7 @@
                                     <div class="form-group">
                                         <label>Content(EN) <span class="text-danger">*</span></label>
                                         <textarea rows="4"
-                                               class="form-control @error('section_three_description_en') is-invalid @enderror"
+                                                  class="form-control @error('section_three_description_en') is-invalid @enderror"
                                                   name="section_three_description_en">{{$data->section_three_description_en}}</textarea>
                                         @error('section_three_description_en')
                                         <span class="invalid-feedback" role="alert">
@@ -258,7 +307,14 @@
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label>Image <span class="text-danger">*</span></label>
+                                        <label>Image <span class="text-danger">*</span>
+                                            @if($data->section_three_image)
+                                                <a href="{{$data->section_three_image}}" target="-_blank">
+                                                    <img src="{{$data->section_three_image}}" class="img-thumbnail ml-3"
+                                                         width="100">
+                                                </a>
+                                            @endif
+                                        </label>
                                         <input type="file"
                                                class="form-control @error('section_three_image') is-invalid @enderror"
                                                name="section_three_image">
@@ -307,7 +363,7 @@
                                     <div class="form-group">
                                         <label>Content(AR) <span class="text-danger">*</span></label>
                                         <textarea rows="4"
-                                               class="form-control @error('section_four_description_ar') is-invalid @enderror"
+                                                  class="form-control @error('section_four_description_ar') is-invalid @enderror"
                                                   name="section_four_description_ar">{{$data->section_four_description_ar}}</textarea>
                                         @error('section_four_description_ar')
                                         <span class="invalid-feedback" role="alert">
@@ -320,7 +376,7 @@
                                     <div class="form-group">
                                         <label>Content(EN) <span class="text-danger">*</span></label>
                                         <textarea rows="4"
-                                               class="form-control @error('section_four_description_en') is-invalid @enderror"
+                                                  class="form-control @error('section_four_description_en') is-invalid @enderror"
                                                   name="section_four_description_en">{{$data->section_four_description_en}}</textarea>
                                         @error('section_four_description_en')
                                         <span class="invalid-feedback" role="alert">
@@ -329,19 +385,24 @@
                                         @enderror
                                     </div>
                                 </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label>Vedio <span class="text-danger">*</span></label>
-                                        <input type="file"
-                                               class="form-control @error('section_four_vedio') is-invalid @enderror"
-                                               name="section_four_vedio">
-                                        @error('section_four_vedio')
-                                        <span class="invalid-feedback" role="alert">
-                                            <strong>{{ $message }}</strong>
-                                           </span>
-                                        @enderror
-                                    </div>
-                                </div>
+{{--                                <div class="col-md-6">--}}
+{{--                                    <div class="form-group">--}}
+{{--                                        <label>Vedio <span class="text-danger">*</span></label>--}}
+{{--                                        <input type="file"--}}
+{{--                                               class="form-control @error('section_four_vedio') is-invalid @enderror"--}}
+{{--                                               name="section_four_vedio">--}}
+{{--                                        @error('section_four_vedio')--}}
+{{--                                        <span class="invalid-feedback" role="alert">--}}
+{{--                                            <strong>{{ $message }}</strong>--}}
+{{--                                           </span>--}}
+{{--                                        @enderror--}}
+{{--                                        @if($data->section_four_vedio)--}}
+{{--                                            <video width="320" height="240" controls>--}}
+{{--                                                <source src="{{$data->section_three_image}}" type="video/mp4">--}}
+{{--                                            </video>--}}
+{{--                                        @endif--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
                             </div>
                         </div>
                     </div>

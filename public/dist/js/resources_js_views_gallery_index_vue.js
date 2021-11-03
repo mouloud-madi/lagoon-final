@@ -104,7 +104,7 @@ __webpack_require__.r(__webpack_exports__);
       facebook: this.$store.state.siteInfo.facebook,
       instagram: this.$store.state.siteInfo.instagram,
       linkedin: this.$store.state.siteInfo.linkedin,
-      app_url: "https://demo.socialm.tv"
+      app_url: "http://127.0.0.1:8000"
     };
   }
 });
@@ -183,7 +183,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
-      app_url: "https://demo.socialm.tv"
+      app_url: "http://127.0.0.1:8000"
     };
   },
   methods: {

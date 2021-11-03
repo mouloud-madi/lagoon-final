@@ -85,7 +85,7 @@ __webpack_require__.r(__webpack_exports__);
       facebook: this.$store.state.siteInfo.facebook,
       instagram: this.$store.state.siteInfo.instagram,
       linkedin: this.$store.state.siteInfo.linkedin,
-      app_url: "https://demo.socialm.tv"
+      app_url: "http://127.0.0.1:8000"
     };
   }
 });
@@ -163,7 +163,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
-      app_url: "https://demo.socialm.tv"
+      app_url: "http://127.0.0.1:8000"
     };
   },
   methods: {
@@ -284,7 +284,7 @@ __webpack_require__.r(__webpack_exports__);
         active: false,
         to: '#section5'
       }],
-      app_url: "https://demo.socialm.tv"
+      app_url: "http://127.0.0.1:8000"
     };
   },
   methods: {
@@ -2327,7 +2327,10 @@ var render = function() {
               _c("img", {
                 staticClass: "img-gif",
                 staticStyle: { "margin-left": "-40px" },
-                attrs: { src: "images/gif1.gif", width: "600" }
+                attrs: {
+                  src: _vm.$store.state.section.section_one_gif_en,
+                  width: "600"
+                }
               }),
               _vm._v(" "),
               _c(
@@ -2349,63 +2352,60 @@ var render = function() {
             ]
           ),
           _vm._v(" "),
-          _vm._m(0)
+          _c(
+            "div",
+            { staticClass: "col-lg-5", attrs: { "data-aos": "fade-right" } },
+            [
+              _c(
+                "div",
+                {
+                  staticClass: "carousel slide carousel-fade",
+                  attrs: { "data-bs-ride": "carousel" }
+                },
+                [
+                  _c("div", { staticClass: "carousel-inner" }, [
+                    _c(
+                      "div",
+                      {
+                        staticClass: "carousel-item active",
+                        attrs: { "data-bs-interval": "5000" }
+                      },
+                      [
+                        _c("img", {
+                          staticClass: "d-block w-100",
+                          attrs: {
+                            src: _vm.$store.state.section.section_one_image1
+                          }
+                        })
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass: "carousel-item",
+                        attrs: { "data-bs-interval": "5000" }
+                      },
+                      [
+                        _c("img", {
+                          staticClass: "d-block w-100",
+                          attrs: {
+                            src: _vm.$store.state.section.section_one_image2
+                          }
+                        })
+                      ]
+                    )
+                  ])
+                ]
+              )
+            ]
+          )
         ])
       ])
     ])
   ])
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      { staticClass: "col-lg-5", attrs: { "data-aos": "fade-right" } },
-      [
-        _c(
-          "div",
-          {
-            staticClass: "carousel slide carousel-fade",
-            attrs: { "data-bs-ride": "carousel" }
-          },
-          [
-            _c("div", { staticClass: "carousel-inner" }, [
-              _c(
-                "div",
-                {
-                  staticClass: "carousel-item active",
-                  attrs: { "data-bs-interval": "5000" }
-                },
-                [
-                  _c("img", {
-                    staticClass: "d-block w-100",
-                    attrs: { src: "images/about/about1.jpg" }
-                  })
-                ]
-              ),
-              _vm._v(" "),
-              _c(
-                "div",
-                {
-                  staticClass: "carousel-item",
-                  attrs: { "data-bs-interval": "5000" }
-                },
-                [
-                  _c("img", {
-                    staticClass: "d-block w-100",
-                    attrs: { src: "images/about/about2.jpg" }
-                  })
-                ]
-              )
-            ])
-          ]
-        )
-      ]
-    )
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 
 
@@ -2438,7 +2438,10 @@ var render = function() {
               _c("img", {
                 staticClass: "img-gif img-gif-2",
                 staticStyle: { "margin-left": "-45px", "margin-top": "-100px" },
-                attrs: { src: "images/lagoon_2.gif", width: "600" }
+                attrs: {
+                  src: _vm.$store.state.section.section_two_gif_en,
+                  width: "600"
+                }
               }),
               _vm._v(" "),
               _c(
@@ -2480,30 +2483,27 @@ var render = function() {
             ]
           ),
           _vm._v(" "),
-          _vm._m(0)
+          _c(
+            "div",
+            { staticClass: "col-lg-6", attrs: { "data-aos": "fade-right" } },
+            [
+              _c("img", {
+                staticClass: "img-fluid img-about",
+                staticStyle: { "margin-top": "100px" },
+                attrs: {
+                  src: _vm.$store.state.section.section_two_image,
+                  alt: "",
+                  width: "100%"
+                }
+              })
+            ]
+          )
         ])
       ])
     ])
   ])
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      { staticClass: "col-lg-6", attrs: { "data-aos": "fade-right" } },
-      [
-        _c("img", {
-          staticClass: "img-fluid img-about",
-          staticStyle: { "margin-top": "100px" },
-          attrs: { src: "images/history.png", alt: "", width: "100%" }
-        })
-      ]
-    )
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 
 
@@ -2564,29 +2564,25 @@ var render = function() {
             ]
           ),
           _vm._v(" "),
-          _vm._m(0)
+          _c(
+            "div",
+            { staticClass: "col-lg-8", attrs: { "data-aos": "fade-right" } },
+            [
+              _c("img", {
+                staticClass: "img-fluid",
+                attrs: {
+                  src: _vm.$store.state.section.section_three_image,
+                  alt: ""
+                }
+              })
+            ]
+          )
         ])
       ])
     ])
   ])
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      { staticClass: "col-lg-8", attrs: { "data-aos": "fade-right" } },
-      [
-        _c("img", {
-          staticClass: "img-fluid",
-          attrs: { src: "images/ABOUT.jpg", alt: "" }
-        })
-      ]
-    )
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 
 

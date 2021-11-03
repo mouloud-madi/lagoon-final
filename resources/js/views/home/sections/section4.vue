@@ -10,7 +10,7 @@
                         </p>
                     </div>
                     <div class="col-lg-8" data-aos="fade-right">
-                        <img src="images/ABOUT.jpg" class="img-fluid" alt="">
+                        <img :src="$store.state.section.section_three_image" class="img-fluid" alt="">
                     </div>
                 </div>
             </div>
