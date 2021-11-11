@@ -9,6 +9,7 @@
     <link href="{{asset('images/logo.png')}}" rel="icon">
     <link href="{{asset('images/logo.png')}}" rel="apple-touch-icon">
     <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text&family=Tajawal:wght@500&display=swap" rel="stylesheet">
     <link href="{{asset('site/assets/vendor/aos/aos.css')}}" rel="stylesheet">
     <link href="{{asset('site/assets/vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
     <link href="{{asset('site/assets/vendor/bootstrap-icons/bootstrap-icons.css')}}" rel="stylesheet">

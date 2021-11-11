@@ -78,6 +78,22 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
@@ -160,6 +176,17 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
@@ -171,6 +198,9 @@ __webpack_require__.r(__webpack_exports__);
       this.$router.push({
         name: 'home'
       });
+    },
+    changeUrl: function changeUrl() {
+      window.history.replaceState(null, null, '?lang=' + this.$store.state.lang);
     }
   }
 });
@@ -391,6 +421,71 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
@@ -405,6 +500,10 @@ __webpack_require__.r(__webpack_exports__);
       projects: this.$store.state.siteInfo.projects,
       projects_in_progress: this.$store.state.siteInfo.projects_in_progress
     };
+  },
+  mounted: function mounted() {
+    window.history.replaceState(null, null, '?lang=' + this.$store.state.lang);
+    window.scrollTo(0, 0);
   }
 });
 
@@ -782,10 +881,26 @@ var render = function() {
               _vm._v(" "),
               _c(
                 "p",
-                { attrs: { "data-aos": "fade-up", "data-aos-delay": "200" } },
+                {
+                  style:
+                    _vm.$store.state.lang === "ar"
+                      ? "font-family: 'Tajawal', sans-serif;"
+                      : "",
+                  attrs: {
+                    "data-aos": "fade-up",
+                    "data-aos-delay": "200",
+                    dir: _vm.$store.state.lang === "en" ? "ltr" : "rtl"
+                  }
+                },
                 [
                   _vm._v(
-                    "\n                        Lagoon Design is a premium interior design studio in Qatar specialized in quality,\n                        innovative solutions and efficient performance.\n                    "
+                    "\n                        " +
+                      _vm._s(
+                        _vm.$store.state.lang === "ar"
+                          ? "لاجون ديزاين هو استديو تصميم داخلي رفيع المستوى في قطر، مختص في الحلول المبتكرة والجودة وفعالية الأداء."
+                          : "Lagoon Design is a premium interior design studio in Qatar specialized in quality,innovative solutions and efficient performance."
+                      ) +
+                      "\n                    "
                   )
                 ]
               )
@@ -795,20 +910,48 @@ var render = function() {
               "div",
               { staticClass: "text-center col-md-3 my-5" },
               [
-                _c("h4", { attrs: { "data-aos": "fade-up" } }, [
-                  _vm._v("Navigation")
-                ]),
+                _c(
+                  "h4",
+                  {
+                    style:
+                      _vm.$store.state.lang === "ar"
+                        ? "font-family: 'Tajawal', sans-serif;"
+                        : "",
+                    attrs: { "data-aos": "fade-up" }
+                  },
+                  [
+                    _vm._v(
+                      _vm._s(
+                        _vm.$store.state.lang === "ar" ? "التنقل" : "Navigation"
+                      )
+                    )
+                  ]
+                ),
                 _vm._v(" "),
                 _c(
                   "router-link",
                   {
+                    style:
+                      _vm.$store.state.lang === "ar"
+                        ? "font-family: 'Tajawal', sans-serif;"
+                        : "",
                     attrs: {
                       "data-aos": "fade-up",
                       "data-aos-delay": "200",
                       to: "/"
                     }
                   },
-                  [_vm._v("Home")]
+                  [
+                    _vm._v(
+                      "\n                        " +
+                        _vm._s(
+                          _vm.$store.state.lang === "ar"
+                            ? "الصفحة الرئيسية"
+                            : "Home"
+                        ) +
+                        "\n                    "
+                    )
+                  ]
                 ),
                 _vm._v(" "),
                 _c("br"),
@@ -816,13 +959,27 @@ var render = function() {
                 _c(
                   "router-link",
                   {
+                    style:
+                      _vm.$store.state.lang === "ar"
+                        ? "font-family: 'Tajawal', sans-serif;"
+                        : "",
                     attrs: {
                       "data-aos": "fade-up",
                       "data-aos-delay": "300",
                       to: "/about-us"
                     }
                   },
-                  [_vm._v("About Us")]
+                  [
+                    _vm._v(
+                      "\n                        " +
+                        _vm._s(
+                          _vm.$store.state.lang === "ar"
+                            ? "عن لاجون ديزاين"
+                            : "About Us"
+                        ) +
+                        "\n                    "
+                    )
+                  ]
                 ),
                 _vm._v(" "),
                 _c("br"),
@@ -830,13 +987,27 @@ var render = function() {
                 _c(
                   "router-link",
                   {
+                    style:
+                      _vm.$store.state.lang === "ar"
+                        ? "font-family: 'Tajawal', sans-serif;"
+                        : "",
                     attrs: {
                       "data-aos": "fade-up",
                       "data-aos-delay": "400",
                       to: "/our-services"
                     }
                   },
-                  [_vm._v("Our Services")]
+                  [
+                    _vm._v(
+                      "\n                        " +
+                        _vm._s(
+                          _vm.$store.state.lang === "ar"
+                            ? "خدماتنا"
+                            : "Our Services"
+                        ) +
+                        "\n                    "
+                    )
+                  ]
                 ),
                 _vm._v(" "),
                 _c("br"),
@@ -844,13 +1015,27 @@ var render = function() {
                 _c(
                   "router-link",
                   {
+                    style:
+                      _vm.$store.state.lang === "ar"
+                        ? "font-family: 'Tajawal', sans-serif;"
+                        : "",
                     attrs: {
                       "data-aos": "fade-up",
                       "data-aos-delay": "500",
                       to: "/gallery"
                     }
                   },
-                  [_vm._v("Gallery")]
+                  [
+                    _vm._v(
+                      "\n                        " +
+                        _vm._s(
+                          _vm.$store.state.lang === "ar"
+                            ? "معرض الصور"
+                            : "Gallery"
+                        ) +
+                        "\n                    "
+                    )
+                  ]
                 ),
                 _vm._v(" "),
                 _c("br"),
@@ -858,13 +1043,27 @@ var render = function() {
                 _c(
                   "router-link",
                   {
+                    style:
+                      _vm.$store.state.lang === "ar"
+                        ? "font-family: 'Tajawal', sans-serif;"
+                        : "",
                     attrs: {
                       "data-aos": "fade-up",
                       "data-aos-delay": "600",
                       to: "/contact-us"
                     }
                   },
-                  [_vm._v("Contact Us")]
+                  [
+                    _vm._v(
+                      "\n                        " +
+                        _vm._s(
+                          _vm.$store.state.lang === "ar"
+                            ? "تواصل معنا"
+                            : "Contact Us"
+                        ) +
+                        "\n                    "
+                    )
+                  ]
                 ),
                 _vm._v(" "),
                 _c("br")
@@ -873,9 +1072,27 @@ var render = function() {
             ),
             _vm._v(" "),
             _c("div", { staticClass: "text-center col-md-3 my-5" }, [
-              _c("h4", { attrs: { "data-aos": "fade-up" } }, [
-                _vm._v("Contact Us")
-              ]),
+              _c(
+                "h4",
+                {
+                  style:
+                    _vm.$store.state.lang === "ar"
+                      ? "font-family: 'Tajawal', sans-serif;"
+                      : "",
+                  attrs: { "data-aos": "fade-up" }
+                },
+                [
+                  _vm._v(
+                    "\n                        " +
+                      _vm._s(
+                        _vm.$store.state.lang === "ar"
+                          ? "تواصل معنا"
+                          : "Contact Us"
+                      ) +
+                      "\n                    "
+                  )
+                ]
+              ),
               _vm._v(" "),
               _c(
                 "span",
@@ -935,18 +1152,48 @@ var render = function() {
             ]),
             _vm._v(" "),
             _c("div", { staticClass: "text-center col-md-3 my-5" }, [
-              _c("h4", { attrs: { "data-aos": "fade-up" } }, [
-                _vm._v("Address")
-              ]),
+              _c(
+                "h4",
+                {
+                  style:
+                    _vm.$store.state.lang === "ar"
+                      ? "font-family: 'Tajawal', sans-serif;"
+                      : "",
+                  attrs: { "data-aos": "fade-up" }
+                },
+                [
+                  _vm._v(
+                    "\n                        " +
+                      _vm._s(
+                        _vm.$store.state.lang === "ar" ? "العنوان" : "Address"
+                      ) +
+                      "\n                    "
+                  )
+                ]
+              ),
               _vm._v(" "),
               _c(
                 "p",
-                { attrs: { "data-aos": "fade-up", "data-aos-delay": "100" } },
+                {
+                  style:
+                    _vm.$store.state.lang === "ar"
+                      ? "font-family: 'Tajawal', sans-serif;"
+                      : "",
+                  attrs: {
+                    "data-aos": "fade-up",
+                    "data-aos-delay": "100",
+                    dir: _vm.$store.state.lang === "en" ? "ltr" : "rtl"
+                  }
+                },
                 [
                   _c("i", { staticClass: "bi bi-pin-map" }),
                   _vm._v(
                     " " +
-                      _vm._s(this.$store.state.siteInfo.address_en) +
+                      _vm._s(
+                        _vm.$store.state.lang === "en"
+                          ? this.$store.state.siteInfo.address_en
+                          : this.$store.state.siteInfo.address_ar
+                      ) +
                       "\n                    "
                   )
                 ]
@@ -1018,26 +1265,37 @@ var render = function() {
             ? "background: #fff"
             : "background: #f5f8fd"
       },
-      [_vm._m(0)]
+      [
+        _c("div", { staticClass: "container" }, [
+          _c("div", { staticClass: "row justify-content-center" }, [
+            _c(
+              "div",
+              {
+                staticClass: "col-6 p-3 text-center",
+                style:
+                  _vm.$store.state.lang === "ar"
+                    ? "font-family: 'Tajawal', sans-serif;"
+                    : ""
+              },
+              [
+                _vm._v(
+                  "\n                    " +
+                    _vm._s(
+                      _vm.$store.state.lang === "ar"
+                        ? "© حقوق الطبع والنشر 2021 - جميع الحقوق محفوظة "
+                        : " © Copyright 2021 - All Rights Reserved"
+                    ) +
+                    "\n                "
+                )
+              ]
+            )
+          ])
+        ])
+      ]
     )
   ])
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "container" }, [
-      _c("div", { staticClass: "row justify-content-center" }, [
-        _c("div", { staticClass: "col-6 p-3 text-center" }, [
-          _vm._v(
-            "\n                    © Copyright 2021 - All Rights Reserved\n                "
-          )
-        ])
-      ])
-    ])
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 
 
@@ -1064,7 +1322,12 @@ var render = function() {
       "nav",
       {
         staticClass:
-          "navbar navbar-expand-lg navbar-light bg-white fixed-top shadow"
+          "navbar navbar-expand-lg navbar-light bg-white fixed-top shadow",
+        style:
+          _vm.$store.state.lang === "ar"
+            ? "font-family: 'Tajawal', sans-serif;"
+            : "",
+        attrs: { dir: _vm.$store.state.lang === "en" ? "ltr" : "rtl" }
       },
       [
         _c("div", { staticClass: "container-fluid" }, [
@@ -1097,27 +1360,20 @@ var render = function() {
                     [
                       _c(
                         "router-link",
-                        { staticClass: "nav-link", attrs: { to: "/" } },
+                        {
+                          staticClass: "nav-link",
+                          class: _vm.$route.name === "home" ? "active" : "",
+                          attrs: { to: "/" }
+                        },
                         [
                           _vm._v(
-                            "\n                                    Home\n                                "
-                          )
-                        ]
-                      )
-                    ],
-                    1
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "li",
-                    { staticClass: "nav-item" },
-                    [
-                      _c(
-                        "router-link",
-                        { staticClass: "nav-link", attrs: { to: "/about-us" } },
-                        [
-                          _vm._v(
-                            "\n                                    About Us\n                                "
+                            "\n                                " +
+                              _vm._s(
+                                _vm.$store.state.lang === "ar"
+                                  ? "الصفحة الرئيسية"
+                                  : "Home"
+                              ) +
+                              "\n                            "
                           )
                         ]
                       )
@@ -1133,28 +1389,46 @@ var render = function() {
                         "router-link",
                         {
                           staticClass: "nav-link",
+                          class: _vm.$route.name === "about-us" ? "active" : "",
+                          attrs: { to: "/about-us" }
+                        },
+                        [
+                          _vm._v(
+                            "\n                                " +
+                              _vm._s(
+                                _vm.$store.state.lang === "ar"
+                                  ? "عن لاجون ديزاين"
+                                  : "About Us"
+                              ) +
+                              "\n                            "
+                          )
+                        ]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "li",
+                    { staticClass: "nav-item" },
+                    [
+                      _c(
+                        "router-link",
+                        {
+                          staticClass: "nav-link",
+                          class:
+                            _vm.$route.name === "our-services" ? "active" : "",
                           attrs: { to: "/our-services" }
                         },
                         [
                           _vm._v(
-                            "\n                                    Our Services\n                                "
-                          )
-                        ]
-                      )
-                    ],
-                    1
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "li",
-                    { staticClass: "nav-item" },
-                    [
-                      _c(
-                        "router-link",
-                        { staticClass: "nav-link", attrs: { to: "/gallery" } },
-                        [
-                          _vm._v(
-                            "\n                                    Gallery\n                                "
+                            "\n                                " +
+                              _vm._s(
+                                _vm.$store.state.lang === "ar"
+                                  ? "خدماتنا"
+                                  : "Our Services"
+                              ) +
+                              "\n                            "
                           )
                         ]
                       )
@@ -1170,11 +1444,18 @@ var render = function() {
                         "router-link",
                         {
                           staticClass: "nav-link",
-                          attrs: { to: "/contact-us" }
+                          class: _vm.$route.name === "gallery" ? "active" : "",
+                          attrs: { to: "/gallery" }
                         },
                         [
                           _vm._v(
-                            "\n                                    Contact Us\n                                "
+                            "\n                                " +
+                              _vm._s(
+                                _vm.$store.state.lang === "ar"
+                                  ? "معرض الصور"
+                                  : "Gallery"
+                              ) +
+                              "\n                            "
                           )
                         ]
                       )
@@ -1182,7 +1463,92 @@ var render = function() {
                     1
                   ),
                   _vm._v(" "),
-                  _vm._m(1)
+                  _c(
+                    "li",
+                    { staticClass: "nav-item" },
+                    [
+                      _c(
+                        "router-link",
+                        {
+                          staticClass: "nav-link",
+                          class:
+                            _vm.$route.name === "contact-us" ? "active" : "",
+                          attrs: { to: "/contact-us" }
+                        },
+                        [
+                          _vm._v(
+                            "\n                                " +
+                              _vm._s(
+                                _vm.$store.state.lang === "ar"
+                                  ? "تواصل معنا"
+                                  : "Contact Us"
+                              ) +
+                              "\n                            "
+                          )
+                        ]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _vm._m(1),
+                  _vm._v(" "),
+                  _c("li", { staticClass: "nav-item" }, [
+                    _vm.$store.state.lang === "en"
+                      ? _c(
+                          "a",
+                          {
+                            staticClass: "nav-link",
+                            staticStyle: {
+                              "font-family": "'Tajawal', sans-serif"
+                            },
+                            attrs: { href: "javascript:void(0)" },
+                            on: {
+                              click: function($event) {
+                                ;[
+                                  _vm.$store.dispatch("lang", "ar"),
+                                  _vm.changeUrl()
+                                ]
+                              }
+                            }
+                          },
+                          [
+                            _vm._v(
+                              "\n                                العربية\n                                "
+                            ),
+                            _c("img", {
+                              staticClass: "flag",
+                              attrs: {
+                                src: _vm.app_url + "/images/Flag-Qatar.jpg"
+                              }
+                            })
+                          ]
+                        )
+                      : _c(
+                          "a",
+                          {
+                            staticClass: "nav-link",
+                            attrs: { href: "javascript:void(0)" },
+                            on: {
+                              click: function($event) {
+                                ;[
+                                  _vm.$store.dispatch("lang", "en"),
+                                  _vm.changeUrl()
+                                ]
+                              }
+                            }
+                          },
+                          [
+                            _vm._v(
+                              "\n                                English "
+                            ),
+                            _c("img", {
+                              staticClass: "flag",
+                              attrs: { src: _vm.app_url + "/images/flagen.jpg" }
+                            })
+                          ]
+                        )
+                  ])
                 ])
               ])
             ]
@@ -1252,7 +1618,12 @@ var render = function() {
         "div",
         {
           staticClass: "portfolio section-bg",
-          staticStyle: { "min-height": "100vh" }
+          staticStyle: { "min-height": "100vh" },
+          style:
+            _vm.$store.state.lang === "ar"
+              ? "font-family: 'Tajawal', sans-serif;"
+              : "",
+          attrs: { dir: _vm.$store.state.lang === "en" ? "ltr" : "rtl" }
         },
         [
           _c("div", { staticClass: "container" }, [
@@ -1261,10 +1632,210 @@ var render = function() {
             _c("br"),
             _c("br"),
             _vm._v(" "),
-            _vm._m(0),
+            _c("div", { staticClass: "section-title text-center" }, [
+              _c(
+                "h2",
+                {
+                  style:
+                    _vm.$store.state.lang === "ar"
+                      ? "font-family: 'Tajawal', sans-serif;"
+                      : ""
+                },
+                [
+                  _vm._v(
+                    "\n                    " +
+                      _vm._s(
+                        _vm.$store.state.lang === "ar"
+                          ? "عن لاجون ديزاين"
+                          : " About Us"
+                      )
+                  )
+                ]
+              )
+            ]),
             _vm._v(" "),
             _c("div", { staticClass: "row" }, [
-              _vm._m(1),
+              _c("div", { staticClass: "col-md-7" }, [
+                _c(
+                  "h2",
+                  {
+                    staticStyle: { color: "#b99658" },
+                    style:
+                      _vm.$store.state.lang === "ar"
+                        ? "font-family: 'Tajawal', sans-serif;"
+                        : "",
+                    attrs: { "data-aos": "fade-right" }
+                  },
+                  [
+                    _vm._v(
+                      "\n                        " +
+                        _vm._s(
+                          _vm.$store.state.lang === "ar"
+                            ? "انعكاس لذاتك"
+                            : "A REFLECTION OF YOU"
+                        ) +
+                        "\n                    "
+                    )
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "h5",
+                  {
+                    style:
+                      _vm.$store.state.lang === "ar"
+                        ? "font-family: 'Tajawal', sans-serif;"
+                        : "",
+                    attrs: { "data-aos": "fade-right", "data-aos-delay": "200" }
+                  },
+                  [
+                    _vm._v(
+                      "\n                        " +
+                        _vm._s(
+                          _vm.$store.state.lang === "ar"
+                            ? "تصاميم فريدة واستثنائية"
+                            : "EXCEPTIONAL AND UNIQUE DESIGNS"
+                        ) +
+                        "\n                    "
+                    )
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "p",
+                  {
+                    attrs: { "data-aos": "fade-right", "data-aos-delay": "200" }
+                  },
+                  [
+                    _vm._v(
+                      "\n                        " +
+                        _vm._s(
+                          _vm.$store.state.lang === "ar"
+                            ? "لاجون ديزاين هو استديو تصميم داخلي رفيع المستوى في قطر، مختص في الحلول المبتكرة والجودة وفعالية الأداء."
+                            : "Lagoon Design is a premium interior design studio in Qatar specialized in quality,innovative solutions andefficient performance."
+                        ) +
+                        "\n                    "
+                    )
+                  ]
+                ),
+                _c(
+                  "h2",
+                  {
+                    staticStyle: { color: "#b99658" },
+                    style:
+                      _vm.$store.state.lang === "ar"
+                        ? "font-family: 'Tajawal', sans-serif;"
+                        : "",
+                    attrs: { "data-aos": "fade-right" }
+                  },
+                  [
+                    _vm._v(
+                      "\n                        " +
+                        _vm._s(
+                          _vm.$store.state.lang === "ar"
+                            ? "تاريخنا"
+                            : "OUR HISTORY"
+                        )
+                    )
+                  ]
+                ),
+                _vm._v(" "),
+                _c("p", { attrs: { "data-aos": "fade-right" } }, [
+                  _vm._v(
+                    "\n                        " +
+                      _vm._s(
+                        _vm.$store.state.lang === "ar"
+                          ? "تمكنا من بناء علاقات صلبة ووثيقة مع شركائنا، الذين يسرهم التأكيد على أن خدماتنا ستفوق احتياجاتك وتوقعاتك عند تسليم المشاريع، خاصة فيما يتعلق بالوقت والمهنية. "
+                          : " We have built solid, trustworthy relationships with our partners, who will be happy to reassure you thatwe will exceed your needs and expectations in delivering your project in a timely and professional manner."
+                      ) +
+                      "\n                    "
+                  )
+                ]),
+                _vm._v(" "),
+                _c("p", { attrs: { "data-aos": "fade-right" } }, [
+                  _vm._v(
+                    "\n                        " +
+                      _vm._s(
+                        _vm.$store.state.lang === "ar"
+                          ? "فخورون بأن نكون أحد الاستوديوهات الرائدة في دول مجلس التعاون الخليجي وذلك لالتزامنا بالمعايير العالمية للصناعة, تاريخنا يحتوي العديد من المشاريع في حقول التصميم المختلفة:"
+                          : " We are proud to be one of the leading studios in the GCC, always committed to major international standards in the industry, Our history includes many complex projects, in many designing fields:"
+                      ) +
+                      "\n\n                    "
+                  )
+                ]),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticStyle: { "font-weight": "bold" },
+                    attrs: { "data-aos": "fade-up" }
+                  },
+                  [
+                    _c("i", {
+                      staticClass: "bi  bi-check2-circle",
+                      staticStyle: { color: "#b99658" }
+                    }),
+                    _vm._v(
+                      "\n                        " +
+                        _vm._s(
+                          _vm.$store.state.lang === "ar"
+                            ? "التصميم الداخلي والتزيين وإعداد الديكور"
+                            : "Interior designing, styling and decorating"
+                        ) +
+                        "\n                        "
+                    ),
+                    _c("br"),
+                    _vm._v(" "),
+                    _c("i", {
+                      staticClass: "bi  bi-check2-circle",
+                      staticStyle: { color: "#b99658" }
+                    }),
+                    _vm._v(
+                      "\n                        " +
+                        _vm._s(
+                          _vm.$store.state.lang === "ar"
+                            ? "تصميم المساحات الخارجية"
+                            : "Outdoor space design"
+                        ) +
+                        "\n                        "
+                    ),
+                    _c("br"),
+                    _vm._v(" "),
+                    _c("i", {
+                      staticClass: "bi  bi-check2-circle",
+                      staticStyle: { color: "#b99658" }
+                    }),
+                    _vm._v(
+                      "\n                        " +
+                        _vm._s(
+                          _vm.$store.state.lang === "ar"
+                            ? 'مشاريع "الفيت أوت" '
+                            : "Fitout projects"
+                        ) +
+                        "\n                        "
+                    ),
+                    _c("br"),
+                    _vm._v(" "),
+                    _c("i", {
+                      staticClass: "bi  bi-check2-circle",
+                      staticStyle: { color: "#b99658" }
+                    }),
+                    _vm._v(
+                      "\n                        " +
+                        _vm._s(
+                          _vm.$store.state.lang === "ar"
+                            ? "عدد كبير من مزودي المواد"
+                            : "  Material suppliers from many reputed firms"
+                        ) +
+                        "\n                    "
+                    )
+                  ]
+                ),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(" "),
+                _c("br")
+              ]),
               _vm._v(" "),
               _c("div", { staticClass: "col-md-5" }, [
                 _c("img", {
@@ -1295,7 +1866,75 @@ var render = function() {
               })
             ]),
             _vm._v(" "),
-            _vm._m(2)
+            _c(
+              "div",
+              {
+                staticClass: "col-md-7",
+                staticStyle: { "margin-top": "50px" }
+              },
+              [
+                _c(
+                  "h1",
+                  {
+                    staticStyle: { color: "#b99658" },
+                    style:
+                      _vm.$store.state.lang === "ar"
+                        ? "font-family: 'Tajawal', sans-serif;"
+                        : "",
+                    attrs: {
+                      dir: _vm.$store.state.lang === "en" ? "ltr" : "rtl",
+                      "data-aos": "fade-left",
+                      "data-aos-delay": "100"
+                    }
+                  },
+                  [
+                    _vm._v(
+                      "\n                        " +
+                        _vm._s(
+                          _vm.$store.state.lang === "ar" ? "مهمتنا" : "Mission"
+                        ) +
+                        "\n                    "
+                    )
+                  ]
+                ),
+                _vm._v(" "),
+                _vm.$store.state.lang === "ar"
+                  ? _c(
+                      "p",
+                      {
+                        staticStyle: { "font-family": "'Tajawal', sans-serif" },
+                        attrs: {
+                          dir: "rtl",
+                          "data-aos": "fade-left",
+                          "data-aos-delay": "300"
+                        }
+                      },
+                      [
+                        _vm._v(
+                          "\n                        مهمتنا هي تجاوز توقعات عملائنا ومنحهم تصاميم فخمة ومريحة فى ذات الوقت\n                    "
+                        )
+                      ]
+                    )
+                  : _c(
+                      "p",
+                      {
+                        attrs: {
+                          "data-aos": "fade-left",
+                          "data-aos-delay": "300"
+                        }
+                      },
+                      [
+                        _vm._v(
+                          "\n                        Our mission is to go\n                        beyond our clients "
+                        ),
+                        _c("br"),
+                        _vm._v(
+                          " expectations and\n                        deliver the most luxury yet cozy designs.\n                    "
+                        )
+                      ]
+                    )
+              ]
+            )
           ])
         ])
       ]),
@@ -1303,7 +1942,64 @@ var render = function() {
       _c("div", { staticClass: "section-bg" }, [
         _c("div", { staticClass: "container" }, [
           _c("div", { staticClass: "row" }, [
-            _vm._m(3),
+            _c("div", { staticClass: "col-md-7 my-5" }, [
+              _c(
+                "h1",
+                {
+                  staticStyle: { "margin-top": "50px", color: "#b99658" },
+                  style:
+                    _vm.$store.state.lang === "ar"
+                      ? "font-family: 'Tajawal', sans-serif;"
+                      : "",
+                  attrs: {
+                    dir: _vm.$store.state.lang === "en" ? "ltr" : "rtl",
+                    "data-aos": "fade-right",
+                    "data-aos-delay": "100"
+                  }
+                },
+                [
+                  _vm._v(
+                    "\n                        " +
+                      _vm._s(
+                        _vm.$store.state.lang === "ar" ? "رؤيتنا" : "VISION"
+                      ) +
+                      "\n                    "
+                  )
+                ]
+              ),
+              _vm._v(" "),
+              _vm.$store.state.lang === "ar"
+                ? _c(
+                    "p",
+                    {
+                      staticStyle: { "font-family": "'Tajawal', sans-serif" },
+                      attrs: {
+                        dir: "rtl",
+                        "data-aos": "fade-left",
+                        "data-aos-delay": "300"
+                      }
+                    },
+                    [
+                      _vm._v(
+                        "\n                        رؤيتنا هي أن نصمم وننفذ بسلاسة واتقان بالجمع بين أفضل الخامات و أسلوبنا الفني المميز.\n                    "
+                      )
+                    ]
+                  )
+                : _c(
+                    "p",
+                    {
+                      attrs: {
+                        "data-aos": "fade-left",
+                        "data-aos-delay": "300"
+                      }
+                    },
+                    [
+                      _vm._v(
+                        "\n                        Our vision is to design\n                        and execute with simplicity and\n                        refinement combining the best materials with our own\n                        style.\n                    "
+                      )
+                    ]
+                  )
+            ]),
             _vm._v(" "),
             _c("div", { staticClass: "col-md-5 my-5" }, [
               _c("img", {
@@ -1319,7 +2015,394 @@ var render = function() {
         ])
       ]),
       _vm._v(" "),
-      _vm._m(4),
+      _c("div", { staticClass: "bg-white" }, [
+        _c("div", { staticClass: "container" }, [
+          _c("div", { staticClass: "row my-5" }, [
+            _c("div", { staticClass: "col-md-6 mb-4" }, [
+              _c(
+                "h4",
+                {
+                  staticStyle: { color: "#b99658" },
+                  style:
+                    _vm.$store.state.lang === "ar"
+                      ? "font-family: 'Tajawal', sans-serif;"
+                      : "",
+                  attrs: {
+                    dir: _vm.$store.state.lang === "en" ? "ltr" : "rtl",
+                    "data-aos": "fade-up",
+                    "data-aos-delay": "100"
+                  }
+                },
+                [
+                  _c("i", {
+                    staticClass: "bi bi-exclude",
+                    staticStyle: { color: "#b99658" }
+                  }),
+                  _vm._v(
+                    "\n                         " +
+                      _vm._s(
+                        _vm.$store.state.lang === "ar"
+                          ? "عملية التصميم"
+                          : "Design progress"
+                      ) +
+                      "\n                    "
+                  )
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "p",
+                {
+                  style:
+                    _vm.$store.state.lang === "ar"
+                      ? "font-family: 'Tajawal', sans-serif;"
+                      : "",
+                  attrs: {
+                    dir: _vm.$store.state.lang === "en" ? "ltr" : "rtl",
+                    "data-aos": "fade-up",
+                    "data-aos-delay": "100"
+                  }
+                },
+                [
+                  _vm._v(
+                    "\n                        " +
+                      _vm._s(
+                        _vm.$store.state.lang === "ar"
+                          ? "نستخدم أحدث تقنيات التخيل ثنائية وثلاثية الأبعاد، لتقريب الأفكار لعملائنا خلال المراحل المختلفة من تنفيذ المشروع."
+                          : "We use the latest 2D & 3D imaging technology to demonstrate our ideas to clients throughout the progression of projects."
+                      ) +
+                      "\n                    "
+                  )
+                ]
+              )
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-md-6 mb-4" }, [
+              _c(
+                "h4",
+                {
+                  staticStyle: { color: "#b99658" },
+                  style:
+                    _vm.$store.state.lang === "ar"
+                      ? "font-family: 'Tajawal', sans-serif;"
+                      : "",
+                  attrs: {
+                    dir: _vm.$store.state.lang === "en" ? "ltr" : "rtl",
+                    "data-aos": "fade-up",
+                    "data-aos-delay": "100"
+                  }
+                },
+                [
+                  _c("i", {
+                    staticClass: "bi bi-exclude",
+                    staticStyle: { color: "#b99658" }
+                  }),
+                  _vm._v(
+                    "\n                         " +
+                      _vm._s(
+                        _vm.$store.state.lang === "ar"
+                          ? "تصاميم مخصصة"
+                          : "Specialized design"
+                      ) +
+                      "\n                    "
+                  )
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "p",
+                {
+                  style:
+                    _vm.$store.state.lang === "ar"
+                      ? "font-family: 'Tajawal', sans-serif;"
+                      : "",
+                  attrs: {
+                    dir: _vm.$store.state.lang === "en" ? "ltr" : "rtl",
+                    "data-aos": "fade-up",
+                    "data-aos-delay": "100"
+                  }
+                },
+                [
+                  _vm._v(
+                    "\n                        " +
+                      _vm._s(
+                        _vm.$store.state.lang === "ar"
+                          ? "كواحد من أنجح الاستديوهات المتخصصة في التصميم الداخلي، نضع الإبداع والتطوير نصب أعيننا في كل ما نقوم به."
+                          : "As one of the most specialized top interior design studios, creativity and development are both at the forefront of what we do."
+                      ) +
+                      "\n                    "
+                  )
+                ]
+              )
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-md-6 mb-4" }, [
+              _c(
+                "h4",
+                {
+                  staticStyle: { color: "#b99658" },
+                  style:
+                    _vm.$store.state.lang === "ar"
+                      ? "font-family: 'Tajawal', sans-serif;"
+                      : "",
+                  attrs: {
+                    dir: _vm.$store.state.lang === "en" ? "ltr" : "rtl",
+                    "data-aos": "fade-up",
+                    "data-aos-delay": "100"
+                  }
+                },
+                [
+                  _c("i", {
+                    staticClass: "bi bi-exclude",
+                    staticStyle: { color: "#b99658" }
+                  }),
+                  _vm._v(
+                    "\n                         " +
+                      _vm._s(
+                        _vm.$store.state.lang === "ar"
+                          ? "ذوق فريد من نوعه"
+                          : "Unique sense of taste "
+                      ) +
+                      "\n                    "
+                  )
+                ]
+              ),
+              _vm._v(" "),
+              _vm.$store.state.lang === "ar"
+                ? _c(
+                    "p",
+                    {
+                      staticStyle: { "font-family": "'Tajawal', sans-serif" },
+                      attrs: {
+                        dir: "rtl",
+                        "data-aos": "fade-up",
+                        "data-aos-delay": "100"
+                      }
+                    },
+                    [
+                      _vm._v(
+                        "\n                        ذوقنا يأتي من تاريخنا الطويل وخبرتنا في استخدام أدوات التصميم. حيث نستخدم الرسوم الأولية للتعبير عن فهمنا لأفكار عملائنا وتخيلاتهم حين نجتمع بهم. "
+                      ),
+                      _c("br"),
+                      _vm._v(
+                        "\n                        أمر طبيعي أن يكون لديك منزل مؤقت، لكن بيت الأحلام يجب أن يكون مميزاً. وهذا تحديداً ما نريد أن نحققه لك..\n                    "
+                      )
+                    ]
+                  )
+                : _c(
+                    "p",
+                    {
+                      attrs: { "data-aos": "fade-up", "data-aos-delay": "100" }
+                    },
+                    [
+                      _vm._v(
+                        "\n                        Our taste comes from our long history and experience in the use of design tools."
+                      ),
+                      _c("br"),
+                      _vm._v(
+                        " We use\n                        sketches\n                        to demonstrate\n                        our understanding of our clients’ thoughts and imagination during meetings. "
+                      ),
+                      _c("br"),
+                      _vm._v(
+                        "\n                        Having a house is normal, but having a home is something special. This is what we aim to\n                        create for\n                        you..\n                    "
+                      )
+                    ]
+                  )
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-md-6 mb-4" }, [
+              _c(
+                "h4",
+                {
+                  staticStyle: { color: "#b99658" },
+                  style:
+                    _vm.$store.state.lang === "ar"
+                      ? "font-family: 'Tajawal', sans-serif;"
+                      : "",
+                  attrs: {
+                    dir: _vm.$store.state.lang === "en" ? "ltr" : "rtl",
+                    "data-aos": "fade-up",
+                    "data-aos-delay": "100"
+                  }
+                },
+                [
+                  _c("i", {
+                    staticClass: "bi bi-exclude",
+                    staticStyle: { color: "#b99658" }
+                  }),
+                  _vm._v(
+                    "\n                        " +
+                      _vm._s(
+                        _vm.$store.state.lang === "ar"
+                          ? "عن طريق التصميم و القرارات، التصورية نصنع القيمة لمشاريعنا"
+                          : "With design & conceptual decisions , we create value for our projects"
+                      ) +
+                      "\n                    "
+                  )
+                ]
+              ),
+              _vm._v(" "),
+              _vm.$store.state.lang === "ar"
+                ? _c(
+                    "p",
+                    {
+                      staticStyle: { "font-family": "'Tajawal', sans-serif" },
+                      attrs: {
+                        dir: "rtl",
+                        "data-aos": "fade-up",
+                        "data-aos-delay": "100"
+                      }
+                    },
+                    [
+                      _vm._v(
+                        "\n                        كل شخص متفرد بذاته ويرى الأشياء بشكل مختلف، ونحن نعمل على فهم الذوق الخاص بكل عميل، حول الكيفية التي يريد أن يكون عليها منزله. "
+                      ),
+                      _c("br"),
+                      _vm._v(
+                        "\n                        هدفنا الأساسي هو أن نعكس رؤيتك على أرض الواقع، لهذا نهتم بكافة التفاصيل، مهما بلغت ضآلتها. ونعامل كل تفصيلة صغيرة باهتمام كبير، لنقدم لك تجربة متكاملة.\n                    "
+                      )
+                    ]
+                  )
+                : _c(
+                    "p",
+                    {
+                      attrs: { "data-aos": "fade-up", "data-aos-delay": "100" }
+                    },
+                    [
+                      _vm._v(
+                        "\n                        Everyone is unique and sees things differently, we work on understanding each client’s\n                        unique sense\n                        of how they want their home to be."
+                      ),
+                      _c("br"),
+                      _vm._v(
+                        "\n                        Our main goal is to reflect your vision. That’s why we take care of every detail. No matter\n                        how\n                        small it is, we treat every detail with concern to make sure we create a wholesome\n                        experience for\n                        you.\n                    "
+                      )
+                    ]
+                  )
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-md-6 mb-4" }, [
+              _c(
+                "h4",
+                {
+                  staticStyle: { color: "#b99658" },
+                  style:
+                    _vm.$store.state.lang === "ar"
+                      ? "font-family: 'Tajawal', sans-serif;"
+                      : "",
+                  attrs: {
+                    dir: _vm.$store.state.lang === "en" ? "ltr" : "rtl",
+                    "data-aos": "fade-up",
+                    "data-aos-delay": "100"
+                  }
+                },
+                [
+                  _c("i", {
+                    staticClass: "bi bi-exclude",
+                    staticStyle: { color: "#b99658" }
+                  }),
+                  _vm._v(
+                    "\n                        " +
+                      _vm._s(
+                        _vm.$store.state.lang === "ar"
+                          ? "عن طريق التصميم و القرارات، التصورية نصنع القيمة لمشاريعنا"
+                          : "It’s all about Subtle, Discreet, Hidden details."
+                      ) +
+                      "\n                    "
+                  )
+                ]
+              ),
+              _vm._v(" "),
+              _vm.$store.state.lang === "ar"
+                ? _c(
+                    "p",
+                    {
+                      staticStyle: { "font-family": "'Tajawal', sans-serif" },
+                      attrs: {
+                        dir: "rtl",
+                        "data-aos": "fade-up",
+                        "data-aos-delay": "100"
+                      }
+                    },
+                    [
+                      _vm._v(
+                        "\n                        جمالية المظهر هي الأساس. مزيج متوازن ومحسوب بين الشكل والوظيفة، يخدم هدفاً محدداً وينتج عنه مخرجاً نهائياً يتسم بالحداثة والفرادة وجمالية الأسلوب\n                    "
+                      )
+                    ]
+                  )
+                : _c(
+                    "p",
+                    {
+                      attrs: { "data-aos": "fade-up", "data-aos-delay": "100" }
+                    },
+                    [
+                      _vm._v(
+                        "\n                        It’s all about what looks good. A calculated and balanced blend of form and function that\n                        serves a\n                        specific purpose and ultimately results in a final outcome that is modern, stylish and\n                        unique.\n                    "
+                      )
+                    ]
+                  )
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-md-6 mb-4" }, [
+              _c(
+                "h4",
+                {
+                  staticStyle: { color: "#b99658" },
+                  style:
+                    _vm.$store.state.lang === "ar"
+                      ? "font-family: 'Tajawal', sans-serif;"
+                      : "",
+                  attrs: {
+                    dir: _vm.$store.state.lang === "en" ? "ltr" : "rtl",
+                    "data-aos": "fade-up",
+                    "data-aos-delay": "100"
+                  }
+                },
+                [
+                  _c("i", {
+                    staticClass: "bi bi-exclude",
+                    staticStyle: { color: "#b99658" }
+                  }),
+                  _vm._v(
+                    "\n                          " +
+                      _vm._s(
+                        _vm.$store.state.lang === "ar"
+                          ? "فريق محترف"
+                          : "Professional team"
+                      ) +
+                      "\n                    "
+                  )
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "p",
+                {
+                  style:
+                    _vm.$store.state.lang === "ar"
+                      ? "font-family: 'Tajawal', sans-serif;"
+                      : "",
+                  attrs: {
+                    dir: _vm.$store.state.lang === "en" ? "ltr" : "rtl",
+                    "data-aos": "fade-up",
+                    "data-aos-delay": "100"
+                  }
+                },
+                [
+                  _vm._v(
+                    "\n                        " +
+                      _vm._s(
+                        _vm.$store.state.lang === "ar"
+                          ? "جمعنا فريقاً من المحترفين في المجال، يمكنهم دائماً ابتكار التصاميم التي تلبي طموحاتك."
+                          : "We gathered a team of professionals in the field who can provide you with the design of your dreams."
+                      ) +
+                      "\n                    "
+                  )
+                ]
+              )
+            ])
+          ])
+        ])
+      ]),
       _vm._v(" "),
       _c("div", { staticClass: "section-bg" }, [
         _c("div", { staticClass: "container" }, [
@@ -1352,7 +2435,26 @@ var render = function() {
                     [_vm._v(_vm._s(_vm.projects) + " +")]
                   ),
                   _vm._v(" "),
-                  _vm._m(5)
+                  _c(
+                    "p",
+                    {
+                      style:
+                        _vm.$store.state.lang === "ar"
+                          ? "font-family: 'Tajawal', sans-serif;"
+                          : ""
+                    },
+                    [
+                      _c("strong", [
+                        _vm._v(
+                          _vm._s(
+                            _vm.$store.state.lang === "ar"
+                              ? "مشروع مكتمل"
+                              : "Completed Projects"
+                          )
+                        )
+                      ])
+                    ]
+                  )
                 ])
               ]
             ),
@@ -1385,7 +2487,26 @@ var render = function() {
                     [_vm._v(_vm._s(_vm.clients) + " +")]
                   ),
                   _vm._v(" "),
-                  _vm._m(6)
+                  _c(
+                    "p",
+                    {
+                      style:
+                        _vm.$store.state.lang === "ar"
+                          ? "font-family: 'Tajawal', sans-serif;"
+                          : ""
+                    },
+                    [
+                      _c("strong", [
+                        _vm._v(
+                          _vm._s(
+                            _vm.$store.state.lang === "ar"
+                              ? "عملاء سعداء"
+                              : "Happy Clients"
+                          ) + " "
+                        )
+                      ])
+                    ]
+                  )
                 ])
               ]
             ),
@@ -1418,7 +2539,26 @@ var render = function() {
                     [_vm._v(_vm._s(_vm.projects_in_progress) + " +")]
                   ),
                   _vm._v(" "),
-                  _vm._m(7)
+                  _c(
+                    "p",
+                    {
+                      style:
+                        _vm.$store.state.lang === "ar"
+                          ? "font-family: 'Tajawal', sans-serif;"
+                          : ""
+                    },
+                    [
+                      _c("strong", [
+                        _vm._v(
+                          _vm._s(
+                            _vm.$store.state.lang === "ar"
+                              ? "مشاريع قيد الإنجاز"
+                              : "Projects in Progress"
+                          )
+                        )
+                      ])
+                    ]
+                  )
                 ])
               ]
             )
@@ -1431,368 +2571,7 @@ var render = function() {
     1
   )
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "section-title text-center" }, [
-      _c("h2", [_vm._v("About Us")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "col-md-7" }, [
-      _c("h2", { attrs: { "data-aos": "fade-right" } }, [
-        _vm._v("A REFLECTION OF YOU")
-      ]),
-      _vm._v(" "),
-      _c(
-        "h5",
-        { attrs: { "data-aos": "fade-right", "data-aos-delay": "200" } },
-        [_vm._v("EXCEPTIONAL AND UNIQUE DESIGNS")]
-      ),
-      _vm._v(" "),
-      _c(
-        "p",
-        { attrs: { "data-aos": "fade-right", "data-aos-delay": "200" } },
-        [
-          _vm._v(
-            "Lagoon Design is a premium interior design\n                        studio in Qatar\n                        specialized in quality,"
-          ),
-          _c("br"),
-          _vm._v(
-            " innovative solutions\n                        and\n                        efficient performance."
-          )
-        ]
-      ),
-      _vm._v(" "),
-      _c("h2", { attrs: { "data-aos": "fade-right" } }, [
-        _vm._v("OUR HISTORY")
-      ]),
-      _vm._v(" "),
-      _c("p", { attrs: { "data-aos": "fade-right" } }, [
-        _vm._v(
-          "\n                        We have built solid, trustworthy relationships with our partners, who will be happy to\n                        reassure you\n                        that\n                        we will exceed your needs and expectations in delivering your project in a timely and\n                        professional\n                        manner.\n                    "
-        )
-      ]),
-      _vm._v(" "),
-      _c("p", { attrs: { "data-aos": "fade-right" } }, [
-        _vm._v(
-          "\n                        We are proud to be one of the leading studios in the GCC, always committed to major\n                        international\n                        standards in the industry. "
-        ),
-        _c("br"),
-        _vm._v(
-          "\n                        Our history includes many complex projects, in many designing fields:\n                    "
-        )
-      ]),
-      _vm._v(" "),
-      _c(
-        "div",
-        {
-          staticStyle: { "font-weight": "bold" },
-          attrs: { "data-aos": "fade-up" }
-        },
-        [
-          _c("i", {
-            staticClass: "bi  bi-check2-circle",
-            staticStyle: { color: "#b99658" }
-          }),
-          _vm._v(
-            " Interior designing, styling\n                        and\n                        decorating\n                        "
-          ),
-          _c("br"),
-          _vm._v(" "),
-          _c("i", {
-            staticClass: "bi  bi-check2-circle",
-            staticStyle: { color: "#b99658" }
-          }),
-          _vm._v(" Outdoor space design "),
-          _c("br"),
-          _vm._v(" "),
-          _c("i", {
-            staticClass: "bi  bi-check2-circle",
-            staticStyle: { color: "#b99658" }
-          }),
-          _vm._v(" Exterior designing and\n                        detailing "),
-          _c("br"),
-          _vm._v(" "),
-          _c("i", {
-            staticClass: "bi  bi-check2-circle",
-            staticStyle: { color: "#b99658" }
-          }),
-          _vm._v(" Fitout projects "),
-          _c("br"),
-          _vm._v(" "),
-          _c("i", {
-            staticClass: "bi  bi-check2-circle",
-            staticStyle: { color: "#b99658" }
-          }),
-          _vm._v(
-            " Material suppliers from many\n                        reputed\n                        firms\n                    "
-          )
-        ]
-      ),
-      _vm._v(" "),
-      _c("br"),
-      _vm._v(" "),
-      _c("br")
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      { staticClass: "col-md-7", staticStyle: { "margin-top": "50px" } },
-      [
-        _c(
-          "h1",
-          { attrs: { "data-aos": "fade-left", "data-aos-delay": "100" } },
-          [_vm._v("Mission")]
-        ),
-        _vm._v(" "),
-        _c(
-          "p",
-          { attrs: { "data-aos": "fade-left", "data-aos-delay": "300" } },
-          [
-            _vm._v(
-              "\n                        Our mission is to go\n                        beyond our clients "
-            ),
-            _c("br"),
-            _vm._v(
-              " expectations and\n                        deliver the most luxury yet cozy designs.\n                    "
-            )
-          ]
-        )
-      ]
-    )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "col-md-7 my-5" }, [
-      _c(
-        "h1",
-        {
-          staticStyle: { "margin-top": "50px" },
-          attrs: { "data-aos": "fade-right", "data-aos-delay": "100" }
-        },
-        [_vm._v("Vision")]
-      ),
-      _vm._v(" "),
-      _c(
-        "p",
-        { attrs: { "data-aos": "fade-right", "data-aos-delay": "200" } },
-        [
-          _vm._v(
-            "\n                        Our vision is to design\n                        and execute with simplicity and\n                        refinement combining the best materials with our own\n                        style.\n                    "
-          )
-        ]
-      )
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "bg-white" }, [
-      _c("div", { staticClass: "container" }, [
-        _c("div", { staticClass: "row my-5" }, [
-          _c("div", { staticClass: "col-md-6 mb-4" }, [
-            _c(
-              "h4",
-              { attrs: { "data-aos": "fade-up", "data-aos-delay": "100" } },
-              [
-                _c("i", {
-                  staticClass: "bi bi-exclude",
-                  staticStyle: { color: "#b99658" }
-                }),
-                _vm._v(
-                  "\n                        Design progress\n                    "
-                )
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "p",
-              { attrs: { "data-aos": "fade-up", "data-aos-delay": "100" } },
-              [
-                _vm._v(
-                  "\n                        We use the latest 2D & 3D imaging technology to demonstrate our ideas to clients\n                        throughout the\n                        progression of projects.\n                    "
-                )
-              ]
-            )
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "col-md-6 mb-4" }, [
-            _c(
-              "h4",
-              { attrs: { "data-aos": "fade-up", "data-aos-delay": "100" } },
-              [
-                _c("i", {
-                  staticClass: "bi bi-exclude",
-                  staticStyle: { color: "#b99658" }
-                }),
-                _vm._v(
-                  "\n                        Specialized design\n                    "
-                )
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "p",
-              { attrs: { "data-aos": "fade-up", "data-aos-delay": "100" } },
-              [
-                _vm._v(
-                  "\n                        As one of the most specialized top interior design studios, creativity and development are\n                        both at\n                        the forefront of what we do.\n                    "
-                )
-              ]
-            )
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "col-md-6 mb-4" }, [
-            _c(
-              "h4",
-              { attrs: { "data-aos": "fade-up", "data-aos-delay": "100" } },
-              [
-                _c("i", {
-                  staticClass: "bi bi-exclude",
-                  staticStyle: { color: "#b99658" }
-                }),
-                _vm._v(
-                  "\n                        Unique sense of taste\n                    "
-                )
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "p",
-              { attrs: { "data-aos": "fade-up", "data-aos-delay": "100" } },
-              [
-                _vm._v(
-                  "\n                        Our taste comes from our long history and experience in the use of design tools."
-                ),
-                _c("br"),
-                _vm._v(
-                  " We use\n                        sketches\n                        to demonstrate\n                        our understanding of our clients’ thoughts and imagination during meetings. "
-                ),
-                _c("br"),
-                _vm._v(
-                  "\n                        Having a house is normal, but having a home is something special. This is what we aim to\n                        create for\n                        you..\n                    "
-                )
-              ]
-            )
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "col-md-6 mb-4" }, [
-            _c(
-              "h4",
-              { attrs: { "data-aos": "fade-up", "data-aos-delay": "100" } },
-              [
-                _c("i", {
-                  staticClass: "bi bi-exclude",
-                  staticStyle: { color: "#b99658" }
-                }),
-                _vm._v(
-                  "\n                        With design & conceptual decisions , we create value for our projects\n                    "
-                )
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "p",
-              { attrs: { "data-aos": "fade-up", "data-aos-delay": "100" } },
-              [
-                _vm._v(
-                  "\n                        Everyone is unique and sees things differently, we work on understanding each client’s\n                        unique sense\n                        of how they want their home to be."
-                ),
-                _c("br"),
-                _vm._v(
-                  "\n                        Our main goal is to reflect your vision. That’s why we take care of every detail. No matter\n                        how\n                        small it is, we treat every detail with concern to make sure we create a wholesome\n                        experience for\n                        you.\n                    "
-                )
-              ]
-            )
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "col-md-6 mb-4" }, [
-            _c(
-              "h4",
-              { attrs: { "data-aos": "fade-up", "data-aos-delay": "100" } },
-              [
-                _c("i", {
-                  staticClass: "bi bi-exclude",
-                  staticStyle: { color: "#b99658" }
-                }),
-                _vm._v(
-                  "\n                        It’s all about Subtle, Discreet, Hidden details.\n                    "
-                )
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "p",
-              { attrs: { "data-aos": "fade-up", "data-aos-delay": "100" } },
-              [
-                _vm._v(
-                  "\n                        It’s all about what looks good. A calculated and balanced blend of form and function that\n                        serves a\n                        specific purpose and ultimately results in a final outcome that is modern, stylish and\n                        unique.\n                    "
-                )
-              ]
-            )
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "col-md-6 mb-4" }, [
-            _c(
-              "h4",
-              { attrs: { "data-aos": "fade-up", "data-aos-delay": "100" } },
-              [
-                _c("i", {
-                  staticClass: "bi bi-exclude",
-                  staticStyle: { color: "#b99658" }
-                }),
-                _vm._v(
-                  "\n                        Professional team\n                    "
-                )
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "p",
-              { attrs: { "data-aos": "fade-up", "data-aos-delay": "100" } },
-              [
-                _vm._v(
-                  "\n                        We gathered a team of professionals in the field who can provide you with the design of your\n                        dreams.\n                    "
-                )
-              ]
-            )
-          ])
-        ])
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("p", [_c("strong", [_vm._v("Completed Projects")])])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("p", [_c("strong", [_vm._v("Happy Clients")])])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("p", [_c("strong", [_vm._v("Projects in Progress")])])
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 
 

@@ -65,12 +65,6 @@ class SectionController extends Controller
             $request->section_three_image->move(public_path('uploads/sections'), $imageName);
             $data['section_three_image'] = env('APP_URL') . $path . $imageName;
         }
-        if ($request->section_four_vedio) {
-            $imageName = time() . '.' . $request->section_four_vedio->getClientOriginalExtension();
-            $path = '/uploads/sections/';
-            $request->section_four_vedio->move(public_path('uploads/sections'), $imageName);
-            $data['section_four_vedio'] = env('APP_URL') . $path . $imageName;
-        }
         Section::where('id', 1)->update($data);
         return redirect()->back()->with([
             'message' => 'Sections updated with successfully.',

@@ -9,6 +9,7 @@ const store = new Vuex.Store({
     state: {
         siteInfo: {},
         section: {},
+        lang: 'en',
     },
     mutations: {
         SITE_INFO: (state, data) => {
@@ -17,6 +18,9 @@ const store = new Vuex.Store({
         SECTION: (state, data) => {
             state.section = data
         },
+        LANG: (state, data) => {
+            state.lang = data
+        },
     },
     actions: {
         siteInfo({commit}, userData) {
@@ -24,6 +28,9 @@ const store = new Vuex.Store({
         },
         section({commit}, data) {
             commit("SECTION", data);
+        },
+        lang({commit}, data) {
+            commit("LANG", data);
         },
     },
 })

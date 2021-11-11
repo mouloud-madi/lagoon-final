@@ -5,25 +5,31 @@
             <div class="container">
                 <br><br><br><br>
                 <div class="section-title text-center">
-                    <h2>Contact Us</h2>
+                    <h2 :style="$store.state.lang === 'ar' ?'font-family: \'Tajawal\', sans-serif;' : ''">
+                        {{ $store.state.lang === 'ar' ? 'تواصل معنا' : 'Contact Us' }}
+                    </h2>
                 </div>
                 <div class="row">
                     <div class="col-md-4  mb-3 text-center">
                         <div class="card h-100" data-aos="fade-up" data-aos-delay="100">
-                            <div class="card-title my-4" style="font-size: 25px">
-                                <i class="bi bi-pin-map" style="font-size: 25px;color: #b99658;"></i> Address
+                            <div class="card-title my-4" style="font-size: 25px;color:#b99658"
+                                 :dir="$store.state.lang === 'en' ? 'ltr' : 'rtl'"
+                                 :style="$store.state.lang === 'ar' ?'font-family: \'Tajawal\', sans-serif;' : ''">
+                                <i class="bi bi-pin-map" style="font-size: 25px;color: #b99658;"></i>
+                                {{ $store.state.lang === 'ar' ? 'العنوان': 'Address' }}
                             </div>
-                            <div class="card-text">
-                                {{ address_en }}
+                            <div class="card-text" :style="$store.state.lang === 'ar' ?'font-family: \'Tajawal\', sans-serif;' : ''">
+                                {{ $store.state.lang === 'ar' ? address_ar: address_en }}
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4 mb-3 text-center">
                         <div class="card h-100" data-aos="fade-up" data-aos-delay="100">
-                            <div class="card-title my-4" style="font-size: 25px">
-                                <i class="bi bi-telephone-outbound" style="font-size: 25px;color: #b99658;"></i> Get in
-                                Touch
-                                with Us
+                            <div class="card-title my-4" style="font-size: 25px;color:#b99658"
+                                 :dir="$store.state.lang === 'en' ? 'ltr' : 'rtl'"
+                                 :style="$store.state.lang === 'ar' ?'font-family: \'Tajawal\', sans-serif;' : ''">
+                                <i class="bi bi-telephone-outbound" style="font-size: 25px;color: #b99658;"></i>
+                                {{ $store.state.lang === 'ar' ? 'تواصل معنا على الهاتف': 'Get in Touch with Us' }}
                             </div>
                             <div class="card-text">
                                 <p v-if="phone1">{{ phone1 }}</p>
@@ -33,8 +39,11 @@
                     </div>
                     <div class="col-md-4 mb-3 text-center">
                         <div class="card h-100" data-aos="fade-up" data-aos-delay="100">
-                            <div class="card-title my-4" style="font-size: 25px">
-                                <i class="bi bi-envelope" style="font-size: 25px;color: #b99658;"></i> Email
+                            <div class="card-title my-4" style="font-size: 25px;color:#b99658"
+                                 :dir="$store.state.lang === 'en' ? 'ltr' : 'rtl'"
+                                 :style="$store.state.lang === 'ar' ?'font-family: \'Tajawal\', sans-serif;' : ''">
+                                <i class="bi bi-envelope" style="font-size: 25px;color: #b99658;"></i>
+                                Email {{$store.state.lang ==='ar' ? 'البريد الإلكتروني' : 'Email'}}
                             </div>
                             <div class="card-text">
                                 <p v-if="contact_email1">{{ contact_email1 }}</p>
@@ -47,18 +56,25 @@
                     <div class="col-md-6 mb-3" data-aos="fade-up" data-aos-delay="600">
                         <div class="card h-100">
                             <div class="card-body">
-                                <p style="font-size: 25px"> Leave a Message</p>
-                                <div v-if="successMessages" class="alert alert-success fade show" role="alert">
-                                    <strong>Thank you!</strong> your message was successfully sent.
+                                <p style="font-size: 25px;color:#b99658"
+                                   :dir="$store.state.lang === 'en' ? 'ltr' : 'rtl'"
+                                   :style="$store.state.lang === 'ar' ?'font-family: \'Tajawal\', sans-serif;' : ''">
+                                     {{$store.state.lang ==='en' ? 'Leave a Message' : 'اترك لنا رسالة'}}
+                                </p>
+                                <div v-if="successMessages" class="alert alert-success fade show" role="alert"
+                                     :dir="$store.state.lang === 'en' ? 'ltr' : 'rtl'"
+                                     :style="$store.state.lang === 'ar' ?'font-family: \'Tajawal\', sans-serif;' : ''">
+                                    {{$store.state.lang ==='ar' ? 'تم إرسال رسالتك بنجاح.' : 'Your message was successfully sent.'}}
                                 </div>
-                                <form @submit.prevent="sendMail">
+                                <form @submit.prevent="sendMail" :dir="$store.state.lang === 'en' ? 'ltr' : 'rtl'">
                                     <div class="row">
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <input type="text" v-model="form.name"
                                                        :class="errMessages && errMessages.name ? 'is-invalid' : ''"
                                                        class="form-control form-control-lg"
-                                                       placeholder="Name *">
+                                                       :style="$store.state.lang === 'ar' ?'font-family: \'Tajawal\', sans-serif;' : ''"
+                                                       :placeholder="$store.state.lang === 'ar' ? 'الاسم *':'Name *'">
                                                 <div class="invalid-feedback">
                                                     <i class="fa fa-info-circle"></i>
                                                     {{ errMessages && errMessages.name ? errMessages.name[0] : '' }}
@@ -70,7 +86,8 @@
                                                 <input type="email" v-model="form.email"
                                                        :class="errMessages && errMessages.email ? 'is-invalid' : ''"
                                                        class="form-control form-control-lg"
-                                                       placeholder="Email *">
+                                                       :style="$store.state.lang === 'ar' ?'font-family: \'Tajawal\', sans-serif;' : ''"
+                                                       :placeholder="$store.state.lang === 'ar' ? 'البريد الالكتروني *':'Email *'">
                                                 <div class="invalid-feedback">
                                                     <i class="fa fa-info-circle"></i>
                                                     {{ errMessages && errMessages.email ? errMessages.email[0] : '' }}
@@ -81,8 +98,9 @@
                                             <div class="form-group">
                                             <textarea v-model="form.message"
                                                       :class="errMessages && errMessages.message ? 'is-invalid' : ''"
+                                                      :style="$store.state.lang === 'ar' ?'font-family: \'Tajawal\', sans-serif;' : ''"
                                                       class="form-control form-control-lg"
-                                                      placeholder="Your Message..."
+                                                      :placeholder="$store.state.lang === 'ar' ? 'الرسالة *':'Message *'"
                                                       rows="5"></textarea>
                                                 <div class="invalid-feedback">
                                                     <i class="fa fa-info-circle"></i>
@@ -90,10 +108,15 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-12">
-                                            <button :disabled="btnLoading" type="submit"
+                                        <div class="col-12" dir="rtl">
+                                            <button v-if="$store.state.lang==='ar'" :disabled="btnLoading" type="submit"
+                                                    style="font-family: 'Tajawal', sans-serif;"
                                                     class="btn btn-primary btn-lg float-end mt-3">
-                                                Send <i v-if="!btnLoading" class="bi bi-arrow-right"></i><span v-else>...</span>
+                                                <i v-if="!btnLoading" class="bi bi-arrow-right"></i><span v-else>...</span>
+                                                إرسال
+                                            </button>
+                                            <button v-else type="submit" class="btn btn-primary btn-lg float-end mt-3">
+                                                <i v-if="!btnLoading" class="bi bi-arrow-right"></i><span v-else>...</span>   Send
                                             </button>
                                         </div>
                                     </div>
@@ -140,6 +163,7 @@ export default {
             phone1: this.$store.state.siteInfo.phone1,
             phone2: this.$store.state.siteInfo.phone2,
             address_en: this.$store.state.siteInfo.address_en,
+            address_ar: this.$store.state.siteInfo.address_ar,
             contact_email1: this.$store.state.siteInfo.contact_email1,
             contact_email2: this.$store.state.siteInfo.contact_email2,
             errMessages: [],
@@ -169,6 +193,9 @@ export default {
             })
         }
     },
+    created() {
+        window.history.replaceState(null, null, '?lang='+ this.$store.state.lang);
+    }
 }
 </script>
 

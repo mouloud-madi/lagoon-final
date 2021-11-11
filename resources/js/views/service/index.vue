@@ -5,7 +5,9 @@
             <div class="container">
                 <br><br><br><br>
                 <div class="section-title text-center">
-                    <h2>Our Services</h2>
+                    <h2 :style="$store.state.lang === 'ar' ?'font-family: \'Tajawal\', sans-serif;' : ''">
+                        {{$store.state.lang ==='ar' ? 'خدماتنا' : 'Our Services'}}
+                    </h2>
                 </div>
                 <div class="row">
                     <div class="col-md-4 mb-4" v-for="service in  services">
@@ -14,8 +16,12 @@
                                 <div class="icon-service" v-html="service.icon"></div>
                             </div>
                             <div class="card-body">
-                                <p style="font-size: 25px">{{ service.name_en }}</p>
-                                <p class="card-text">{{ service.description_en }}</p>
+                                <p :dir="$store.state.lang === 'en' ? 'ltr' : 'rtl'" :style="$store.state.lang === 'ar' ?'font-family: \'Tajawal\', sans-serif;' : ''" style="font-size: 25px;color:#b99658">
+                                    {{ $store.state.lang === 'en' ?  service.name_en : service.name_ar }}
+                                </p>
+                                <p  :dir="$store.state.lang === 'en' ? 'ltr' : 'rtl'" :style="$store.state.lang === 'ar' ?'font-family: \'Tajawal\', sans-serif;' : ''" class="card-text">
+                                    {{ $store.state.lang === 'en' ?  service.description_en : service.description_ar }}
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -46,6 +52,7 @@ export default {
         },
     },
     created() {
+        window.history.replaceState(null, null, '?lang='+ this.$store.state.lang);
         this.getServices()
     }
 }

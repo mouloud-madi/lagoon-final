@@ -5,19 +5,27 @@
             <div class="container">
                 <div class="section-title text-center">
                     <br><br><br><br>
-                    <h2>Gallery</h2>
+                    <h2 :style="$store.state.lang === 'ar' ?'font-family: \'Tajawal\', sans-serif;' : ''">
+                        {{ $store.state.lang === 'ar' ? 'معرض الصور' : 'Gallery' }}
+                    </h2>
                 </div>
-                <div class="row justify-content-center">
+                <div class="row justify-content-center" :dir="$store.state.lang === 'en' ? 'ltr' : 'rtl'">
                     <div class="col-12 text-center">
-                        <button class="btn" @click="filter('all')" :class="{selected: selectedCat === 'all'}">All
+                        <button
+                            :style="$store.state.lang === 'ar' ?'font-family: \'Tajawal\', sans-serif;' : ''"
+                            class="btn" @click="filter('all')" :class="{selected: selectedCat === 'all'}">
+                            {{ $store.state.lang === 'ar' ? 'جميع الصور' : 'All' }}
                         </button>
-                        <button class="btn" v-for="category in categories" @click="filter(category.id)"
-                                :class="{selected: selectedCat === category.id}">{{ category.name_en }}
+                        <button
+                            :style="$store.state.lang === 'ar' ?'font-family: \'Tajawal\', sans-serif;' : ''"
+                            class="btn" v-for="category in categories" @click="filter(category.id)"
+                                :class="{selected: selectedCat === category.id}">
+                            {{ $store.state.lang === 'en' ?  category.name_en : category.name_ar }}
                         </button>
                     </div>
                 </div>
                 <div class="row mt-5">
-                    <a class="col-md-4 mb-4"  :href="image.image_url" data-fancybox="gallery" data-aos="fade-in"
+                    <a class="col-md-4 mb-4" :href="image.image_url" data-fancybox="gallery" data-aos="fade-in"
                        v-if="selectedCat === image.category_id || selectedCat === 'all'"
                        v-for="image in images"
                        :class="'image ' + image.category_id">
@@ -69,6 +77,8 @@ export default {
         Fancybox
     },
     created() {
+        window.history.replaceState(null, null, '?lang='+ this.$store.state.lang);
+        window.scrollTo(0, 0);
         this.getImages()
         this.getCategories()
     }

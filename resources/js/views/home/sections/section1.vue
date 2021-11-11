@@ -1,6 +1,6 @@
 <template>
     <div>
-        <section id="section1" style="padding: 0">
+        <div id="section1">
             <div class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div v-for="(slider,i) in sliders" class="carousel-item" :class="i=== 0 ? 'active' : '' ">
@@ -8,7 +8,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
     </div>
 </template>
 
@@ -35,5 +35,20 @@ export default {
 </script>
 
 <style scoped>
+#section1 {
+    height: 100vh;
+}
 
+.d-block {
+    height: 100vh;
+}
+
+@media only screen and (max-width: 600px) {
+    .d-block {
+        height: 100% !important;
+    }
+    #section1 {
+        height: 100% !important;
+    }
+}
 </style>

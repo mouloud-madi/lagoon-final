@@ -385,24 +385,20 @@
                                         @enderror
                                     </div>
                                 </div>
-{{--                                <div class="col-md-6">--}}
-{{--                                    <div class="form-group">--}}
-{{--                                        <label>Vedio <span class="text-danger">*</span></label>--}}
-{{--                                        <input type="file"--}}
-{{--                                               class="form-control @error('section_four_vedio') is-invalid @enderror"--}}
-{{--                                               name="section_four_vedio">--}}
-{{--                                        @error('section_four_vedio')--}}
-{{--                                        <span class="invalid-feedback" role="alert">--}}
-{{--                                            <strong>{{ $message }}</strong>--}}
-{{--                                           </span>--}}
-{{--                                        @enderror--}}
-{{--                                        @if($data->section_four_vedio)--}}
-{{--                                            <video width="320" height="240" controls>--}}
-{{--                                                <source src="{{$data->section_three_image}}" type="video/mp4">--}}
-{{--                                            </video>--}}
-{{--                                        @endif--}}
-{{--                                    </div>--}}
-{{--                                </div>--}}
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Vedio (watch?v=...) <span class="text-danger">*</span></label>
+                                        <input type="text"
+                                               value="{{$data->section_four_vedio}}"
+                                               class="form-control @error('section_four_vedio') is-invalid @enderror"
+                                               name="section_four_vedio">
+                                        @error('section_four_vedio')
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong>{{ $message }}</strong>
+                                           </span>
+                                        @enderror
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

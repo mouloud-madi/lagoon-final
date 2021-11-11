@@ -78,6 +78,22 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
@@ -160,6 +176,17 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
@@ -171,6 +198,9 @@ __webpack_require__.r(__webpack_exports__);
       this.$router.push({
         name: 'home'
       });
+    },
+    changeUrl: function changeUrl() {
+      window.history.replaceState(null, null, '?lang=' + this.$store.state.lang);
     }
   }
 });
@@ -320,6 +350,29 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
@@ -332,6 +385,7 @@ __webpack_require__.r(__webpack_exports__);
       phone1: this.$store.state.siteInfo.phone1,
       phone2: this.$store.state.siteInfo.phone2,
       address_en: this.$store.state.siteInfo.address_en,
+      address_ar: this.$store.state.siteInfo.address_ar,
       contact_email1: this.$store.state.siteInfo.contact_email1,
       contact_email2: this.$store.state.siteInfo.contact_email2,
       errMessages: [],
@@ -362,6 +416,9 @@ __webpack_require__.r(__webpack_exports__);
         _this.errMessages = err.response.data.errors;
       });
     }
+  },
+  created: function created() {
+    window.history.replaceState(null, null, '?lang=' + this.$store.state.lang);
   }
 });
 
@@ -739,10 +796,26 @@ var render = function() {
               _vm._v(" "),
               _c(
                 "p",
-                { attrs: { "data-aos": "fade-up", "data-aos-delay": "200" } },
+                {
+                  style:
+                    _vm.$store.state.lang === "ar"
+                      ? "font-family: 'Tajawal', sans-serif;"
+                      : "",
+                  attrs: {
+                    "data-aos": "fade-up",
+                    "data-aos-delay": "200",
+                    dir: _vm.$store.state.lang === "en" ? "ltr" : "rtl"
+                  }
+                },
                 [
                   _vm._v(
-                    "\n                        Lagoon Design is a premium interior design studio in Qatar specialized in quality,\n                        innovative solutions and efficient performance.\n                    "
+                    "\n                        " +
+                      _vm._s(
+                        _vm.$store.state.lang === "ar"
+                          ? "لاجون ديزاين هو استديو تصميم داخلي رفيع المستوى في قطر، مختص في الحلول المبتكرة والجودة وفعالية الأداء."
+                          : "Lagoon Design is a premium interior design studio in Qatar specialized in quality,innovative solutions and efficient performance."
+                      ) +
+                      "\n                    "
                   )
                 ]
               )
@@ -752,20 +825,48 @@ var render = function() {
               "div",
               { staticClass: "text-center col-md-3 my-5" },
               [
-                _c("h4", { attrs: { "data-aos": "fade-up" } }, [
-                  _vm._v("Navigation")
-                ]),
+                _c(
+                  "h4",
+                  {
+                    style:
+                      _vm.$store.state.lang === "ar"
+                        ? "font-family: 'Tajawal', sans-serif;"
+                        : "",
+                    attrs: { "data-aos": "fade-up" }
+                  },
+                  [
+                    _vm._v(
+                      _vm._s(
+                        _vm.$store.state.lang === "ar" ? "التنقل" : "Navigation"
+                      )
+                    )
+                  ]
+                ),
                 _vm._v(" "),
                 _c(
                   "router-link",
                   {
+                    style:
+                      _vm.$store.state.lang === "ar"
+                        ? "font-family: 'Tajawal', sans-serif;"
+                        : "",
                     attrs: {
                       "data-aos": "fade-up",
                       "data-aos-delay": "200",
                       to: "/"
                     }
                   },
-                  [_vm._v("Home")]
+                  [
+                    _vm._v(
+                      "\n                        " +
+                        _vm._s(
+                          _vm.$store.state.lang === "ar"
+                            ? "الصفحة الرئيسية"
+                            : "Home"
+                        ) +
+                        "\n                    "
+                    )
+                  ]
                 ),
                 _vm._v(" "),
                 _c("br"),
@@ -773,13 +874,27 @@ var render = function() {
                 _c(
                   "router-link",
                   {
+                    style:
+                      _vm.$store.state.lang === "ar"
+                        ? "font-family: 'Tajawal', sans-serif;"
+                        : "",
                     attrs: {
                       "data-aos": "fade-up",
                       "data-aos-delay": "300",
                       to: "/about-us"
                     }
                   },
-                  [_vm._v("About Us")]
+                  [
+                    _vm._v(
+                      "\n                        " +
+                        _vm._s(
+                          _vm.$store.state.lang === "ar"
+                            ? "عن لاجون ديزاين"
+                            : "About Us"
+                        ) +
+                        "\n                    "
+                    )
+                  ]
                 ),
                 _vm._v(" "),
                 _c("br"),
@@ -787,13 +902,27 @@ var render = function() {
                 _c(
                   "router-link",
                   {
+                    style:
+                      _vm.$store.state.lang === "ar"
+                        ? "font-family: 'Tajawal', sans-serif;"
+                        : "",
                     attrs: {
                       "data-aos": "fade-up",
                       "data-aos-delay": "400",
                       to: "/our-services"
                     }
                   },
-                  [_vm._v("Our Services")]
+                  [
+                    _vm._v(
+                      "\n                        " +
+                        _vm._s(
+                          _vm.$store.state.lang === "ar"
+                            ? "خدماتنا"
+                            : "Our Services"
+                        ) +
+                        "\n                    "
+                    )
+                  ]
                 ),
                 _vm._v(" "),
                 _c("br"),
@@ -801,13 +930,27 @@ var render = function() {
                 _c(
                   "router-link",
                   {
+                    style:
+                      _vm.$store.state.lang === "ar"
+                        ? "font-family: 'Tajawal', sans-serif;"
+                        : "",
                     attrs: {
                       "data-aos": "fade-up",
                       "data-aos-delay": "500",
                       to: "/gallery"
                     }
                   },
-                  [_vm._v("Gallery")]
+                  [
+                    _vm._v(
+                      "\n                        " +
+                        _vm._s(
+                          _vm.$store.state.lang === "ar"
+                            ? "معرض الصور"
+                            : "Gallery"
+                        ) +
+                        "\n                    "
+                    )
+                  ]
                 ),
                 _vm._v(" "),
                 _c("br"),
@@ -815,13 +958,27 @@ var render = function() {
                 _c(
                   "router-link",
                   {
+                    style:
+                      _vm.$store.state.lang === "ar"
+                        ? "font-family: 'Tajawal', sans-serif;"
+                        : "",
                     attrs: {
                       "data-aos": "fade-up",
                       "data-aos-delay": "600",
                       to: "/contact-us"
                     }
                   },
-                  [_vm._v("Contact Us")]
+                  [
+                    _vm._v(
+                      "\n                        " +
+                        _vm._s(
+                          _vm.$store.state.lang === "ar"
+                            ? "تواصل معنا"
+                            : "Contact Us"
+                        ) +
+                        "\n                    "
+                    )
+                  ]
                 ),
                 _vm._v(" "),
                 _c("br")
@@ -830,9 +987,27 @@ var render = function() {
             ),
             _vm._v(" "),
             _c("div", { staticClass: "text-center col-md-3 my-5" }, [
-              _c("h4", { attrs: { "data-aos": "fade-up" } }, [
-                _vm._v("Contact Us")
-              ]),
+              _c(
+                "h4",
+                {
+                  style:
+                    _vm.$store.state.lang === "ar"
+                      ? "font-family: 'Tajawal', sans-serif;"
+                      : "",
+                  attrs: { "data-aos": "fade-up" }
+                },
+                [
+                  _vm._v(
+                    "\n                        " +
+                      _vm._s(
+                        _vm.$store.state.lang === "ar"
+                          ? "تواصل معنا"
+                          : "Contact Us"
+                      ) +
+                      "\n                    "
+                  )
+                ]
+              ),
               _vm._v(" "),
               _c(
                 "span",
@@ -892,18 +1067,48 @@ var render = function() {
             ]),
             _vm._v(" "),
             _c("div", { staticClass: "text-center col-md-3 my-5" }, [
-              _c("h4", { attrs: { "data-aos": "fade-up" } }, [
-                _vm._v("Address")
-              ]),
+              _c(
+                "h4",
+                {
+                  style:
+                    _vm.$store.state.lang === "ar"
+                      ? "font-family: 'Tajawal', sans-serif;"
+                      : "",
+                  attrs: { "data-aos": "fade-up" }
+                },
+                [
+                  _vm._v(
+                    "\n                        " +
+                      _vm._s(
+                        _vm.$store.state.lang === "ar" ? "العنوان" : "Address"
+                      ) +
+                      "\n                    "
+                  )
+                ]
+              ),
               _vm._v(" "),
               _c(
                 "p",
-                { attrs: { "data-aos": "fade-up", "data-aos-delay": "100" } },
+                {
+                  style:
+                    _vm.$store.state.lang === "ar"
+                      ? "font-family: 'Tajawal', sans-serif;"
+                      : "",
+                  attrs: {
+                    "data-aos": "fade-up",
+                    "data-aos-delay": "100",
+                    dir: _vm.$store.state.lang === "en" ? "ltr" : "rtl"
+                  }
+                },
                 [
                   _c("i", { staticClass: "bi bi-pin-map" }),
                   _vm._v(
                     " " +
-                      _vm._s(this.$store.state.siteInfo.address_en) +
+                      _vm._s(
+                        _vm.$store.state.lang === "en"
+                          ? this.$store.state.siteInfo.address_en
+                          : this.$store.state.siteInfo.address_ar
+                      ) +
                       "\n                    "
                   )
                 ]
@@ -975,26 +1180,37 @@ var render = function() {
             ? "background: #fff"
             : "background: #f5f8fd"
       },
-      [_vm._m(0)]
+      [
+        _c("div", { staticClass: "container" }, [
+          _c("div", { staticClass: "row justify-content-center" }, [
+            _c(
+              "div",
+              {
+                staticClass: "col-6 p-3 text-center",
+                style:
+                  _vm.$store.state.lang === "ar"
+                    ? "font-family: 'Tajawal', sans-serif;"
+                    : ""
+              },
+              [
+                _vm._v(
+                  "\n                    " +
+                    _vm._s(
+                      _vm.$store.state.lang === "ar"
+                        ? "© حقوق الطبع والنشر 2021 - جميع الحقوق محفوظة "
+                        : " © Copyright 2021 - All Rights Reserved"
+                    ) +
+                    "\n                "
+                )
+              ]
+            )
+          ])
+        ])
+      ]
     )
   ])
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "container" }, [
-      _c("div", { staticClass: "row justify-content-center" }, [
-        _c("div", { staticClass: "col-6 p-3 text-center" }, [
-          _vm._v(
-            "\n                    © Copyright 2021 - All Rights Reserved\n                "
-          )
-        ])
-      ])
-    ])
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 
 
@@ -1021,7 +1237,12 @@ var render = function() {
       "nav",
       {
         staticClass:
-          "navbar navbar-expand-lg navbar-light bg-white fixed-top shadow"
+          "navbar navbar-expand-lg navbar-light bg-white fixed-top shadow",
+        style:
+          _vm.$store.state.lang === "ar"
+            ? "font-family: 'Tajawal', sans-serif;"
+            : "",
+        attrs: { dir: _vm.$store.state.lang === "en" ? "ltr" : "rtl" }
       },
       [
         _c("div", { staticClass: "container-fluid" }, [
@@ -1054,27 +1275,20 @@ var render = function() {
                     [
                       _c(
                         "router-link",
-                        { staticClass: "nav-link", attrs: { to: "/" } },
+                        {
+                          staticClass: "nav-link",
+                          class: _vm.$route.name === "home" ? "active" : "",
+                          attrs: { to: "/" }
+                        },
                         [
                           _vm._v(
-                            "\n                                    Home\n                                "
-                          )
-                        ]
-                      )
-                    ],
-                    1
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "li",
-                    { staticClass: "nav-item" },
-                    [
-                      _c(
-                        "router-link",
-                        { staticClass: "nav-link", attrs: { to: "/about-us" } },
-                        [
-                          _vm._v(
-                            "\n                                    About Us\n                                "
+                            "\n                                " +
+                              _vm._s(
+                                _vm.$store.state.lang === "ar"
+                                  ? "الصفحة الرئيسية"
+                                  : "Home"
+                              ) +
+                              "\n                            "
                           )
                         ]
                       )
@@ -1090,28 +1304,46 @@ var render = function() {
                         "router-link",
                         {
                           staticClass: "nav-link",
+                          class: _vm.$route.name === "about-us" ? "active" : "",
+                          attrs: { to: "/about-us" }
+                        },
+                        [
+                          _vm._v(
+                            "\n                                " +
+                              _vm._s(
+                                _vm.$store.state.lang === "ar"
+                                  ? "عن لاجون ديزاين"
+                                  : "About Us"
+                              ) +
+                              "\n                            "
+                          )
+                        ]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "li",
+                    { staticClass: "nav-item" },
+                    [
+                      _c(
+                        "router-link",
+                        {
+                          staticClass: "nav-link",
+                          class:
+                            _vm.$route.name === "our-services" ? "active" : "",
                           attrs: { to: "/our-services" }
                         },
                         [
                           _vm._v(
-                            "\n                                    Our Services\n                                "
-                          )
-                        ]
-                      )
-                    ],
-                    1
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "li",
-                    { staticClass: "nav-item" },
-                    [
-                      _c(
-                        "router-link",
-                        { staticClass: "nav-link", attrs: { to: "/gallery" } },
-                        [
-                          _vm._v(
-                            "\n                                    Gallery\n                                "
+                            "\n                                " +
+                              _vm._s(
+                                _vm.$store.state.lang === "ar"
+                                  ? "خدماتنا"
+                                  : "Our Services"
+                              ) +
+                              "\n                            "
                           )
                         ]
                       )
@@ -1127,11 +1359,18 @@ var render = function() {
                         "router-link",
                         {
                           staticClass: "nav-link",
-                          attrs: { to: "/contact-us" }
+                          class: _vm.$route.name === "gallery" ? "active" : "",
+                          attrs: { to: "/gallery" }
                         },
                         [
                           _vm._v(
-                            "\n                                    Contact Us\n                                "
+                            "\n                                " +
+                              _vm._s(
+                                _vm.$store.state.lang === "ar"
+                                  ? "معرض الصور"
+                                  : "Gallery"
+                              ) +
+                              "\n                            "
                           )
                         ]
                       )
@@ -1139,7 +1378,92 @@ var render = function() {
                     1
                   ),
                   _vm._v(" "),
-                  _vm._m(1)
+                  _c(
+                    "li",
+                    { staticClass: "nav-item" },
+                    [
+                      _c(
+                        "router-link",
+                        {
+                          staticClass: "nav-link",
+                          class:
+                            _vm.$route.name === "contact-us" ? "active" : "",
+                          attrs: { to: "/contact-us" }
+                        },
+                        [
+                          _vm._v(
+                            "\n                                " +
+                              _vm._s(
+                                _vm.$store.state.lang === "ar"
+                                  ? "تواصل معنا"
+                                  : "Contact Us"
+                              ) +
+                              "\n                            "
+                          )
+                        ]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _vm._m(1),
+                  _vm._v(" "),
+                  _c("li", { staticClass: "nav-item" }, [
+                    _vm.$store.state.lang === "en"
+                      ? _c(
+                          "a",
+                          {
+                            staticClass: "nav-link",
+                            staticStyle: {
+                              "font-family": "'Tajawal', sans-serif"
+                            },
+                            attrs: { href: "javascript:void(0)" },
+                            on: {
+                              click: function($event) {
+                                ;[
+                                  _vm.$store.dispatch("lang", "ar"),
+                                  _vm.changeUrl()
+                                ]
+                              }
+                            }
+                          },
+                          [
+                            _vm._v(
+                              "\n                                العربية\n                                "
+                            ),
+                            _c("img", {
+                              staticClass: "flag",
+                              attrs: {
+                                src: _vm.app_url + "/images/Flag-Qatar.jpg"
+                              }
+                            })
+                          ]
+                        )
+                      : _c(
+                          "a",
+                          {
+                            staticClass: "nav-link",
+                            attrs: { href: "javascript:void(0)" },
+                            on: {
+                              click: function($event) {
+                                ;[
+                                  _vm.$store.dispatch("lang", "en"),
+                                  _vm.changeUrl()
+                                ]
+                              }
+                            }
+                          },
+                          [
+                            _vm._v(
+                              "\n                                English "
+                            ),
+                            _c("img", {
+                              staticClass: "flag",
+                              attrs: { src: _vm.app_url + "/images/flagen.jpg" }
+                            })
+                          ]
+                        )
+                  ])
                 ])
               ])
             ]
@@ -1218,7 +1542,28 @@ var render = function() {
             _c("br"),
             _c("br"),
             _vm._v(" "),
-            _vm._m(0),
+            _c("div", { staticClass: "section-title text-center" }, [
+              _c(
+                "h2",
+                {
+                  style:
+                    _vm.$store.state.lang === "ar"
+                      ? "font-family: 'Tajawal', sans-serif;"
+                      : ""
+                },
+                [
+                  _vm._v(
+                    "\n                    " +
+                      _vm._s(
+                        _vm.$store.state.lang === "ar"
+                          ? "تواصل معنا"
+                          : "Contact Us"
+                      ) +
+                      "\n                "
+                  )
+                ]
+              )
+            ]),
             _vm._v(" "),
             _c("div", { staticClass: "row" }, [
               _c("div", { staticClass: "col-md-4  mb-3 text-center" }, [
@@ -1229,15 +1574,57 @@ var render = function() {
                     attrs: { "data-aos": "fade-up", "data-aos-delay": "100" }
                   },
                   [
-                    _vm._m(1),
+                    _c(
+                      "div",
+                      {
+                        staticClass: "card-title my-4",
+                        staticStyle: { "font-size": "25px", color: "#b99658" },
+                        style:
+                          _vm.$store.state.lang === "ar"
+                            ? "font-family: 'Tajawal', sans-serif;"
+                            : "",
+                        attrs: {
+                          dir: _vm.$store.state.lang === "en" ? "ltr" : "rtl"
+                        }
+                      },
+                      [
+                        _c("i", {
+                          staticClass: "bi bi-pin-map",
+                          staticStyle: { "font-size": "25px", color: "#b99658" }
+                        }),
+                        _vm._v(
+                          "\n                            " +
+                            _vm._s(
+                              _vm.$store.state.lang === "ar"
+                                ? "العنوان"
+                                : "Address"
+                            ) +
+                            "\n                        "
+                        )
+                      ]
+                    ),
                     _vm._v(" "),
-                    _c("div", { staticClass: "card-text" }, [
-                      _vm._v(
-                        "\n                            " +
-                          _vm._s(_vm.address_en) +
-                          "\n                        "
-                      )
-                    ])
+                    _c(
+                      "div",
+                      {
+                        staticClass: "card-text",
+                        style:
+                          _vm.$store.state.lang === "ar"
+                            ? "font-family: 'Tajawal', sans-serif;"
+                            : ""
+                      },
+                      [
+                        _vm._v(
+                          "\n                            " +
+                            _vm._s(
+                              _vm.$store.state.lang === "ar"
+                                ? _vm.address_ar
+                                : _vm.address_en
+                            ) +
+                            "\n                        "
+                        )
+                      ]
+                    )
                   ]
                 )
               ]),
@@ -1250,7 +1637,35 @@ var render = function() {
                     attrs: { "data-aos": "fade-up", "data-aos-delay": "100" }
                   },
                   [
-                    _vm._m(2),
+                    _c(
+                      "div",
+                      {
+                        staticClass: "card-title my-4",
+                        staticStyle: { "font-size": "25px", color: "#b99658" },
+                        style:
+                          _vm.$store.state.lang === "ar"
+                            ? "font-family: 'Tajawal', sans-serif;"
+                            : "",
+                        attrs: {
+                          dir: _vm.$store.state.lang === "en" ? "ltr" : "rtl"
+                        }
+                      },
+                      [
+                        _c("i", {
+                          staticClass: "bi bi-telephone-outbound",
+                          staticStyle: { "font-size": "25px", color: "#b99658" }
+                        }),
+                        _vm._v(
+                          "\n                            " +
+                            _vm._s(
+                              _vm.$store.state.lang === "ar"
+                                ? "تواصل معنا على الهاتف"
+                                : "Get in Touch with Us"
+                            ) +
+                            "\n                        "
+                        )
+                      ]
+                    ),
                     _vm._v(" "),
                     _c("div", { staticClass: "card-text" }, [
                       _vm.phone1
@@ -1273,7 +1688,35 @@ var render = function() {
                     attrs: { "data-aos": "fade-up", "data-aos-delay": "100" }
                   },
                   [
-                    _vm._m(3),
+                    _c(
+                      "div",
+                      {
+                        staticClass: "card-title my-4",
+                        staticStyle: { "font-size": "25px", color: "#b99658" },
+                        style:
+                          _vm.$store.state.lang === "ar"
+                            ? "font-family: 'Tajawal', sans-serif;"
+                            : "",
+                        attrs: {
+                          dir: _vm.$store.state.lang === "en" ? "ltr" : "rtl"
+                        }
+                      },
+                      [
+                        _c("i", {
+                          staticClass: "bi bi-envelope",
+                          staticStyle: { "font-size": "25px", color: "#b99658" }
+                        }),
+                        _vm._v(
+                          "\n                            Email " +
+                            _vm._s(
+                              _vm.$store.state.lang === "ar"
+                                ? "البريد الإلكتروني"
+                                : "Email"
+                            ) +
+                            "\n                        "
+                        )
+                      ]
+                    ),
                     _vm._v(" "),
                     _c("div", { staticClass: "card-text" }, [
                       _vm.contact_email1
@@ -1299,21 +1742,58 @@ var render = function() {
                 [
                   _c("div", { staticClass: "card h-100" }, [
                     _c("div", { staticClass: "card-body" }, [
-                      _c("p", { staticStyle: { "font-size": "25px" } }, [
-                        _vm._v(" Leave a Message")
-                      ]),
+                      _c(
+                        "p",
+                        {
+                          staticStyle: {
+                            "font-size": "25px",
+                            color: "#b99658"
+                          },
+                          style:
+                            _vm.$store.state.lang === "ar"
+                              ? "font-family: 'Tajawal', sans-serif;"
+                              : "",
+                          attrs: {
+                            dir: _vm.$store.state.lang === "en" ? "ltr" : "rtl"
+                          }
+                        },
+                        [
+                          _vm._v(
+                            "\n                                 " +
+                              _vm._s(
+                                _vm.$store.state.lang === "en"
+                                  ? "Leave a Message"
+                                  : "اترك لنا رسالة"
+                              ) +
+                              "\n                            "
+                          )
+                        ]
+                      ),
                       _vm._v(" "),
                       _vm.successMessages
                         ? _c(
                             "div",
                             {
                               staticClass: "alert alert-success fade show",
-                              attrs: { role: "alert" }
+                              style:
+                                _vm.$store.state.lang === "ar"
+                                  ? "font-family: 'Tajawal', sans-serif;"
+                                  : "",
+                              attrs: {
+                                role: "alert",
+                                dir:
+                                  _vm.$store.state.lang === "en" ? "ltr" : "rtl"
+                              }
                             },
                             [
-                              _c("strong", [_vm._v("Thank you!")]),
                               _vm._v(
-                                " your message was successfully sent.\n                            "
+                                "\n                                " +
+                                  _vm._s(
+                                    _vm.$store.state.lang === "ar"
+                                      ? "تم إرسال رسالتك بنجاح."
+                                      : "Your message was successfully sent."
+                                  ) +
+                                  "\n                            "
                               )
                             ]
                           )
@@ -1322,6 +1802,9 @@ var render = function() {
                       _c(
                         "form",
                         {
+                          attrs: {
+                            dir: _vm.$store.state.lang === "en" ? "ltr" : "rtl"
+                          },
                           on: {
                             submit: function($event) {
                               $event.preventDefault()
@@ -1347,9 +1830,16 @@ var render = function() {
                                     _vm.errMessages && _vm.errMessages.name
                                       ? "is-invalid"
                                       : "",
+                                  style:
+                                    _vm.$store.state.lang === "ar"
+                                      ? "font-family: 'Tajawal', sans-serif;"
+                                      : "",
                                   attrs: {
                                     type: "text",
-                                    placeholder: "Name *"
+                                    placeholder:
+                                      _vm.$store.state.lang === "ar"
+                                        ? "الاسم *"
+                                        : "Name *"
                                   },
                                   domProps: { value: _vm.form.name },
                                   on: {
@@ -1397,9 +1887,16 @@ var render = function() {
                                     _vm.errMessages && _vm.errMessages.email
                                       ? "is-invalid"
                                       : "",
+                                  style:
+                                    _vm.$store.state.lang === "ar"
+                                      ? "font-family: 'Tajawal', sans-serif;"
+                                      : "",
                                   attrs: {
                                     type: "email",
-                                    placeholder: "Email *"
+                                    placeholder:
+                                      _vm.$store.state.lang === "ar"
+                                        ? "البريد الالكتروني *"
+                                        : "Email *"
                                   },
                                   domProps: { value: _vm.form.email },
                                   on: {
@@ -1447,8 +1944,15 @@ var render = function() {
                                     _vm.errMessages && _vm.errMessages.message
                                       ? "is-invalid"
                                       : "",
+                                  style:
+                                    _vm.$store.state.lang === "ar"
+                                      ? "font-family: 'Tajawal', sans-serif;"
+                                      : "",
                                   attrs: {
-                                    placeholder: "Your Message...",
+                                    placeholder:
+                                      _vm.$store.state.lang === "ar"
+                                        ? "الرسالة *"
+                                        : "Message *",
                                     rows: "5"
                                   },
                                   domProps: { value: _vm.form.message },
@@ -1482,29 +1986,55 @@ var render = function() {
                               ])
                             ]),
                             _vm._v(" "),
-                            _c("div", { staticClass: "col-12" }, [
-                              _c(
-                                "button",
-                                {
-                                  staticClass:
-                                    "btn btn-primary btn-lg float-end mt-3",
-                                  attrs: {
-                                    disabled: _vm.btnLoading,
-                                    type: "submit"
-                                  }
-                                },
-                                [
-                                  _vm._v(
-                                    "\n                                            Send "
-                                  ),
-                                  !_vm.btnLoading
-                                    ? _c("i", {
-                                        staticClass: "bi bi-arrow-right"
-                                      })
-                                    : _c("span", [_vm._v("...")])
-                                ]
-                              )
-                            ])
+                            _c(
+                              "div",
+                              { staticClass: "col-12", attrs: { dir: "rtl" } },
+                              [
+                                _vm.$store.state.lang === "ar"
+                                  ? _c(
+                                      "button",
+                                      {
+                                        staticClass:
+                                          "btn btn-primary btn-lg float-end mt-3",
+                                        staticStyle: {
+                                          "font-family": "'Tajawal', sans-serif"
+                                        },
+                                        attrs: {
+                                          disabled: _vm.btnLoading,
+                                          type: "submit"
+                                        }
+                                      },
+                                      [
+                                        !_vm.btnLoading
+                                          ? _c("i", {
+                                              staticClass: "bi bi-arrow-right"
+                                            })
+                                          : _c("span", [_vm._v("...")]),
+                                        _vm._v(
+                                          "\n                                            إرسال\n                                        "
+                                        )
+                                      ]
+                                    )
+                                  : _c(
+                                      "button",
+                                      {
+                                        staticClass:
+                                          "btn btn-primary btn-lg float-end mt-3",
+                                        attrs: { type: "submit" }
+                                      },
+                                      [
+                                        !_vm.btnLoading
+                                          ? _c("i", {
+                                              staticClass: "bi bi-arrow-right"
+                                            })
+                                          : _c("span", [_vm._v("...")]),
+                                        _vm._v(
+                                          "   Send\n                                        "
+                                        )
+                                      ]
+                                    )
+                              ]
+                            )
                           ])
                         ]
                       )
@@ -1577,66 +2107,7 @@ var render = function() {
     1
   )
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "section-title text-center" }, [
-      _c("h2", [_vm._v("Contact Us")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      { staticClass: "card-title my-4", staticStyle: { "font-size": "25px" } },
-      [
-        _c("i", {
-          staticClass: "bi bi-pin-map",
-          staticStyle: { "font-size": "25px", color: "#b99658" }
-        }),
-        _vm._v(" Address\n                        ")
-      ]
-    )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      { staticClass: "card-title my-4", staticStyle: { "font-size": "25px" } },
-      [
-        _c("i", {
-          staticClass: "bi bi-telephone-outbound",
-          staticStyle: { "font-size": "25px", color: "#b99658" }
-        }),
-        _vm._v(
-          " Get in\n                            Touch\n                            with Us\n                        "
-        )
-      ]
-    )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      { staticClass: "card-title my-4", staticStyle: { "font-size": "25px" } },
-      [
-        _c("i", {
-          staticClass: "bi bi-envelope",
-          staticStyle: { "font-size": "25px", color: "#b99658" }
-        }),
-        _vm._v(" Email\n                        ")
-      ]
-    )
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 
 

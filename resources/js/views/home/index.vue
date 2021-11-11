@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div :style="$store.state.lang === 'ar' ?'font-family: \'Tajawal\', sans-serif;' : ''">
         <div id="loader" class="loader"></div>
         <top/>
         <section1/>
@@ -17,7 +17,6 @@
         </footer>
     </div>
 </template>
-
 <script>
 import Section1 from "./sections/section1";
 import Section2 from "./sections/section2";
@@ -30,6 +29,7 @@ import AppFooter from "../../components/appFooter";
 export default {
     components: {AppFooter, Top, Section5, Section4, Section3, Section2, Section1},
     mounted() {
+        window.history.replaceState(null, null, '?lang='+ this.$store.state.lang);
         setTimeout(function () {
             document.getElementById('loader').style.display = 'none'
         }, 2500);

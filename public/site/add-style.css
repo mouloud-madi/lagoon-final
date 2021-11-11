@@ -129,6 +129,7 @@ section {
     width: 30px;
     height: 30px;
     border-radius: 50%;
+    text-shadow: 2px 2px;
 }
 .vedio{
     margin-top: 50px;

@@ -1,25 +1,22 @@
 <template>
-    <div>
-        <section class="about">
-            <div class="container">
-                <div class="row" id="section3">
-                    <div class="col-lg-6" data-aos="fade-left">
-                        <img class="img-gif img-gif-2" :src="$store.state.section.section_two_gif_en" width="600" style="margin-left: -45px;margin-top: -100px">
-                        <p class="paragraph paragraph-section3" style="margin-top: -70px;font-size: 22px">
-                            {{$store.state.section.section_two_description_en}}
-                        </p>
-                            <span class="text--primary">●</span> Interior designing, styling and decorating <br>
-                        <span class="text--primary">●</span> Outdoor space design <br>
-                        <span class="text--primary">●</span> Exterior designing and detailing <br>
-                        <span class="text--primary">●</span> Fitout projects <br>
-                        <span class="text--primary">●</span> Material suppliers from many reputed firms <br>
-                    </div>
-                    <div class="col-lg-6" data-aos="fade-right">
-                        <img :src="$store.state.section.section_two_image" class="img-fluid img-about" alt="" width="100%" style="margin-top: 100px">
-                    </div>
+    <div id="section3">
+        <div class="container">
+            <div class="row" :dir="$store.state.lang === 'en' ? 'ltr' : 'rtl'">
+                <div class="col-lg-6" :data-aos="$store.state.lang === 'en' ? 'fade-left' : 'fade-right'">
+                    <img :src="$store.state.lang === 'en' ? $store.state.section.section_two_gif_en : $store.state.section.section_two_gif_ar " class="gif">
+                    <p class="p-section">
+                        {{ $store.state.lang ==='ar' ? $store.state.section.section_two_description_ar : $store.state.section.section_two_description_en }}
+                    </p>
+                    <span class="text--primary">●</span> {{$store.state.lang === 'en' ? 'Interior designing, styling and decorating' : 'التصميم الداخلي والتزيين وإعداد الديكور'}}<br>
+                    <span class="text--primary">●</span> {{$store.state.lang === 'en' ? 'Outdoor space design' : 'تصميم المساحات الخارجية'}}  <br>
+                    <span class="text--primary">●</span> {{$store.state.lang === 'en' ? 'Fit-out' : 'الفيت أوت'}}  <br>
+                    <span class="text--primary">●</span> {{$store.state.lang === 'en' ? 'Material suppliers from many firms ' : 'عدد كبير من مزودي المواد'}}  <br>
+                </div>
+                <div class="col-lg-6" :data-aos="$store.state.lang === 'en' ? 'fade-right' : 'fade-left'">
+                    <img :src="$store.state.section.section_two_image" width="100%" class="image">
                 </div>
             </div>
-        </section>
+        </div>
     </div>
 </template>
 
@@ -30,5 +27,44 @@ export default {}
 <style scoped>
 .text--primary {
     color: #b99658;
+}
+
+#section3 {
+    min-height: 100vh;
+}
+
+.p-section {
+    font-size: 30px;
+}
+
+.gif {
+    width: 500px;
+    margin-left: -32px;
+    margin-bottom: -70px;
+}
+
+.image {
+    margin-top: 150px;
+}
+
+@media only screen and (max-width: 600px) {
+    #section3 {
+        min-height: 0 !important;
+    }
+
+    .p-section {
+        font-size: 19px;
+    }
+
+    .gif {
+        width: 250px;
+        margin-left: -10px;
+        margin-bottom: -28px;
+        margin-top: -20px;
+    }
+
+    .image {
+        margin-top: 0;
+    }
 }
 </style>
