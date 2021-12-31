@@ -3,7 +3,7 @@
         <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow"
              :dir="$store.state.lang === 'en' ? 'ltr' : 'rtl'"
              :style="$store.state.lang === 'ar' ?'font-family: \'Tajawal\', sans-serif;' : ''">
-            <div class="container-fluid">
+            <div class="container">
                 <a @click="goToHome" class="navbar-brand">
                     <img :src="app_url+'/images/logo.png'" width="100">
                 </a>
@@ -53,11 +53,10 @@
                                    style="font-family: 'Tajawal', sans-serif;"
                                    @click="[$store.dispatch('lang','ar'),changeUrl()]">
                                     العربية
-                                    <img class="flag" :src="app_url+'/images/Flag-Qatar.jpg'">
                                 </a>
                                 <a v-else class="nav-link" href="javascript:void(0)"
                                    @click="[$store.dispatch('lang','en'),changeUrl()]">
-                                    English <img class="flag" :src="app_url+'/images/flagen.jpg'">
+                                    English
                                 </a>
                             </li>
                         </ul>

@@ -1,12 +1,13 @@
 <template>
     <div>
         <navbar/>
-        <div class="portfolio section-bg" style="min-height: 100vh;">
+        <div class="portfolio bg-white" style="min-height: 100vh;">
             <div class="container">
                 <div class="section-title text-center">
                     <br><br><br><br>
                     <h2 :style="$store.state.lang === 'ar' ?'font-family: \'Tajawal\', sans-serif;' : ''">
-                        {{ $store.state.lang === 'ar' ? 'معرض الصور' : 'Gallery' }}
+                        <span v-if="$store.state.lang === 'ar'">معرض الصور</span>
+                        <img v-else src="/images/gallery.gif" width="250">
                     </h2>
                 </div>
                 <div class="row justify-content-center" :dir="$store.state.lang === 'en' ? 'ltr' : 'rtl'">
@@ -87,15 +88,16 @@ export default {
 
 <style scoped>
 .section-title h2 {
-    color: #0d0d0e;
+    color: #808285;
 }
-
 .section-title h2::after {
     left: 48%;
 }
-
+.btn {
+    color: #808285;
+}
 .btn.selected {
-    background-color: #b99658;
+    background-color: #B3965A;
     color: white;
 }
 </style>

@@ -94,6 +94,26 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
@@ -101,7 +121,8 @@ __webpack_require__.r(__webpack_exports__);
       facebook: this.$store.state.siteInfo.facebook,
       instagram: this.$store.state.siteInfo.instagram,
       linkedin: this.$store.state.siteInfo.linkedin,
-      app_url: "http://127.0.0.1:8000"
+      whatsapp: this.$store.state.siteInfo.whatsapp,
+      app_url: "https://demo.socialm.tv"
     };
   }
 });
@@ -186,11 +207,10 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
-      app_url: "http://127.0.0.1:8000"
+      app_url: "https://demo.socialm.tv"
     };
   },
   methods: {
@@ -433,59 +453,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
@@ -495,7 +462,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   data: function data() {
     return {
-      url: "http://127.0.0.1:8000",
+      url: "https://demo.socialm.tv",
       clients: this.$store.state.siteInfo.clients,
       projects: this.$store.state.siteInfo.projects,
       projects_in_progress: this.$store.state.siteInfo.projects_in_progress
@@ -525,7 +492,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.btn-link[data-v-a9f4693e] {\n    background-color: #f3f3f3;\n    color: #b99658;\n}\na[data-v-a9f4693e]:hover {\n    color: #b17c1f;\n}\na[data-v-a9f4693e] {\n    color: #272829;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.btn-link[data-v-a9f4693e] {\n    color: #B3965A;\n}\na[data-v-a9f4693e]:hover {\n    color: #b17c1f;\n}\nh5[data-v-a9f4693e]{\n    font-size: 1.4rem;\n}\na[data-v-a9f4693e] {\n    color: #808285;\n}\n.ft[data-v-a9f4693e] {\n    padding-left: 80px;\n}\n@media only screen and (max-width: 600px) {\n.ft[data-v-a9f4693e] {\n        padding-left: 13px;\n}\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -548,7 +515,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.section-title h2[data-v-6ba873a1] {\n    color: #0d0d0e;\n}\n.section-title h2[data-v-6ba873a1]::after {\n    left: 48%;\n}\n.card[data-v-6ba873a1] {\n    border: 1px solid rgba(67, 62, 62, 0.06);\n}\n.card-text[data-v-6ba873a1] {\n    color: #4f5050;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.section-title h2[data-v-6ba873a1] {\n    color: #0d0d0e;\n}\n.section-title h2[data-v-6ba873a1]::after {\n    left: 48%;\n}\n.card[data-v-6ba873a1] {\n    border: 1px solid rgba(67, 62, 62, 0.06);\n}\nh4[data-v-6ba873a1]{\n    font-size: 1.4rem;\n}\n.card-text[data-v-6ba873a1] {\n    color: #4f5050;\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -866,52 +833,68 @@ var render = function() {
   return _c("div", [
     _c(
       "div",
-      { style: _vm.$route.name === "home" ? "background: #f5f8fd" : "" },
+      {
+        staticStyle: {
+          background: "rgba(0, 0, 0, 0.01)",
+          "margin-top": "100px"
+        }
+      },
       [
         _c("div", { staticClass: "container" }, [
           _c("div", { staticClass: "row" }, [
-            _c("div", { staticClass: "text-center col-md-3 my-5" }, [
-              _c("img", {
-                attrs: {
-                  src: _vm.app_url + "/images/logo.png",
-                  width: "100",
-                  "data-aos": "fade-up"
-                }
-              }),
-              _vm._v(" "),
-              _c(
-                "p",
-                {
-                  style:
-                    _vm.$store.state.lang === "ar"
-                      ? "font-family: 'Tajawal', sans-serif;"
-                      : "",
+            _c(
+              "div",
+              {
+                staticClass: "col-md-3 my-3",
+                attrs: { dir: _vm.$store.state.lang === "en" ? "ltr" : "rtl" }
+              },
+              [
+                _c("img", {
+                  staticClass: "mb-4",
                   attrs: {
-                    "data-aos": "fade-up",
-                    "data-aos-delay": "200",
-                    dir: _vm.$store.state.lang === "en" ? "ltr" : "rtl"
+                    src: _vm.app_url + "/images/logo.png",
+                    width: "100",
+                    "data-aos": "fade-up"
                   }
-                },
-                [
-                  _vm._v(
-                    "\n                        " +
-                      _vm._s(
-                        _vm.$store.state.lang === "ar"
-                          ? "لاجون ديزاين هو استديو تصميم داخلي رفيع المستوى في قطر، مختص في الحلول المبتكرة والجودة وفعالية الأداء."
-                          : "Lagoon Design is a premium interior design studio in Qatar specialized in quality,innovative solutions and efficient performance."
-                      ) +
-                      "\n                    "
-                  )
-                ]
-              )
-            ]),
+                }),
+                _vm._v(" "),
+                _c(
+                  "p",
+                  {
+                    style:
+                      _vm.$store.state.lang === "ar"
+                        ? "font-family: 'Tajawal', sans-serif;"
+                        : "",
+                    attrs: {
+                      "data-aos": "fade-up",
+                      "data-aos-delay": "200",
+                      dir: _vm.$store.state.lang === "en" ? "ltr" : "rtl"
+                    }
+                  },
+                  [
+                    _vm._v(
+                      "\n                        " +
+                        _vm._s(
+                          _vm.$store.state.lang === "ar"
+                            ? "لاجون ديزاين هو استديو تصميم داخلي رفيع المستوى في قطر، مختص في الحلول المبتكرة والجودة وفعالية الأداء."
+                            : "Lagoon Design is a premium interior design studio in Qatar specialized in quality,innovative solutions and efficient performance."
+                        ) +
+                        "\n                    "
+                    )
+                  ]
+                )
+              ]
+            ),
             _vm._v(" "),
             _c(
               "div",
-              { staticClass: "text-center col-md-3 my-5" },
+              {
+                staticClass: "col-md-3 my-5 ft",
+                attrs: { dir: _vm.$store.state.lang === "en" ? "ltr" : "rtl" }
+              },
               [
                 _c(
-                  "h4",
+                  "h5",
                   {
                     style:
                       _vm.$store.state.lang === "ar"
@@ -1071,187 +1054,226 @@ var render = function() {
               1
             ),
             _vm._v(" "),
-            _c("div", { staticClass: "text-center col-md-3 my-5" }, [
-              _c(
-                "h4",
-                {
-                  style:
-                    _vm.$store.state.lang === "ar"
-                      ? "font-family: 'Tajawal', sans-serif;"
-                      : "",
-                  attrs: { "data-aos": "fade-up" }
-                },
-                [
-                  _vm._v(
-                    "\n                        " +
-                      _vm._s(
-                        _vm.$store.state.lang === "ar"
-                          ? "تواصل معنا"
-                          : "Contact Us"
-                      ) +
-                      "\n                    "
-                  )
-                ]
-              ),
-              _vm._v(" "),
-              _c(
-                "span",
-                { attrs: { "data-aos": "fade-up", "data-aos-delay": "200" } },
-                [
-                  _c("i", { staticClass: "bi bi-telephone" }),
-                  _vm._v("  " + _vm._s(this.$store.state.siteInfo.phone1))
-                ]
-              ),
-              _vm._v(" "),
-              _c("br"),
-              _vm._v(" "),
-              this.$store.state.siteInfo.phone2
-                ? _c(
-                    "span",
-                    {
-                      attrs: { "data-aos": "fade-up", "data-aos-delay": "300" }
-                    },
-                    [
-                      _c("i", { staticClass: "bi bi-telephone" }),
-                      _vm._v(" " + _vm._s(this.$store.state.siteInfo.phone2))
-                    ]
-                  )
-                : _vm._e(),
-              _vm._v(" "),
-              _c("br"),
-              _vm._v(" "),
-              _c(
-                "span",
-                { attrs: { "data-aos": "fade-up", "data-aos-delay": "400" } },
-                [
-                  _c("i", { staticClass: "bi bi-envelope" }),
-                  _vm._v(
-                    "  " + _vm._s(this.$store.state.siteInfo.contact_email1)
-                  )
-                ]
-              ),
-              _vm._v(" "),
-              _c("br"),
-              _vm._v(" "),
-              this.$store.state.siteInfo.contact_email2
-                ? _c(
-                    "span",
-                    {
-                      attrs: { "data-aos": "fade-up", "data-aos-delay": "500" }
-                    },
-                    [
-                      _c("i", { staticClass: "bi bi-envelope" }),
-                      _vm._v(
-                        "  " + _vm._s(this.$store.state.siteInfo.contact_email2)
-                      )
-                    ]
-                  )
-                : _vm._e(),
-              _vm._v(" "),
-              _c("br")
-            ]),
+            _c(
+              "div",
+              {
+                staticClass: "col-md-3 my-5",
+                attrs: { dir: _vm.$store.state.lang === "en" ? "ltr" : "rtl" }
+              },
+              [
+                _c(
+                  "h5",
+                  {
+                    style:
+                      _vm.$store.state.lang === "ar"
+                        ? "font-family: 'Tajawal', sans-serif;"
+                        : "",
+                    attrs: { "data-aos": "fade-up" }
+                  },
+                  [
+                    _vm._v(
+                      "\n                        " +
+                        _vm._s(
+                          _vm.$store.state.lang === "ar"
+                            ? "تواصل معنا"
+                            : "Contact Us"
+                        ) +
+                        "\n                    "
+                    )
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "span",
+                  { attrs: { "data-aos": "fade-up", "data-aos-delay": "200" } },
+                  [
+                    _c("i", { staticClass: "bi bi-telephone" }),
+                    _vm._v("  " + _vm._s(this.$store.state.siteInfo.phone1))
+                  ]
+                ),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(" "),
+                this.$store.state.siteInfo.phone2
+                  ? _c(
+                      "span",
+                      {
+                        attrs: {
+                          "data-aos": "fade-up",
+                          "data-aos-delay": "300"
+                        }
+                      },
+                      [
+                        _c("i", { staticClass: "bi bi-telephone" }),
+                        _vm._v(" " + _vm._s(this.$store.state.siteInfo.phone2))
+                      ]
+                    )
+                  : _vm._e(),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(" "),
+                _c(
+                  "span",
+                  { attrs: { "data-aos": "fade-up", "data-aos-delay": "400" } },
+                  [
+                    _c("i", { staticClass: "bi bi-envelope" }),
+                    _vm._v(
+                      "  " + _vm._s(this.$store.state.siteInfo.contact_email1)
+                    )
+                  ]
+                ),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(" "),
+                this.$store.state.siteInfo.contact_email2
+                  ? _c(
+                      "span",
+                      {
+                        attrs: {
+                          "data-aos": "fade-up",
+                          "data-aos-delay": "500"
+                        }
+                      },
+                      [
+                        _c("i", { staticClass: "bi bi-envelope" }),
+                        _vm._v(
+                          "  " +
+                            _vm._s(this.$store.state.siteInfo.contact_email2)
+                        )
+                      ]
+                    )
+                  : _vm._e(),
+                _vm._v(" "),
+                _c("br")
+              ]
+            ),
             _vm._v(" "),
-            _c("div", { staticClass: "text-center col-md-3 my-5" }, [
-              _c(
-                "h4",
-                {
-                  style:
-                    _vm.$store.state.lang === "ar"
-                      ? "font-family: 'Tajawal', sans-serif;"
-                      : "",
-                  attrs: { "data-aos": "fade-up" }
-                },
-                [
-                  _vm._v(
-                    "\n                        " +
-                      _vm._s(
-                        _vm.$store.state.lang === "ar" ? "العنوان" : "Address"
-                      ) +
-                      "\n                    "
-                  )
-                ]
-              ),
-              _vm._v(" "),
-              _c(
-                "p",
-                {
-                  style:
-                    _vm.$store.state.lang === "ar"
-                      ? "font-family: 'Tajawal', sans-serif;"
-                      : "",
-                  attrs: {
-                    "data-aos": "fade-up",
-                    "data-aos-delay": "100",
-                    dir: _vm.$store.state.lang === "en" ? "ltr" : "rtl"
-                  }
-                },
-                [
-                  _c("i", { staticClass: "bi bi-pin-map" }),
-                  _vm._v(
-                    " " +
-                      _vm._s(
-                        _vm.$store.state.lang === "en"
-                          ? this.$store.state.siteInfo.address_en
-                          : this.$store.state.siteInfo.address_ar
-                      ) +
-                      "\n                    "
-                  )
-                ]
-              ),
-              _vm._v(" "),
-              _c(
-                "div",
-                {
-                  staticClass: "flex-column",
-                  attrs: { "data-aos": "fade-up", "data-aos-delay": "200" }
-                },
-                [
-                  _vm.facebook
-                    ? _c(
-                        "a",
-                        {
-                          staticClass: "btn btn-link",
-                          attrs: { href: _vm.facebook, target: "_blank" }
-                        },
-                        [_c("i", { staticClass: "bi bi-facebook" })]
-                      )
-                    : _vm._e(),
-                  _vm._v(" "),
-                  _vm.instagram
-                    ? _c(
-                        "a",
-                        {
-                          staticClass: "btn btn-link",
-                          attrs: { href: _vm.instagram, target: "_blank" }
-                        },
-                        [_c("i", { staticClass: "bi bi-instagram" })]
-                      )
-                    : _vm._e(),
-                  _vm._v(" "),
-                  _vm.linkedin
-                    ? _c(
-                        "a",
-                        {
-                          staticClass: "btn btn-link",
-                          attrs: { href: _vm.linkedin, target: "_blank" }
-                        },
-                        [_c("i", { staticClass: "bi bi-linkedin" })]
-                      )
-                    : _vm._e(),
-                  _vm._v(" "),
-                  _vm.youtube
-                    ? _c(
-                        "a",
-                        {
-                          staticClass: "btn btn-link",
-                          attrs: { href: _vm.youtube, target: "_blank" }
-                        },
-                        [_c("i", { staticClass: "bi bi-youtube" })]
-                      )
-                    : _vm._e()
-                ]
-              )
-            ])
+            _c(
+              "div",
+              {
+                staticClass: "col-md-3 my-5",
+                attrs: { dir: _vm.$store.state.lang === "en" ? "ltr" : "rtl" }
+              },
+              [
+                _c(
+                  "h5",
+                  {
+                    style:
+                      _vm.$store.state.lang === "ar"
+                        ? "font-family: 'Tajawal', sans-serif;"
+                        : "",
+                    attrs: { "data-aos": "fade-up" }
+                  },
+                  [
+                    _vm._v(
+                      "\n                        " +
+                        _vm._s(
+                          _vm.$store.state.lang === "ar" ? "العنوان" : "Address"
+                        ) +
+                        "\n                    "
+                    )
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "p",
+                  {
+                    style:
+                      _vm.$store.state.lang === "ar"
+                        ? "font-family: 'Tajawal', sans-serif;"
+                        : "",
+                    attrs: {
+                      "data-aos": "fade-up",
+                      "data-aos-delay": "100",
+                      dir: _vm.$store.state.lang === "en" ? "ltr" : "rtl"
+                    }
+                  },
+                  [
+                    _c("i", { staticClass: "bi bi-pin-map" }),
+                    _vm._v(
+                      " " +
+                        _vm._s(
+                          _vm.$store.state.lang === "en"
+                            ? this.$store.state.siteInfo.address_en
+                            : this.$store.state.siteInfo.address_ar
+                        ) +
+                        "\n                    "
+                    )
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass: "flex-column",
+                    attrs: {
+                      "data-aos": "fade-up",
+                      "data-aos-delay": "200",
+                      dir: _vm.$store.state.lang === "en" ? "ltr" : "rtl"
+                    }
+                  },
+                  [
+                    _vm.facebook
+                      ? _c(
+                          "a",
+                          {
+                            staticClass: "btn btn-link",
+                            attrs: { href: _vm.facebook, target: "_blank" }
+                          },
+                          [_c("i", { staticClass: "bi bi-facebook" })]
+                        )
+                      : _vm._e(),
+                    _vm._v(" "),
+                    _vm.instagram
+                      ? _c(
+                          "a",
+                          {
+                            staticClass: "btn btn-link",
+                            attrs: { href: _vm.instagram, target: "_blank" }
+                          },
+                          [_c("i", { staticClass: "bi bi-instagram" })]
+                        )
+                      : _vm._e(),
+                    _vm._v(" "),
+                    _vm.linkedin
+                      ? _c(
+                          "a",
+                          {
+                            staticClass: "btn btn-link",
+                            attrs: { href: _vm.linkedin, target: "_blank" }
+                          },
+                          [_c("i", { staticClass: "bi bi-linkedin" })]
+                        )
+                      : _vm._e(),
+                    _vm._v(" "),
+                    _vm.youtube
+                      ? _c(
+                          "a",
+                          {
+                            staticClass: "btn btn-link",
+                            attrs: { href: _vm.youtube, target: "_blank" }
+                          },
+                          [_c("i", { staticClass: "bi bi-youtube" })]
+                        )
+                      : _vm._e(),
+                    _vm._v(" "),
+                    _vm.whatsapp
+                      ? _c(
+                          "a",
+                          {
+                            staticClass: "btn btn-link",
+                            attrs: {
+                              href: "https://wa.me/" + _vm.whatsapp,
+                              target: "_blank"
+                            }
+                          },
+                          [_c("i", { staticClass: "bi bi-whatsapp" })]
+                        )
+                      : _vm._e()
+                  ]
+                )
+              ]
+            )
           ])
         ])
       ]
@@ -1260,36 +1282,32 @@ var render = function() {
     _c(
       "div",
       {
-        style:
-          _vm.$route.name === "home"
-            ? "background: #fff"
-            : "background: #f5f8fd"
+        staticClass: "container",
+        staticStyle: { background: "rgba(0, 0, 0, 0.01)" }
       },
       [
-        _c("div", { staticClass: "container" }, [
-          _c("div", { staticClass: "row justify-content-center" }, [
-            _c(
-              "div",
-              {
-                staticClass: "col-6 p-3 text-center",
-                style:
-                  _vm.$store.state.lang === "ar"
-                    ? "font-family: 'Tajawal', sans-serif;"
-                    : ""
-              },
-              [
-                _vm._v(
-                  "\n                    " +
-                    _vm._s(
-                      _vm.$store.state.lang === "ar"
-                        ? "© حقوق الطبع والنشر 2021 - جميع الحقوق محفوظة "
-                        : " © Copyright 2021 - All Rights Reserved"
-                    ) +
-                    "\n                "
-                )
-              ]
-            )
-          ])
+        _c("div", { staticClass: "row justify-content-center" }, [
+          _c(
+            "div",
+            {
+              staticClass: "col-12 p-3 text-center",
+              style:
+                _vm.$store.state.lang === "ar"
+                  ? "font-family: 'Tajawal', sans-serif;"
+                  : ""
+            },
+            [
+              _vm._v(
+                "\n                " +
+                  _vm._s(
+                    _vm.$store.state.lang === "ar"
+                      ? "© حقوق الطبع والنشر 2021 - جميع الحقوق محفوظة "
+                      : " © Copyright 2021 - All Rights Reserved"
+                  ) +
+                  "\n            "
+              )
+            ]
+          )
         ])
       ]
     )
@@ -1330,7 +1348,7 @@ var render = function() {
         attrs: { dir: _vm.$store.state.lang === "en" ? "ltr" : "rtl" }
       },
       [
-        _c("div", { staticClass: "container-fluid" }, [
+        _c("div", { staticClass: "container" }, [
           _c(
             "a",
             { staticClass: "navbar-brand", on: { click: _vm.goToHome } },
@@ -1514,14 +1532,8 @@ var render = function() {
                           },
                           [
                             _vm._v(
-                              "\n                                العربية\n                                "
-                            ),
-                            _c("img", {
-                              staticClass: "flag",
-                              attrs: {
-                                src: _vm.app_url + "/images/Flag-Qatar.jpg"
-                              }
-                            })
+                              "\n                                العربية\n                            "
+                            )
                           ]
                         )
                       : _c(
@@ -1540,12 +1552,8 @@ var render = function() {
                           },
                           [
                             _vm._v(
-                              "\n                                English "
-                            ),
-                            _c("img", {
-                              staticClass: "flag",
-                              attrs: { src: _vm.app_url + "/images/flagen.jpg" }
-                            })
+                              "\n                                English\n                            "
+                            )
                           ]
                         )
                   ])
@@ -1617,7 +1625,7 @@ var render = function() {
       _c(
         "div",
         {
-          staticClass: "portfolio section-bg",
+          staticClass: "portfolio",
           staticStyle: { "min-height": "100vh" },
           style:
             _vm.$store.state.lang === "ar"
@@ -1642,14 +1650,11 @@ var render = function() {
                       : ""
                 },
                 [
-                  _vm._v(
-                    "\n                    " +
-                      _vm._s(
-                        _vm.$store.state.lang === "ar"
-                          ? "عن لاجون ديزاين"
-                          : " About Us"
-                      )
-                  )
+                  _vm.$store.state.lang === "ar"
+                    ? _c("span", [_vm._v(" عن لاجون ديزاين")])
+                    : _c("img", {
+                        attrs: { src: "/images/about.gif", width: "300" }
+                      })
                 ]
               )
             ]),
@@ -1657,9 +1662,9 @@ var render = function() {
             _c("div", { staticClass: "row" }, [
               _c("div", { staticClass: "col-md-7" }, [
                 _c(
-                  "h2",
+                  "h4",
                   {
-                    staticStyle: { color: "#b99658" },
+                    staticStyle: { color: "#B3965A" },
                     style:
                       _vm.$store.state.lang === "ar"
                         ? "font-family: 'Tajawal', sans-serif;"
@@ -1680,7 +1685,7 @@ var render = function() {
                 ),
                 _vm._v(" "),
                 _c(
-                  "h5",
+                  "p",
                   {
                     style:
                       _vm.$store.state.lang === "ar"
@@ -1719,9 +1724,9 @@ var render = function() {
                   ]
                 ),
                 _c(
-                  "h2",
+                  "h4",
                   {
-                    staticStyle: { color: "#b99658" },
+                    staticStyle: { color: "#B3965A" },
                     style:
                       _vm.$store.state.lang === "ar"
                         ? "font-family: 'Tajawal', sans-serif;"
@@ -1746,7 +1751,7 @@ var render = function() {
                       _vm._s(
                         _vm.$store.state.lang === "ar"
                           ? "تمكنا من بناء علاقات صلبة ووثيقة مع شركائنا، الذين يسرهم التأكيد على أن خدماتنا ستفوق احتياجاتك وتوقعاتك عند تسليم المشاريع، خاصة فيما يتعلق بالوقت والمهنية. "
-                          : " We have built solid, trustworthy relationships with our partners, who will be happy to reassure you thatwe will exceed your needs and expectations in delivering your project in a timely and professional manner."
+                          : " We have built solid, trustworthy relationships with our partners, who will be happy to reassure you that we will exceed your needs and expectations in delivering your project in a timely and professional manner."
                       ) +
                       "\n                    "
                   )
@@ -1771,10 +1776,6 @@ var render = function() {
                     attrs: { "data-aos": "fade-up" }
                   },
                   [
-                    _c("i", {
-                      staticClass: "bi  bi-check2-circle",
-                      staticStyle: { color: "#b99658" }
-                    }),
                     _vm._v(
                       "\n                        " +
                         _vm._s(
@@ -1785,11 +1786,6 @@ var render = function() {
                         "\n                        "
                     ),
                     _c("br"),
-                    _vm._v(" "),
-                    _c("i", {
-                      staticClass: "bi  bi-check2-circle",
-                      staticStyle: { color: "#b99658" }
-                    }),
                     _vm._v(
                       "\n                        " +
                         _vm._s(
@@ -1800,11 +1796,6 @@ var render = function() {
                         "\n                        "
                     ),
                     _c("br"),
-                    _vm._v(" "),
-                    _c("i", {
-                      staticClass: "bi  bi-check2-circle",
-                      staticStyle: { color: "#b99658" }
-                    }),
                     _vm._v(
                       "\n                        " +
                         _vm._s(
@@ -1815,11 +1806,6 @@ var render = function() {
                         "\n                        "
                     ),
                     _c("br"),
-                    _vm._v(" "),
-                    _c("i", {
-                      staticClass: "bi  bi-check2-circle",
-                      staticStyle: { color: "#b99658" }
-                    }),
                     _vm._v(
                       "\n                        " +
                         _vm._s(
@@ -1852,168 +1838,181 @@ var render = function() {
         ]
       ),
       _vm._v(" "),
-      _c("div", { staticClass: "bg-white" }, [
-        _c("div", { staticClass: "container" }, [
-          _c("div", { staticClass: "row my-5" }, [
-            _c("div", { staticClass: "col-md-5" }, [
-              _c("img", {
-                staticStyle: { width: "100%" },
-                attrs: {
-                  src: _vm.url + "/images/03.jpg",
-                  "data-aos": "fade-right",
-                  "data-aos-delay": "100"
-                }
-              })
-            ]),
-            _vm._v(" "),
-            _c(
-              "div",
-              {
-                staticClass: "col-md-7",
-                staticStyle: { "margin-top": "50px" }
-              },
-              [
-                _c(
-                  "h1",
-                  {
-                    staticStyle: { color: "#b99658" },
-                    style:
-                      _vm.$store.state.lang === "ar"
-                        ? "font-family: 'Tajawal', sans-serif;"
-                        : "",
-                    attrs: {
-                      dir: _vm.$store.state.lang === "en" ? "ltr" : "rtl",
-                      "data-aos": "fade-left",
-                      "data-aos-delay": "100"
-                    }
-                  },
-                  [
-                    _vm._v(
-                      "\n                        " +
-                        _vm._s(
-                          _vm.$store.state.lang === "ar" ? "مهمتنا" : "Mission"
-                        ) +
-                        "\n                    "
-                    )
-                  ]
-                ),
-                _vm._v(" "),
-                _vm.$store.state.lang === "ar"
-                  ? _c(
-                      "p",
-                      {
-                        staticStyle: { "font-family": "'Tajawal', sans-serif" },
-                        attrs: {
-                          dir: "rtl",
-                          "data-aos": "fade-left",
-                          "data-aos-delay": "300"
-                        }
-                      },
-                      [
-                        _vm._v(
-                          "\n                        مهمتنا هي تجاوز توقعات عملائنا ومنحهم تصاميم فخمة ومريحة فى ذات الوقت\n                    "
-                        )
-                      ]
-                    )
-                  : _c(
-                      "p",
-                      {
-                        attrs: {
-                          "data-aos": "fade-left",
-                          "data-aos-delay": "300"
-                        }
-                      },
-                      [
-                        _vm._v(
-                          "\n                        Our mission is to go\n                        beyond our clients "
-                        ),
-                        _c("br"),
-                        _vm._v(
-                          " expectations and\n                        deliver the most luxury yet cozy designs.\n                    "
-                        )
-                      ]
-                    )
-              ]
-            )
-          ])
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "section-bg" }, [
-        _c("div", { staticClass: "container" }, [
-          _c("div", { staticClass: "row" }, [
-            _c("div", { staticClass: "col-md-7 my-5" }, [
-              _c(
-                "h1",
-                {
-                  staticStyle: { "margin-top": "50px", color: "#b99658" },
-                  style:
-                    _vm.$store.state.lang === "ar"
-                      ? "font-family: 'Tajawal', sans-serif;"
-                      : "",
+      _c(
+        "div",
+        {
+          staticClass: "bg-white",
+          attrs: { dir: _vm.$store.state.lang === "en" ? "ltr" : "rtl" }
+        },
+        [
+          _c("div", { staticClass: "container" }, [
+            _c("div", { staticClass: "row my-5" }, [
+              _c("div", { staticClass: "col-md-5" }, [
+                _c("img", {
+                  staticStyle: { width: "100%" },
                   attrs: {
-                    dir: _vm.$store.state.lang === "en" ? "ltr" : "rtl",
+                    src: _vm.url + "/images/03.jpg",
                     "data-aos": "fade-right",
                     "data-aos-delay": "100"
                   }
+                })
+              ]),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass: "col-md-7",
+                  staticStyle: { "margin-top": "70px" }
                 },
                 [
-                  _vm._v(
-                    "\n                        " +
-                      _vm._s(
-                        _vm.$store.state.lang === "ar" ? "رؤيتنا" : "VISION"
-                      ) +
-                      "\n                    "
-                  )
+                  _c(
+                    "h1",
+                    {
+                      style:
+                        _vm.$store.state.lang === "ar"
+                          ? "font-family: 'Tajawal', sans-serif;"
+                          : "",
+                      attrs: {
+                        dir: _vm.$store.state.lang === "en" ? "ltr" : "rtl"
+                      }
+                    },
+                    [
+                      _vm.$store.state.lang === "ar"
+                        ? _c("span", [_vm._v("مهمتنا")])
+                        : _c("img", {
+                            attrs: { src: "/images/mission.gif", width: "200" }
+                          })
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _vm.$store.state.lang === "ar"
+                    ? _c(
+                        "p",
+                        {
+                          staticStyle: {
+                            "font-family": "'Tajawal', sans-serif"
+                          },
+                          attrs: {
+                            dir: "rtl",
+                            "data-aos": "fade-left",
+                            "data-aos-delay": "300"
+                          }
+                        },
+                        [
+                          _vm._v(
+                            "\n                        مهمتنا هي تجاوز توقعات عملائنا ومنحهم تصاميم فخمة ومريحة فى ذات الوقت\n                    "
+                          )
+                        ]
+                      )
+                    : _c(
+                        "p",
+                        {
+                          attrs: {
+                            "data-aos": "fade-left",
+                            "data-aos-delay": "300"
+                          }
+                        },
+                        [
+                          _vm._v(
+                            "\n                        Our mission is to go\n                        beyond our clients "
+                          ),
+                          _c("br"),
+                          _vm._v(
+                            " expectations and\n                        deliver the most luxury yet cozy designs.\n                    "
+                          )
+                        ]
+                      )
+                ]
+              )
+            ])
+          ])
+        ]
+      ),
+      _vm._v(" "),
+      _c(
+        "div",
+        {
+          staticClass: "bg-white",
+          attrs: { dir: _vm.$store.state.lang === "en" ? "ltr" : "rtl" }
+        },
+        [
+          _c("div", { staticClass: "container" }, [
+            _c("div", { staticClass: "row" }, [
+              _c(
+                "div",
+                {
+                  staticClass: "col-md-7 my-5",
+                  attrs: { dir: _vm.$store.state.lang === "en" ? "ltr" : "rtl" }
+                },
+                [
+                  _c(
+                    "h1",
+                    {
+                      staticStyle: { "margin-top": "70px" },
+                      style:
+                        _vm.$store.state.lang === "ar"
+                          ? "font-family: 'Tajawal', sans-serif;"
+                          : ""
+                    },
+                    [
+                      _vm.$store.state.lang === "ar"
+                        ? _c("span", [_vm._v("رؤيتنا")])
+                        : _c("img", {
+                            attrs: { src: "/images/vision.gif", width: "200" }
+                          })
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _vm.$store.state.lang === "ar"
+                    ? _c(
+                        "p",
+                        {
+                          staticStyle: {
+                            "font-family": "'Tajawal', sans-serif"
+                          },
+                          attrs: {
+                            dir: "rtl",
+                            "data-aos": "fade-left",
+                            "data-aos-delay": "300"
+                          }
+                        },
+                        [
+                          _vm._v(
+                            "\n                        رؤيتنا هي أن نصمم وننفذ بسلاسة واتقان بالجمع بين أفضل الخامات و أسلوبنا الفني المميز.\n                    "
+                          )
+                        ]
+                      )
+                    : _c(
+                        "p",
+                        {
+                          attrs: {
+                            "data-aos": "fade-left",
+                            "data-aos-delay": "300"
+                          }
+                        },
+                        [
+                          _vm._v(
+                            "\n                        Our vision is to design\n                        and execute with simplicity and\n                        refinement, combining the best materials with our own\n                        style.\n                    "
+                          )
+                        ]
+                      )
                 ]
               ),
               _vm._v(" "),
-              _vm.$store.state.lang === "ar"
-                ? _c(
-                    "p",
-                    {
-                      staticStyle: { "font-family": "'Tajawal', sans-serif" },
-                      attrs: {
-                        dir: "rtl",
-                        "data-aos": "fade-left",
-                        "data-aos-delay": "300"
-                      }
-                    },
-                    [
-                      _vm._v(
-                        "\n                        رؤيتنا هي أن نصمم وننفذ بسلاسة واتقان بالجمع بين أفضل الخامات و أسلوبنا الفني المميز.\n                    "
-                      )
-                    ]
-                  )
-                : _c(
-                    "p",
-                    {
-                      attrs: {
-                        "data-aos": "fade-left",
-                        "data-aos-delay": "300"
-                      }
-                    },
-                    [
-                      _vm._v(
-                        "\n                        Our vision is to design\n                        and execute with simplicity and\n                        refinement combining the best materials with our own\n                        style.\n                    "
-                      )
-                    ]
-                  )
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "col-md-5 my-5" }, [
-              _c("img", {
-                staticStyle: { width: "100%" },
-                attrs: {
-                  src: _vm.url + "/images/02.jpg",
-                  "data-aos": "fade-left",
-                  "data-aos-delay": "100"
-                }
-              })
+              _c("div", { staticClass: "col-md-5 my-5" }, [
+                _c("img", {
+                  staticStyle: { width: "100%" },
+                  attrs: {
+                    src: _vm.url + "/images/02.jpg",
+                    "data-aos": "fade-left",
+                    "data-aos-delay": "100"
+                  }
+                })
+              ])
             ])
           ])
-        ])
-      ]),
+        ]
+      ),
       _vm._v(" "),
       _c("div", { staticClass: "bg-white" }, [
         _c("div", { staticClass: "container" }, [
@@ -2022,7 +2021,7 @@ var render = function() {
               _c(
                 "h4",
                 {
-                  staticStyle: { color: "#b99658" },
+                  staticStyle: { color: "#B3965A" },
                   style:
                     _vm.$store.state.lang === "ar"
                       ? "font-family: 'Tajawal', sans-serif;"
@@ -2034,10 +2033,6 @@ var render = function() {
                   }
                 },
                 [
-                  _c("i", {
-                    staticClass: "bi bi-exclude",
-                    staticStyle: { color: "#b99658" }
-                  }),
                   _vm._v(
                     "\n                         " +
                       _vm._s(
@@ -2081,7 +2076,7 @@ var render = function() {
               _c(
                 "h4",
                 {
-                  staticStyle: { color: "#b99658" },
+                  staticStyle: { color: "#B3965A" },
                   style:
                     _vm.$store.state.lang === "ar"
                       ? "font-family: 'Tajawal', sans-serif;"
@@ -2093,10 +2088,6 @@ var render = function() {
                   }
                 },
                 [
-                  _c("i", {
-                    staticClass: "bi bi-exclude",
-                    staticStyle: { color: "#b99658" }
-                  }),
                   _vm._v(
                     "\n                         " +
                       _vm._s(
@@ -2140,7 +2131,7 @@ var render = function() {
               _c(
                 "h4",
                 {
-                  staticStyle: { color: "#b99658" },
+                  staticStyle: { color: "#B3965A" },
                   style:
                     _vm.$store.state.lang === "ar"
                       ? "font-family: 'Tajawal', sans-serif;"
@@ -2152,10 +2143,6 @@ var render = function() {
                   }
                 },
                 [
-                  _c("i", {
-                    staticClass: "bi bi-exclude",
-                    staticStyle: { color: "#b99658" }
-                  }),
                   _vm._v(
                     "\n                         " +
                       _vm._s(
@@ -2196,15 +2183,11 @@ var render = function() {
                     },
                     [
                       _vm._v(
-                        "\n                        Our taste comes from our long history and experience in the use of design tools."
+                        "\n                        Our taste comes from our long history and experience in the use of design tools. We use sketches to demonstrate\n                        our understanding of our clients’ thoughts and imagination during meetings."
                       ),
                       _c("br"),
                       _vm._v(
-                        " We use\n                        sketches\n                        to demonstrate\n                        our understanding of our clients’ thoughts and imagination during meetings. "
-                      ),
-                      _c("br"),
-                      _vm._v(
-                        "\n                        Having a house is normal, but having a home is something special. This is what we aim to\n                        create for\n                        you..\n                    "
+                        "\n                        Having a house is normal, but having a home is something special. This is what we aim to create for you.\n                    "
                       )
                     ]
                   )
@@ -2214,7 +2197,7 @@ var render = function() {
               _c(
                 "h4",
                 {
-                  staticStyle: { color: "#b99658" },
+                  staticStyle: { color: "#B3965A" },
                   style:
                     _vm.$store.state.lang === "ar"
                       ? "font-family: 'Tajawal', sans-serif;"
@@ -2226,10 +2209,6 @@ var render = function() {
                   }
                 },
                 [
-                  _c("i", {
-                    staticClass: "bi bi-exclude",
-                    staticStyle: { color: "#b99658" }
-                  }),
                   _vm._v(
                     "\n                        " +
                       _vm._s(
@@ -2284,7 +2263,7 @@ var render = function() {
               _c(
                 "h4",
                 {
-                  staticStyle: { color: "#b99658" },
+                  staticStyle: { color: "#B3965A" },
                   style:
                     _vm.$store.state.lang === "ar"
                       ? "font-family: 'Tajawal', sans-serif;"
@@ -2296,10 +2275,6 @@ var render = function() {
                   }
                 },
                 [
-                  _c("i", {
-                    staticClass: "bi bi-exclude",
-                    staticStyle: { color: "#b99658" }
-                  }),
                   _vm._v(
                     "\n                        " +
                       _vm._s(
@@ -2336,7 +2311,7 @@ var render = function() {
                     },
                     [
                       _vm._v(
-                        "\n                        It’s all about what looks good. A calculated and balanced blend of form and function that\n                        serves a\n                        specific purpose and ultimately results in a final outcome that is modern, stylish and\n                        unique.\n                    "
+                        "\n                        It’s all about what looks good. A calculated and balanced blend of form and function that serves a specific purpose and ultimately results in an outcome that is modern, stylish, and unique.\n                    "
                       )
                     ]
                   )
@@ -2346,7 +2321,7 @@ var render = function() {
               _c(
                 "h4",
                 {
-                  staticStyle: { color: "#b99658" },
+                  staticStyle: { color: "#B3965A" },
                   style:
                     _vm.$store.state.lang === "ar"
                       ? "font-family: 'Tajawal', sans-serif;"
@@ -2358,10 +2333,6 @@ var render = function() {
                   }
                 },
                 [
-                  _c("i", {
-                    staticClass: "bi bi-exclude",
-                    staticStyle: { color: "#b99658" }
-                  }),
                   _vm._v(
                     "\n                          " +
                       _vm._s(
@@ -2400,168 +2371,6 @@ var render = function() {
                 ]
               )
             ])
-          ])
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "section-bg" }, [
-        _c("div", { staticClass: "container" }, [
-          _c("div", { staticClass: "row no-gutters justify-content-center" }, [
-            _c(
-              "div",
-              {
-                staticClass:
-                  "col-lg-4 my-5 col-md-6 d-md-flex justify-content-center",
-                attrs: { "data-aos": "fade-up", "data-aos-delay": "100" }
-              },
-              [
-                _c("div", { staticClass: "text-center" }, [
-                  _c("i", {
-                    staticClass: "bi bi-journal-richtext",
-                    staticStyle: { "font-size": "44px", color: "#b99658" }
-                  }),
-                  _vm._v(" "),
-                  _c(
-                    "span",
-                    {
-                      staticClass: "purecounter my-2",
-                      staticStyle: {
-                        "font-size": "48px",
-                        "line-height": "40px",
-                        display: "block",
-                        "font-weight": "700"
-                      }
-                    },
-                    [_vm._v(_vm._s(_vm.projects) + " +")]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "p",
-                    {
-                      style:
-                        _vm.$store.state.lang === "ar"
-                          ? "font-family: 'Tajawal', sans-serif;"
-                          : ""
-                    },
-                    [
-                      _c("strong", [
-                        _vm._v(
-                          _vm._s(
-                            _vm.$store.state.lang === "ar"
-                              ? "مشروع مكتمل"
-                              : "Completed Projects"
-                          )
-                        )
-                      ])
-                    ]
-                  )
-                ])
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "div",
-              {
-                staticClass:
-                  "col-lg-4 col-md-6 my-5 d-md-flex justify-content-center",
-                attrs: { "data-aos": "fade-up" }
-              },
-              [
-                _c("div", { staticClass: "text-center" }, [
-                  _c("i", {
-                    staticClass: "bi bi-emoji-smile",
-                    staticStyle: { "font-size": "44px", color: "#b99658" }
-                  }),
-                  _vm._v(" "),
-                  _c(
-                    "span",
-                    {
-                      staticClass: "purecounter my-2",
-                      staticStyle: {
-                        "font-size": "48px",
-                        "line-height": "40px",
-                        display: "block",
-                        "font-weight": "700"
-                      }
-                    },
-                    [_vm._v(_vm._s(_vm.clients) + " +")]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "p",
-                    {
-                      style:
-                        _vm.$store.state.lang === "ar"
-                          ? "font-family: 'Tajawal', sans-serif;"
-                          : ""
-                    },
-                    [
-                      _c("strong", [
-                        _vm._v(
-                          _vm._s(
-                            _vm.$store.state.lang === "ar"
-                              ? "عملاء سعداء"
-                              : "Happy Clients"
-                          ) + " "
-                        )
-                      ])
-                    ]
-                  )
-                ])
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "div",
-              {
-                staticClass:
-                  "col-lg-4 col-md-6 my-5 d-md-flex justify-content-center",
-                attrs: { "data-aos": "fade-up", "data-aos-delay": "200" }
-              },
-              [
-                _c("div", { staticClass: "text-center" }, [
-                  _c("i", {
-                    staticClass: "bi bi-journal-richtext",
-                    staticStyle: { "font-size": "44px", color: "#b99658" }
-                  }),
-                  _vm._v(" "),
-                  _c(
-                    "span",
-                    {
-                      staticClass: "purecounter my-2",
-                      staticStyle: {
-                        "font-size": "48px",
-                        "line-height": "40px",
-                        display: "block",
-                        "font-weight": "700"
-                      }
-                    },
-                    [_vm._v(_vm._s(_vm.projects_in_progress) + " +")]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "p",
-                    {
-                      style:
-                        _vm.$store.state.lang === "ar"
-                          ? "font-family: 'Tajawal', sans-serif;"
-                          : ""
-                    },
-                    [
-                      _c("strong", [
-                        _vm._v(
-                          _vm._s(
-                            _vm.$store.state.lang === "ar"
-                              ? "مشاريع قيد الإنجاز"
-                              : "Projects in Progress"
-                          )
-                        )
-                      ])
-                    ]
-                  )
-                ])
-              ]
-            )
           ])
         ])
       ]),

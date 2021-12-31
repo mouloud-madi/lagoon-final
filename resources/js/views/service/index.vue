@@ -1,27 +1,28 @@
 <template>
     <div>
         <navbar/>
-        <div class="portfolio section-bg" style="min-height: 100vh;">
+        <div class="portfolio bg-white" style="min-height: 100vh;">
             <div class="container">
                 <br><br><br><br>
                 <div class="section-title text-center">
                     <h2 :style="$store.state.lang === 'ar' ?'font-family: \'Tajawal\', sans-serif;' : ''">
-                        {{$store.state.lang ==='ar' ? 'خدماتنا' : 'Our Services'}}
+                        <span v-if="$store.state.lang === 'ar'">خدماتنا</span>
+                        <img v-else src="/images/services.gif" width="300">
                     </h2>
                 </div>
                 <div class="row">
                     <div class="col-md-4 mb-4" v-for="service in  services">
-                        <div class="card text-center h-100" data-aos="fade-up">
-                            <div class="box-icon">
-                                <div class="icon-service" v-html="service.icon"></div>
-                            </div>
-                            <div class="card-body">
-                                <p :dir="$store.state.lang === 'en' ? 'ltr' : 'rtl'" :style="$store.state.lang === 'ar' ?'font-family: \'Tajawal\', sans-serif;' : ''" style="font-size: 25px;color:#b99658">
-                                    {{ $store.state.lang === 'en' ?  service.name_en : service.name_ar }}
-                                </p>
-                                <p  :dir="$store.state.lang === 'en' ? 'ltr' : 'rtl'" :style="$store.state.lang === 'ar' ?'font-family: \'Tajawal\', sans-serif;' : ''" class="card-text">
-                                    {{ $store.state.lang === 'en' ?  service.description_en : service.description_ar }}
-                                </p>
+                        <div class="card h-100" data-aos="fade-up">
+                            <div class="card-body  my-3">
+                                <div class="p-3">
+                                    <p class="text-center" :dir="$store.state.lang === 'en' ? 'ltr' : 'rtl'"
+                                       :style="$store.state.lang === 'ar' ?'font-family: \'Tajawal\', sans-serif;' : ''" style="font-size: 22px;color:#B3965A">
+                                        {{ $store.state.lang === 'en' ?  service.name_en : service.name_ar }}
+                                    </p>
+                                    <p  :dir="$store.state.lang === 'en' ? 'ltr' : 'rtl'" :style="$store.state.lang === 'ar' ?'font-family: \'Tajawal\', sans-serif;' : ''" class="card-text">
+                                        {{ $store.state.lang === 'en' ?  service.description_en : service.description_ar }}
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -68,7 +69,7 @@ export default {
 }
 
 .btn.selected {
-    background-color: #b99658;
+    background-color: #B3965A;
     color: white;
 }
 
@@ -97,7 +98,8 @@ export default {
 }
 
 .card {
-    border: 1px solid rgba(67, 62, 62, 0.06);
+    border: none;
+    box-shadow: 0 2px 30px -1px hsla(31, 36.8%, 50.4%, 0.08),0 4px 30px 0 hsla(44.4, 61%, 83.9%, 0.35),0 1px 30px 0 hsla(0,0%,100%,0) !important;
 }
 
 .card-text {

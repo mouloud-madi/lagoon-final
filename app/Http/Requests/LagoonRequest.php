@@ -41,6 +41,7 @@ class LagoonRequest extends FormRequest
             'clients' => 'nullable',
             'projects' => 'nullable',
             'projects_in_progress' => 'nullable',
+            'whatsapp' => 'nullable',
         ];
     }
 }

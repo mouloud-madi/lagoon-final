@@ -1,21 +1,22 @@
 <template>
     <div>
         <navbar/>
-        <div class="portfolio section-bg" style="min-height: 100vh;">
+        <div class="portfolio bg-white" style="min-height: 100vh;">
             <div class="container">
                 <br><br><br><br>
                 <div class="section-title text-center">
                     <h2 :style="$store.state.lang === 'ar' ?'font-family: \'Tajawal\', sans-serif;' : ''">
-                        {{ $store.state.lang === 'ar' ? 'تواصل معنا' : 'Contact Us' }}
+                        <span v-if="$store.state.lang === 'ar'">تواصل معنا</span>
+                        <img v-else src="/images/contact.gif" width="300">
                     </h2>
                 </div>
                 <div class="row">
                     <div class="col-md-4  mb-3 text-center">
                         <div class="card h-100" data-aos="fade-up" data-aos-delay="100">
-                            <div class="card-title my-4" style="font-size: 25px;color:#b99658"
+                            <div class="card-title my-4" style="font-size: 1.4rem;color:#B3965A"
                                  :dir="$store.state.lang === 'en' ? 'ltr' : 'rtl'"
                                  :style="$store.state.lang === 'ar' ?'font-family: \'Tajawal\', sans-serif;' : ''">
-                                <i class="bi bi-pin-map" style="font-size: 25px;color: #b99658;"></i>
+                                <i class="bi bi-pin-map" style="font-size: 1.4rem;color: #B3965A;"></i>
                                 {{ $store.state.lang === 'ar' ? 'العنوان': 'Address' }}
                             </div>
                             <div class="card-text" :style="$store.state.lang === 'ar' ?'font-family: \'Tajawal\', sans-serif;' : ''">
@@ -25,10 +26,10 @@
                     </div>
                     <div class="col-md-4 mb-3 text-center">
                         <div class="card h-100" data-aos="fade-up" data-aos-delay="100">
-                            <div class="card-title my-4" style="font-size: 25px;color:#b99658"
+                            <div class="card-title my-4" style="font-size: 1.4rem;color:#B3965A"
                                  :dir="$store.state.lang === 'en' ? 'ltr' : 'rtl'"
                                  :style="$store.state.lang === 'ar' ?'font-family: \'Tajawal\', sans-serif;' : ''">
-                                <i class="bi bi-telephone-outbound" style="font-size: 25px;color: #b99658;"></i>
+                                <i class="bi bi-telephone-outbound" style="font-size: 1.4rem;color: #B3965A;"></i>
                                 {{ $store.state.lang === 'ar' ? 'تواصل معنا على الهاتف': 'Get in Touch with Us' }}
                             </div>
                             <div class="card-text">
@@ -39,11 +40,11 @@
                     </div>
                     <div class="col-md-4 mb-3 text-center">
                         <div class="card h-100" data-aos="fade-up" data-aos-delay="100">
-                            <div class="card-title my-4" style="font-size: 25px;color:#b99658"
+                            <div class="card-title my-4" style="font-size: 1.4rem;color:#B3965A"
                                  :dir="$store.state.lang === 'en' ? 'ltr' : 'rtl'"
                                  :style="$store.state.lang === 'ar' ?'font-family: \'Tajawal\', sans-serif;' : ''">
-                                <i class="bi bi-envelope" style="font-size: 25px;color: #b99658;"></i>
-                                Email {{$store.state.lang ==='ar' ? 'البريد الإلكتروني' : 'Email'}}
+                                <i class="bi bi-envelope" style="font-size: 1.4rem;color: #B3965A;"></i>
+                                 {{$store.state.lang ==='ar' ? 'البريد الإلكتروني' : 'Email'}}
                             </div>
                             <div class="card-text">
                                 <p v-if="contact_email1">{{ contact_email1 }}</p>
@@ -56,7 +57,7 @@
                     <div class="col-md-6 mb-3" data-aos="fade-up" data-aos-delay="600">
                         <div class="card h-100">
                             <div class="card-body">
-                                <p style="font-size: 25px;color:#b99658"
+                                <p style="font-size: 1.4rem;color:#B3965A"
                                    :dir="$store.state.lang === 'en' ? 'ltr' : 'rtl'"
                                    :style="$store.state.lang === 'ar' ?'font-family: \'Tajawal\', sans-serif;' : ''">
                                      {{$store.state.lang ==='en' ? 'Leave a Message' : 'اترك لنا رسالة'}}
@@ -209,15 +210,16 @@ export default {
 }
 
 .card {
-    border: 1px solid rgba(67, 62, 62, 0.06);
+    border: none;
+    box-shadow: 0 2px 30px -1px hsla(31, 36.8%, 50.4%, 0.08),0 4px 30px 0 hsla(44.4, 61%, 83.9%, 0.35),0 1px 30px 0 hsla(0,0%,100%,0) !important;
 }
 
 .card-text {
-    color: #4f5050;
+    color: #808285;
 }
 
 .btn-primary {
-    background: #b99658;
+    background: #B3965A;
     border: none;
 }
 

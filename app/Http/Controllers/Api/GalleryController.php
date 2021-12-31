@@ -11,8 +11,8 @@ class GalleryController extends Controller
 {
     public function index()
     {
-        $data = Gallery::all();
-        return response()->json($data);
+        $data = Gallery::latest();
+        return response()->json($data->get());
     }
 
     public function category()

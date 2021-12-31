@@ -15,7 +15,7 @@ body {
 }
 
 a {
-    color: #b99658;
+    color: #B3965A;
     text-decoration: none;
 }
 
@@ -38,7 +38,7 @@ h1, h2, h3, h4, h5, h6 {
     right: 15px;
     bottom: 15px;
     z-index: 996;
-    background: #b99658;
+    background: #B3965A;
     width: 40px;
     height: 40px;
     border-radius: 50px;
@@ -116,7 +116,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header .profile .social-links a:hover {
-    background: #b99658;
+    background: #B3965A;
     color: #fff;
     text-decoration: none;
 }
@@ -176,7 +176,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-menu a:hover i, .nav-menu .active i, .nav-menu .active:focus i, .nav-menu li:hover > a i {
-    color: #b99658;
+    color: #B3965A;
 }
 
 /* Mobile Navigation */
@@ -189,7 +189,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 24px;
     transition: all 0.4s;
     outline: none !important;
-    background-color: #b99658;
+    background-color: #B3965A;
     color: #fff;
     width: 40px;
     height: 40px;
@@ -255,7 +255,7 @@ h1, h2, h3, h4, h5, h6 {
     color: #fff;
     padding-bottom: 4px;
     letter-spacing: 1px;
-    border-bottom: 3px solid #b99658;
+    border-bottom: 3px solid #B3965A;
 }
 
 @media (min-width: 1024px) {
@@ -308,7 +308,7 @@ section {
     display: block;
     width: 50px;
     height: 3px;
-    background: #b99658;
+    background: #B3965A;
     bottom: 0;
     left: 0;
 }
@@ -344,7 +344,7 @@ section {
 .about .content ul i {
     font-size: 16px;
     margin-right: 5px;
-    color: #b99658;
+    color: #B3965A;
     line-height: 0;
 }
 
@@ -367,7 +367,7 @@ section {
 .facts .count-box i {
     display: block;
     font-size: 44px;
-    color: #b99658;
+    color: #B3965A;
     float: left;
     line-height: 0;
 }
@@ -437,7 +437,7 @@ section {
     width: 1px;
     height: 10px;
     transition: 0.9s;
-    background-color: #b99658;
+    background-color: #B3965A;
 }
 
 /*--------------------------------------------------------------
@@ -532,7 +532,7 @@ section {
 }
 
 .portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
-    color: #b99658;
+    color: #B3965A;
 }
 
 .portfolio #portfolio-flters li:last-child {
@@ -622,11 +622,11 @@ section {
     height: 12px;
     background-color: #fff;
     opacity: 1;
-    border: 1px solid #b99658;
+    border: 1px solid #B3965A;
 }
 
 .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
-    background-color: #b99658;
+    background-color: #B3965A;
 }
 
 .portfolio-details .portfolio-info {
@@ -680,10 +680,10 @@ section {
     justify-content: center;
     width: 54px;
     height: 54px;
-    background: #b99658;
+    background: #B3965A;
     border-radius: 50%;
     transition: 0.5s;
-    border: 1px solid #b99658;
+    border: 1px solid #B3965A;
 }
 
 .services .icon i {
@@ -697,7 +697,7 @@ section {
 }
 
 .services .icon-box:hover .icon i {
-    color: #b99658;
+    color: #B3965A;
 }
 
 .services .title {
@@ -712,7 +712,7 @@ section {
 }
 
 .services .title a:hover {
-    color: #b99658;
+    color: #B3965A;
 }
 
 .services .description {
@@ -804,11 +804,11 @@ section {
     height: 12px;
     background-color: #fff;
     opacity: 1;
-    border: 1px solid #b99658;
+    border: 1px solid #B3965A;
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
-    background-color: #b99658;
+    background-color: #B3965A;
 }
 
 /*--------------------------------------------------------------
@@ -827,7 +827,7 @@ section {
 
 .contact .info i {
     font-size: 20px;
-    color: #b99658;
+    color: #B3965A;
     float: left;
     width: 44px;
     height: 44px;
@@ -878,12 +878,12 @@ section {
 }
 
 .contact .info .social-links a:hover {
-    background: #b99658;
+    background: #B3965A;
     color: #fff;
 }
 
 .contact .info .email:hover i, .contact .info .address:hover i, .contact .info .phone:hover i {
-    background: #b99658;
+    background: #B3965A;
     color: #fff;
 }
 
@@ -971,7 +971,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit] {
-    background: #b99658;
+    background: #B3965A;
     border: 0;
     padding: 10px 24px;
     color: #fff;

@@ -30,16 +30,19 @@ export default {}
     min-height: 100vh;
 }
 .title {
-    font-size: 28px;
+    font-size: 24px;
 }
 .description {
-    color: #b99658;
+    color: #B3965A;
     font-size: 18px;
 }
 @media only screen and (max-width: 600px) {
     #section4 {
         min-height: 0;
         margin-top: 20px;
+    }
+    .title {
+        font-size: 20px;
     }
 }
 </style>

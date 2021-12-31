@@ -13,6 +13,7 @@
         <footer id="footer">
             <div class="container" style=" padding: 0 23px">
                 <a href="#section5"><i class="bi bi-chevron-double-down"></i></a>
+<!--                <img src="/images/l.png">-->
             </div>
         </footer>
     </div>

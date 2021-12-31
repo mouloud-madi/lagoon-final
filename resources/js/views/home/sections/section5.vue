@@ -4,11 +4,11 @@
             <div class="row">
                 <div class="col-md-6" :data-aos="$store.state.lang === 'en' ? 'fade-left' : 'fade-right'">
                    <div class="about-content">
-                       <h1 :dir="$store.state.lang === 'en' ? 'ltr' : 'rtl'"
+                       <h2 :dir="$store.state.lang === 'en' ? 'ltr' : 'rtl'"
                            :style="$store.state.lang === 'ar' ?'font-family: \'Tajawal\', sans-serif;' : ''"
                        >
                            {{ $store.state.lang === 'en' ? $store.state.section.section_four_title_en :$store.state.section.section_four_title_ar  }}
-                       </h1>
+                       </h2>
                        <p class="p-section" :dir="$store.state.lang === 'en' ? 'ltr' : 'rtl'">
                            {{ $store.state.lang === 'en' ? $store.state.section.section_four_description_en :$store.state.section.section_four_description_ar  }}
                        </p>
@@ -38,18 +38,15 @@ export default {}
 
 <style scoped>
 a {
-    color: #272829;
+    color: #808285;
 }
-
 a:hover {
-    color: rgb(185, 150, 88);
+    color: #B3965A;
 }
-
 .p-section {
-    color: rgb(185, 150, 88);
+    color: #B3965A;
     font-size: 22px;
 }
-
 #section5 {
     display: flex;
     justify-content: center;

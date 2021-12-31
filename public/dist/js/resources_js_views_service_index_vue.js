@@ -94,6 +94,26 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
@@ -101,7 +121,8 @@ __webpack_require__.r(__webpack_exports__);
       facebook: this.$store.state.siteInfo.facebook,
       instagram: this.$store.state.siteInfo.instagram,
       linkedin: this.$store.state.siteInfo.linkedin,
-      app_url: "http://127.0.0.1:8000"
+      whatsapp: this.$store.state.siteInfo.whatsapp,
+      app_url: "https://demo.socialm.tv"
     };
   }
 });
@@ -186,11 +207,10 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
-      app_url: "http://127.0.0.1:8000"
+      app_url: "https://demo.socialm.tv"
     };
   },
   methods: {
@@ -219,6 +239,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _components_navbar__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../components/navbar */ "./resources/js/components/navbar.vue");
 /* harmony import */ var _components_appFooter__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components/appFooter */ "./resources/js/components/appFooter.vue");
+//
 //
 //
 //
@@ -299,7 +320,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.btn-link[data-v-a9f4693e] {\n    background-color: #f3f3f3;\n    color: #b99658;\n}\na[data-v-a9f4693e]:hover {\n    color: #b17c1f;\n}\na[data-v-a9f4693e] {\n    color: #272829;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.btn-link[data-v-a9f4693e] {\n    color: #B3965A;\n}\na[data-v-a9f4693e]:hover {\n    color: #b17c1f;\n}\nh5[data-v-a9f4693e]{\n    font-size: 1.4rem;\n}\na[data-v-a9f4693e] {\n    color: #808285;\n}\n.ft[data-v-a9f4693e] {\n    padding-left: 80px;\n}\n@media only screen and (max-width: 600px) {\n.ft[data-v-a9f4693e] {\n        padding-left: 13px;\n}\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -322,7 +343,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.section-title h2[data-v-0a5ada89] {\n    color: #0d0d0e;\n}\n.section-title h2[data-v-0a5ada89]::after {\n    left: 48%;\n}\n.btn.selected[data-v-0a5ada89] {\n    background-color: #b99658;\n    color: white;\n}\n.icon-service[data-v-0a5ada89] {\n    color: #fff;\n    font-size: 25px;\n    justify-content: center;\n    align-items: center;\n}\n.box-icon[data-v-0a5ada89] {\n    margin: 0 auto;\n    margin-top: 30px;\n    width: 100%;\n    height: 80px;\n    max-width: 80px;\n    background: linear-gradient(90deg, #bc9e6fa6 0%, #b89d6d 40%, rgba(0, 0, 0, 0.28) 60%);\n    border-radius: 100%;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    color: white;\n    transition: all 0.8s ease;\n    background-position: 0px;\n    background-size: 200px;\n}\n.card[data-v-0a5ada89] {\n    border: 1px solid rgba(67, 62, 62, 0.06);\n}\n.card-text[data-v-0a5ada89] {\n    color: #4f5050;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.section-title h2[data-v-0a5ada89] {\n    color: #0d0d0e;\n}\n.section-title h2[data-v-0a5ada89]::after {\n    left: 48%;\n}\n.btn.selected[data-v-0a5ada89] {\n    background-color: #B3965A;\n    color: white;\n}\n.icon-service[data-v-0a5ada89] {\n    color: #fff;\n    font-size: 25px;\n    justify-content: center;\n    align-items: center;\n}\n.box-icon[data-v-0a5ada89] {\n    margin: 0 auto;\n    margin-top: 30px;\n    width: 100%;\n    height: 80px;\n    max-width: 80px;\n    background: linear-gradient(90deg, #bc9e6fa6 0%, #b89d6d 40%, rgba(0, 0, 0, 0.28) 60%);\n    border-radius: 100%;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    color: white;\n    transition: all 0.8s ease;\n    background-position: 0px;\n    background-size: 200px;\n}\n.card[data-v-0a5ada89] {\n    border: none;\n    box-shadow: 0 2px 30px -1px hsla(31, 36.8%, 50.4%, 0.08),0 4px 30px 0 hsla(44.4, 61%, 83.9%, 0.35),0 1px 30px 0 hsla(0,0%,100%,0) !important;\n}\n.card-text[data-v-0a5ada89] {\n    color: #4f5050;\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -640,52 +661,68 @@ var render = function() {
   return _c("div", [
     _c(
       "div",
-      { style: _vm.$route.name === "home" ? "background: #f5f8fd" : "" },
+      {
+        staticStyle: {
+          background: "rgba(0, 0, 0, 0.01)",
+          "margin-top": "100px"
+        }
+      },
       [
         _c("div", { staticClass: "container" }, [
           _c("div", { staticClass: "row" }, [
-            _c("div", { staticClass: "text-center col-md-3 my-5" }, [
-              _c("img", {
-                attrs: {
-                  src: _vm.app_url + "/images/logo.png",
-                  width: "100",
-                  "data-aos": "fade-up"
-                }
-              }),
-              _vm._v(" "),
-              _c(
-                "p",
-                {
-                  style:
-                    _vm.$store.state.lang === "ar"
-                      ? "font-family: 'Tajawal', sans-serif;"
-                      : "",
+            _c(
+              "div",
+              {
+                staticClass: "col-md-3 my-3",
+                attrs: { dir: _vm.$store.state.lang === "en" ? "ltr" : "rtl" }
+              },
+              [
+                _c("img", {
+                  staticClass: "mb-4",
                   attrs: {
-                    "data-aos": "fade-up",
-                    "data-aos-delay": "200",
-                    dir: _vm.$store.state.lang === "en" ? "ltr" : "rtl"
+                    src: _vm.app_url + "/images/logo.png",
+                    width: "100",
+                    "data-aos": "fade-up"
                   }
-                },
-                [
-                  _vm._v(
-                    "\n                        " +
-                      _vm._s(
-                        _vm.$store.state.lang === "ar"
-                          ? "لاجون ديزاين هو استديو تصميم داخلي رفيع المستوى في قطر، مختص في الحلول المبتكرة والجودة وفعالية الأداء."
-                          : "Lagoon Design is a premium interior design studio in Qatar specialized in quality,innovative solutions and efficient performance."
-                      ) +
-                      "\n                    "
-                  )
-                ]
-              )
-            ]),
+                }),
+                _vm._v(" "),
+                _c(
+                  "p",
+                  {
+                    style:
+                      _vm.$store.state.lang === "ar"
+                        ? "font-family: 'Tajawal', sans-serif;"
+                        : "",
+                    attrs: {
+                      "data-aos": "fade-up",
+                      "data-aos-delay": "200",
+                      dir: _vm.$store.state.lang === "en" ? "ltr" : "rtl"
+                    }
+                  },
+                  [
+                    _vm._v(
+                      "\n                        " +
+                        _vm._s(
+                          _vm.$store.state.lang === "ar"
+                            ? "لاجون ديزاين هو استديو تصميم داخلي رفيع المستوى في قطر، مختص في الحلول المبتكرة والجودة وفعالية الأداء."
+                            : "Lagoon Design is a premium interior design studio in Qatar specialized in quality,innovative solutions and efficient performance."
+                        ) +
+                        "\n                    "
+                    )
+                  ]
+                )
+              ]
+            ),
             _vm._v(" "),
             _c(
               "div",
-              { staticClass: "text-center col-md-3 my-5" },
+              {
+                staticClass: "col-md-3 my-5 ft",
+                attrs: { dir: _vm.$store.state.lang === "en" ? "ltr" : "rtl" }
+              },
               [
                 _c(
-                  "h4",
+                  "h5",
                   {
                     style:
                       _vm.$store.state.lang === "ar"
@@ -845,187 +882,226 @@ var render = function() {
               1
             ),
             _vm._v(" "),
-            _c("div", { staticClass: "text-center col-md-3 my-5" }, [
-              _c(
-                "h4",
-                {
-                  style:
-                    _vm.$store.state.lang === "ar"
-                      ? "font-family: 'Tajawal', sans-serif;"
-                      : "",
-                  attrs: { "data-aos": "fade-up" }
-                },
-                [
-                  _vm._v(
-                    "\n                        " +
-                      _vm._s(
-                        _vm.$store.state.lang === "ar"
-                          ? "تواصل معنا"
-                          : "Contact Us"
-                      ) +
-                      "\n                    "
-                  )
-                ]
-              ),
-              _vm._v(" "),
-              _c(
-                "span",
-                { attrs: { "data-aos": "fade-up", "data-aos-delay": "200" } },
-                [
-                  _c("i", { staticClass: "bi bi-telephone" }),
-                  _vm._v("  " + _vm._s(this.$store.state.siteInfo.phone1))
-                ]
-              ),
-              _vm._v(" "),
-              _c("br"),
-              _vm._v(" "),
-              this.$store.state.siteInfo.phone2
-                ? _c(
-                    "span",
-                    {
-                      attrs: { "data-aos": "fade-up", "data-aos-delay": "300" }
-                    },
-                    [
-                      _c("i", { staticClass: "bi bi-telephone" }),
-                      _vm._v(" " + _vm._s(this.$store.state.siteInfo.phone2))
-                    ]
-                  )
-                : _vm._e(),
-              _vm._v(" "),
-              _c("br"),
-              _vm._v(" "),
-              _c(
-                "span",
-                { attrs: { "data-aos": "fade-up", "data-aos-delay": "400" } },
-                [
-                  _c("i", { staticClass: "bi bi-envelope" }),
-                  _vm._v(
-                    "  " + _vm._s(this.$store.state.siteInfo.contact_email1)
-                  )
-                ]
-              ),
-              _vm._v(" "),
-              _c("br"),
-              _vm._v(" "),
-              this.$store.state.siteInfo.contact_email2
-                ? _c(
-                    "span",
-                    {
-                      attrs: { "data-aos": "fade-up", "data-aos-delay": "500" }
-                    },
-                    [
-                      _c("i", { staticClass: "bi bi-envelope" }),
-                      _vm._v(
-                        "  " + _vm._s(this.$store.state.siteInfo.contact_email2)
-                      )
-                    ]
-                  )
-                : _vm._e(),
-              _vm._v(" "),
-              _c("br")
-            ]),
+            _c(
+              "div",
+              {
+                staticClass: "col-md-3 my-5",
+                attrs: { dir: _vm.$store.state.lang === "en" ? "ltr" : "rtl" }
+              },
+              [
+                _c(
+                  "h5",
+                  {
+                    style:
+                      _vm.$store.state.lang === "ar"
+                        ? "font-family: 'Tajawal', sans-serif;"
+                        : "",
+                    attrs: { "data-aos": "fade-up" }
+                  },
+                  [
+                    _vm._v(
+                      "\n                        " +
+                        _vm._s(
+                          _vm.$store.state.lang === "ar"
+                            ? "تواصل معنا"
+                            : "Contact Us"
+                        ) +
+                        "\n                    "
+                    )
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "span",
+                  { attrs: { "data-aos": "fade-up", "data-aos-delay": "200" } },
+                  [
+                    _c("i", { staticClass: "bi bi-telephone" }),
+                    _vm._v("  " + _vm._s(this.$store.state.siteInfo.phone1))
+                  ]
+                ),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(" "),
+                this.$store.state.siteInfo.phone2
+                  ? _c(
+                      "span",
+                      {
+                        attrs: {
+                          "data-aos": "fade-up",
+                          "data-aos-delay": "300"
+                        }
+                      },
+                      [
+                        _c("i", { staticClass: "bi bi-telephone" }),
+                        _vm._v(" " + _vm._s(this.$store.state.siteInfo.phone2))
+                      ]
+                    )
+                  : _vm._e(),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(" "),
+                _c(
+                  "span",
+                  { attrs: { "data-aos": "fade-up", "data-aos-delay": "400" } },
+                  [
+                    _c("i", { staticClass: "bi bi-envelope" }),
+                    _vm._v(
+                      "  " + _vm._s(this.$store.state.siteInfo.contact_email1)
+                    )
+                  ]
+                ),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(" "),
+                this.$store.state.siteInfo.contact_email2
+                  ? _c(
+                      "span",
+                      {
+                        attrs: {
+                          "data-aos": "fade-up",
+                          "data-aos-delay": "500"
+                        }
+                      },
+                      [
+                        _c("i", { staticClass: "bi bi-envelope" }),
+                        _vm._v(
+                          "  " +
+                            _vm._s(this.$store.state.siteInfo.contact_email2)
+                        )
+                      ]
+                    )
+                  : _vm._e(),
+                _vm._v(" "),
+                _c("br")
+              ]
+            ),
             _vm._v(" "),
-            _c("div", { staticClass: "text-center col-md-3 my-5" }, [
-              _c(
-                "h4",
-                {
-                  style:
-                    _vm.$store.state.lang === "ar"
-                      ? "font-family: 'Tajawal', sans-serif;"
-                      : "",
-                  attrs: { "data-aos": "fade-up" }
-                },
-                [
-                  _vm._v(
-                    "\n                        " +
-                      _vm._s(
-                        _vm.$store.state.lang === "ar" ? "العنوان" : "Address"
-                      ) +
-                      "\n                    "
-                  )
-                ]
-              ),
-              _vm._v(" "),
-              _c(
-                "p",
-                {
-                  style:
-                    _vm.$store.state.lang === "ar"
-                      ? "font-family: 'Tajawal', sans-serif;"
-                      : "",
-                  attrs: {
-                    "data-aos": "fade-up",
-                    "data-aos-delay": "100",
-                    dir: _vm.$store.state.lang === "en" ? "ltr" : "rtl"
-                  }
-                },
-                [
-                  _c("i", { staticClass: "bi bi-pin-map" }),
-                  _vm._v(
-                    " " +
-                      _vm._s(
-                        _vm.$store.state.lang === "en"
-                          ? this.$store.state.siteInfo.address_en
-                          : this.$store.state.siteInfo.address_ar
-                      ) +
-                      "\n                    "
-                  )
-                ]
-              ),
-              _vm._v(" "),
-              _c(
-                "div",
-                {
-                  staticClass: "flex-column",
-                  attrs: { "data-aos": "fade-up", "data-aos-delay": "200" }
-                },
-                [
-                  _vm.facebook
-                    ? _c(
-                        "a",
-                        {
-                          staticClass: "btn btn-link",
-                          attrs: { href: _vm.facebook, target: "_blank" }
-                        },
-                        [_c("i", { staticClass: "bi bi-facebook" })]
-                      )
-                    : _vm._e(),
-                  _vm._v(" "),
-                  _vm.instagram
-                    ? _c(
-                        "a",
-                        {
-                          staticClass: "btn btn-link",
-                          attrs: { href: _vm.instagram, target: "_blank" }
-                        },
-                        [_c("i", { staticClass: "bi bi-instagram" })]
-                      )
-                    : _vm._e(),
-                  _vm._v(" "),
-                  _vm.linkedin
-                    ? _c(
-                        "a",
-                        {
-                          staticClass: "btn btn-link",
-                          attrs: { href: _vm.linkedin, target: "_blank" }
-                        },
-                        [_c("i", { staticClass: "bi bi-linkedin" })]
-                      )
-                    : _vm._e(),
-                  _vm._v(" "),
-                  _vm.youtube
-                    ? _c(
-                        "a",
-                        {
-                          staticClass: "btn btn-link",
-                          attrs: { href: _vm.youtube, target: "_blank" }
-                        },
-                        [_c("i", { staticClass: "bi bi-youtube" })]
-                      )
-                    : _vm._e()
-                ]
-              )
-            ])
+            _c(
+              "div",
+              {
+                staticClass: "col-md-3 my-5",
+                attrs: { dir: _vm.$store.state.lang === "en" ? "ltr" : "rtl" }
+              },
+              [
+                _c(
+                  "h5",
+                  {
+                    style:
+                      _vm.$store.state.lang === "ar"
+                        ? "font-family: 'Tajawal', sans-serif;"
+                        : "",
+                    attrs: { "data-aos": "fade-up" }
+                  },
+                  [
+                    _vm._v(
+                      "\n                        " +
+                        _vm._s(
+                          _vm.$store.state.lang === "ar" ? "العنوان" : "Address"
+                        ) +
+                        "\n                    "
+                    )
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "p",
+                  {
+                    style:
+                      _vm.$store.state.lang === "ar"
+                        ? "font-family: 'Tajawal', sans-serif;"
+                        : "",
+                    attrs: {
+                      "data-aos": "fade-up",
+                      "data-aos-delay": "100",
+                      dir: _vm.$store.state.lang === "en" ? "ltr" : "rtl"
+                    }
+                  },
+                  [
+                    _c("i", { staticClass: "bi bi-pin-map" }),
+                    _vm._v(
+                      " " +
+                        _vm._s(
+                          _vm.$store.state.lang === "en"
+                            ? this.$store.state.siteInfo.address_en
+                            : this.$store.state.siteInfo.address_ar
+                        ) +
+                        "\n                    "
+                    )
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass: "flex-column",
+                    attrs: {
+                      "data-aos": "fade-up",
+                      "data-aos-delay": "200",
+                      dir: _vm.$store.state.lang === "en" ? "ltr" : "rtl"
+                    }
+                  },
+                  [
+                    _vm.facebook
+                      ? _c(
+                          "a",
+                          {
+                            staticClass: "btn btn-link",
+                            attrs: { href: _vm.facebook, target: "_blank" }
+                          },
+                          [_c("i", { staticClass: "bi bi-facebook" })]
+                        )
+                      : _vm._e(),
+                    _vm._v(" "),
+                    _vm.instagram
+                      ? _c(
+                          "a",
+                          {
+                            staticClass: "btn btn-link",
+                            attrs: { href: _vm.instagram, target: "_blank" }
+                          },
+                          [_c("i", { staticClass: "bi bi-instagram" })]
+                        )
+                      : _vm._e(),
+                    _vm._v(" "),
+                    _vm.linkedin
+                      ? _c(
+                          "a",
+                          {
+                            staticClass: "btn btn-link",
+                            attrs: { href: _vm.linkedin, target: "_blank" }
+                          },
+                          [_c("i", { staticClass: "bi bi-linkedin" })]
+                        )
+                      : _vm._e(),
+                    _vm._v(" "),
+                    _vm.youtube
+                      ? _c(
+                          "a",
+                          {
+                            staticClass: "btn btn-link",
+                            attrs: { href: _vm.youtube, target: "_blank" }
+                          },
+                          [_c("i", { staticClass: "bi bi-youtube" })]
+                        )
+                      : _vm._e(),
+                    _vm._v(" "),
+                    _vm.whatsapp
+                      ? _c(
+                          "a",
+                          {
+                            staticClass: "btn btn-link",
+                            attrs: {
+                              href: "https://wa.me/" + _vm.whatsapp,
+                              target: "_blank"
+                            }
+                          },
+                          [_c("i", { staticClass: "bi bi-whatsapp" })]
+                        )
+                      : _vm._e()
+                  ]
+                )
+              ]
+            )
           ])
         ])
       ]
@@ -1034,36 +1110,32 @@ var render = function() {
     _c(
       "div",
       {
-        style:
-          _vm.$route.name === "home"
-            ? "background: #fff"
-            : "background: #f5f8fd"
+        staticClass: "container",
+        staticStyle: { background: "rgba(0, 0, 0, 0.01)" }
       },
       [
-        _c("div", { staticClass: "container" }, [
-          _c("div", { staticClass: "row justify-content-center" }, [
-            _c(
-              "div",
-              {
-                staticClass: "col-6 p-3 text-center",
-                style:
-                  _vm.$store.state.lang === "ar"
-                    ? "font-family: 'Tajawal', sans-serif;"
-                    : ""
-              },
-              [
-                _vm._v(
-                  "\n                    " +
-                    _vm._s(
-                      _vm.$store.state.lang === "ar"
-                        ? "© حقوق الطبع والنشر 2021 - جميع الحقوق محفوظة "
-                        : " © Copyright 2021 - All Rights Reserved"
-                    ) +
-                    "\n                "
-                )
-              ]
-            )
-          ])
+        _c("div", { staticClass: "row justify-content-center" }, [
+          _c(
+            "div",
+            {
+              staticClass: "col-12 p-3 text-center",
+              style:
+                _vm.$store.state.lang === "ar"
+                  ? "font-family: 'Tajawal', sans-serif;"
+                  : ""
+            },
+            [
+              _vm._v(
+                "\n                " +
+                  _vm._s(
+                    _vm.$store.state.lang === "ar"
+                      ? "© حقوق الطبع والنشر 2021 - جميع الحقوق محفوظة "
+                      : " © Copyright 2021 - All Rights Reserved"
+                  ) +
+                  "\n            "
+              )
+            ]
+          )
         ])
       ]
     )
@@ -1104,7 +1176,7 @@ var render = function() {
         attrs: { dir: _vm.$store.state.lang === "en" ? "ltr" : "rtl" }
       },
       [
-        _c("div", { staticClass: "container-fluid" }, [
+        _c("div", { staticClass: "container" }, [
           _c(
             "a",
             { staticClass: "navbar-brand", on: { click: _vm.goToHome } },
@@ -1288,14 +1360,8 @@ var render = function() {
                           },
                           [
                             _vm._v(
-                              "\n                                العربية\n                                "
-                            ),
-                            _c("img", {
-                              staticClass: "flag",
-                              attrs: {
-                                src: _vm.app_url + "/images/Flag-Qatar.jpg"
-                              }
-                            })
+                              "\n                                العربية\n                            "
+                            )
                           ]
                         )
                       : _c(
@@ -1314,12 +1380,8 @@ var render = function() {
                           },
                           [
                             _vm._v(
-                              "\n                                English "
-                            ),
-                            _c("img", {
-                              staticClass: "flag",
-                              attrs: { src: _vm.app_url + "/images/flagen.jpg" }
-                            })
+                              "\n                                English\n                            "
+                            )
                           ]
                         )
                   ])
@@ -1391,7 +1453,7 @@ var render = function() {
       _c(
         "div",
         {
-          staticClass: "portfolio section-bg",
+          staticClass: "portfolio bg-white",
           staticStyle: { "min-height": "100vh" }
         },
         [
@@ -1411,15 +1473,11 @@ var render = function() {
                       : ""
                 },
                 [
-                  _vm._v(
-                    "\n                    " +
-                      _vm._s(
-                        _vm.$store.state.lang === "ar"
-                          ? "خدماتنا"
-                          : "Our Services"
-                      ) +
-                      "\n                "
-                  )
+                  _vm.$store.state.lang === "ar"
+                    ? _c("span", [_vm._v("خدماتنا")])
+                    : _c("img", {
+                        attrs: { src: "/images/services.gif", width: "300" }
+                      })
                 ]
               )
             ]),
@@ -1432,72 +1490,68 @@ var render = function() {
                   _c(
                     "div",
                     {
-                      staticClass: "card text-center h-100",
+                      staticClass: "card h-100",
                       attrs: { "data-aos": "fade-up" }
                     },
                     [
-                      _c("div", { staticClass: "box-icon" }, [
-                        _c("div", {
-                          staticClass: "icon-service",
-                          domProps: { innerHTML: _vm._s(service.icon) }
-                        })
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "card-body" }, [
-                        _c(
-                          "p",
-                          {
-                            staticStyle: {
-                              "font-size": "25px",
-                              color: "#b99658"
+                      _c("div", { staticClass: "card-body  my-3" }, [
+                        _c("div", { staticClass: "p-3" }, [
+                          _c(
+                            "p",
+                            {
+                              staticClass: "text-center",
+                              staticStyle: {
+                                "font-size": "22px",
+                                color: "#B3965A"
+                              },
+                              style:
+                                _vm.$store.state.lang === "ar"
+                                  ? "font-family: 'Tajawal', sans-serif;"
+                                  : "",
+                              attrs: {
+                                dir:
+                                  _vm.$store.state.lang === "en" ? "ltr" : "rtl"
+                              }
                             },
-                            style:
-                              _vm.$store.state.lang === "ar"
-                                ? "font-family: 'Tajawal', sans-serif;"
-                                : "",
-                            attrs: {
-                              dir:
-                                _vm.$store.state.lang === "en" ? "ltr" : "rtl"
-                            }
-                          },
-                          [
-                            _vm._v(
-                              "\n                                " +
-                                _vm._s(
-                                  _vm.$store.state.lang === "en"
-                                    ? service.name_en
-                                    : service.name_ar
-                                ) +
-                                "\n                            "
-                            )
-                          ]
-                        ),
-                        _vm._v(" "),
-                        _c(
-                          "p",
-                          {
-                            staticClass: "card-text",
-                            style:
-                              _vm.$store.state.lang === "ar"
-                                ? "font-family: 'Tajawal', sans-serif;"
-                                : "",
-                            attrs: {
-                              dir:
-                                _vm.$store.state.lang === "en" ? "ltr" : "rtl"
-                            }
-                          },
-                          [
-                            _vm._v(
-                              "\n                                " +
-                                _vm._s(
-                                  _vm.$store.state.lang === "en"
-                                    ? service.description_en
-                                    : service.description_ar
-                                ) +
-                                "\n                            "
-                            )
-                          ]
-                        )
+                            [
+                              _vm._v(
+                                "\n                                    " +
+                                  _vm._s(
+                                    _vm.$store.state.lang === "en"
+                                      ? service.name_en
+                                      : service.name_ar
+                                  ) +
+                                  "\n                                "
+                              )
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "p",
+                            {
+                              staticClass: "card-text",
+                              style:
+                                _vm.$store.state.lang === "ar"
+                                  ? "font-family: 'Tajawal', sans-serif;"
+                                  : "",
+                              attrs: {
+                                dir:
+                                  _vm.$store.state.lang === "en" ? "ltr" : "rtl"
+                              }
+                            },
+                            [
+                              _vm._v(
+                                "\n                                    " +
+                                  _vm._s(
+                                    _vm.$store.state.lang === "en"
+                                      ? service.description_en
+                                      : service.description_ar
+                                  ) +
+                                  "\n                                "
+                              )
+                            ]
+                          )
+                        ])
                       ])
                     ]
                   )
