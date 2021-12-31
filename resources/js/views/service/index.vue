@@ -16,7 +16,7 @@
                             <div class="card-body  my-3">
                                 <div class="p-3">
                                     <p class="text-center" :dir="$store.state.lang === 'en' ? 'ltr' : 'rtl'"
-                                       :style="$store.state.lang === 'ar' ?'font-family: \'Tajawal\', sans-serif;' : ''" style="font-size: 22px;color:#B3965A">
+                                       :style="$store.state.lang === 'ar' ?'font-family: \'Tajawal\', sans-serif;' : ''" style="font-size: 1.4rem;color:#B3965A">
                                         {{ $store.state.lang === 'en' ?  service.name_en : service.name_ar }}
                                     </p>
                                     <p  :dir="$store.state.lang === 'en' ? 'ltr' : 'rtl'" :style="$store.state.lang === 'ar' ?'font-family: \'Tajawal\', sans-serif;' : ''" class="card-text">
@@ -96,13 +96,11 @@ export default {
     background-position: 0px;
     background-size: 200px;
 }
-
 .card {
     border: none;
     box-shadow: 0 2px 30px -1px hsla(31, 36.8%, 50.4%, 0.08),0 4px 30px 0 hsla(44.4, 61%, 83.9%, 0.35),0 1px 30px 0 hsla(0,0%,100%,0) !important;
 }
-
 .card-text {
-    color: #4f5050;
+    color: #808285;
 }
 </style>

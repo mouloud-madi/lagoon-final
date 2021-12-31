@@ -509,6 +509,13 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({});
 
 /***/ }),
@@ -523,6 +530,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+//
+//
+//
+//
 //
 //
 //
@@ -594,6 +605,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -717,7 +734,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n#section2[data-v-08f05786] {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    min-height: 100vh;\n}\n.content-center[data-v-08f05786]{\n    display: flex;\n    justify-content: center;\n    align-items: center;\n}\n.p-section[data-v-08f05786] {\n    font-size: 22px;\n}\n.gif[data-v-08f05786] {\n    width: 500px;\n}\n@media only screen and (max-width: 600px) {\n#section2[data-v-08f05786] {\n        min-height: 0 !important;\n}\n.p-section[data-v-08f05786] {\n        font-size: 16px;\n}\n.gif[data-v-08f05786] {\n        width: 300px;\n}\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n#section2[data-v-08f05786] {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    min-height: 100vh;\n}\n.content-center[data-v-08f05786] {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n}\n.gif[data-v-08f05786] {\n    width: 450px;\n}\nh4[data-v-08f05786] {\n    font-size: 1.4rem;\n    color: #B3965A;\n}\n@media only screen and (max-width: 600px) {\n#section2[data-v-08f05786] {\n        min-height: 0 !important;\n}\n.gif[data-v-08f05786] {\n        width: 300px;\n}\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -740,7 +757,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.text--primary[data-v-08d42884] {\n    color: #B3965A;\n}\n#section3[data-v-08d42884] {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    min-height: 100vh;\n}\n.p-section[data-v-08d42884] {\n    font-size: 22px;\n}\n.content-center[data-v-08d42884]{\n    display: flex;\n    justify-content: center;\n    align-items: center;\n}\n.gif[data-v-08d42884] {\n    width: 500px;\n}\n@media only screen and (max-width: 600px) {\n#section3[data-v-08d42884] {\n        min-height: 0 !important;\n}\n.p-section[data-v-08d42884] {\n        font-size: 16px;\n}\n.gif[data-v-08d42884] {\n        width: 300px;\n}\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.text--primary[data-v-08d42884] {\n    color: #B3965A;\n}\nh4[data-v-08d42884]{\n    font-size: 1.4rem;\n    color: #B3965A;\n}\n#section3[data-v-08d42884] {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    min-height: 100vh;\n}\n.content-center[data-v-08d42884]{\n    display: flex;\n    justify-content: center;\n    align-items: center;\n}\n.gif[data-v-08d42884] {\n    width: 450px;\n}\n@media only screen and (max-width: 600px) {\n#section3[data-v-08d42884] {\n        min-height: 0 !important;\n}\n.gif[data-v-08d42884] {\n        width: 300px;\n}\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -763,7 +780,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n#section4[data-v-08b7f982] {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    min-height: 100vh;\n}\n.title[data-v-08b7f982] {\n    font-size: 24px;\n}\n.description[data-v-08b7f982] {\n    color: #B3965A;\n    font-size: 18px;\n}\n@media only screen and (max-width: 600px) {\n#section4[data-v-08b7f982] {\n        min-height: 0;\n        margin-top: 20px;\n}\n.title[data-v-08b7f982] {\n        font-size: 20px;\n}\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n#section4[data-v-08b7f982] {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    min-height: 100vh;\n}\nh4[data-v-08b7f982] {\n    font-size: 1.4rem;\n    color: #B3965A;\n}\n@media only screen and (max-width: 600px) {\n#section4[data-v-08b7f982] {\n        min-height: 0;\n        margin-top: 20px;\n}\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -786,7 +803,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\na[data-v-089bca80] {\n    color: #808285;\n}\na[data-v-089bca80]:hover {\n    color: #B3965A;\n}\n.p-section[data-v-089bca80] {\n    color: #B3965A;\n    font-size: 22px;\n}\n#section5[data-v-089bca80] {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    min-height: 100vh;\n    margin-top: 0;\n}\n.vedio[data-v-089bca80]{\n    height: 100vh;\n    width: 100%;\n    margin-right: -400px;\n    margin-top: -25px;\n}\n.about-content[data-v-089bca80]{\n    margin-top: 200px;\n    margin-left: 50px;\n}\n@media only screen and (max-width: 600px) {\n#section5[data-v-089bca80] {\n        min-height: 0;\n        margin-top: 20px;\n}\n.vedio[data-v-089bca80]{\n        height: 100%;\n        width: 100% ;\n        margin-bottom: 40px;\n}\n.p-section[data-v-089bca80] {\n        font-size: 19px;\n}\n.about-content[data-v-089bca80]{\n        margin-top: 20px !important;\n        margin-left: 5px !important;\n}\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\na[data-v-089bca80] {\n    color: #808285;\n}\na[data-v-089bca80]:hover {\n    color: #B3965A;\n}\n#section5[data-v-089bca80] {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    min-height: 100vh;\n    margin-top: 0;\n}\n.vedio[data-v-089bca80] {\n    height: 100vh;\n    width: 100%;\n    margin-right: -400px;\n    margin-top: -25px;\n}\n.about-content[data-v-089bca80] {\n    margin-top: 200px;\n    margin-left: 50px;\n}\n.about-content h4[data-v-089bca80] {\n    color: #B3965A;\n}\n@media only screen and (max-width: 600px) {\n#section5[data-v-089bca80] {\n        min-height: 0;\n        margin-top: 20px;\n}\n.vedio[data-v-089bca80] {\n        height: 100%;\n        width: 100%;\n        margin-bottom: 40px;\n}\n.about-content[data-v-089bca80] {\n        margin-top: 20px !important;\n        margin-left: 5px !important;\n}\n}\nh4[data-v-089bca80] {\n    font-size: 1.4rem;\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -2989,15 +3006,33 @@ var render = function() {
               }
             },
             [
-              _c("img", {
-                staticClass: "gif",
-                attrs: {
-                  src:
-                    _vm.$store.state.lang === "en"
-                      ? _vm.$store.state.section.section_one_gif_en
-                      : _vm.$store.state.section.section_one_gif_ar
-                }
-              }),
+              _vm.$store.state.lang === "ar"
+                ? _c(
+                    "h4",
+                    {
+                      style:
+                        _vm.$store.state.lang === "ar"
+                          ? "font-family: 'Tajawal', sans-serif;"
+                          : "",
+                      attrs: {
+                        dir: _vm.$store.state.lang === "en" ? "ltr" : "rtl"
+                      }
+                    },
+                    [
+                      _vm._v(
+                        "\n                    العاطفة والديكور\n                "
+                      )
+                    ]
+                  )
+                : _c("img", {
+                    staticClass: "gif",
+                    attrs: {
+                      src:
+                        _vm.$store.state.lang === "en"
+                          ? _vm.$store.state.section.section_one_gif_en
+                          : _vm.$store.state.section.section_one_gif_ar
+                    }
+                  }),
               _vm._v(" "),
               _c("p", { staticClass: "p-section mt-3" }, [
                 _vm._v(
@@ -3113,17 +3148,35 @@ var render = function() {
               }
             },
             [
-              _c("img", {
-                staticClass: "gif",
-                attrs: {
-                  src:
-                    _vm.$store.state.lang === "en"
-                      ? _vm.$store.state.section.section_two_gif_en
-                      : _vm.$store.state.section.section_two_gif_ar
-                }
-              }),
+              _vm.$store.state.lang === "ar"
+                ? _c(
+                    "h4",
+                    {
+                      style:
+                        _vm.$store.state.lang === "ar"
+                          ? "font-family: 'Tajawal', sans-serif;"
+                          : "",
+                      attrs: {
+                        dir: _vm.$store.state.lang === "en" ? "ltr" : "rtl"
+                      }
+                    },
+                    [
+                      _vm._v(
+                        "\n                    معاييرنا العالية\n                "
+                      )
+                    ]
+                  )
+                : _c("img", {
+                    staticClass: "gif",
+                    attrs: {
+                      src:
+                        _vm.$store.state.lang === "en"
+                          ? _vm.$store.state.section.section_two_gif_en
+                          : _vm.$store.state.section.section_two_gif_ar
+                    }
+                  }),
               _vm._v(" "),
-              _c("p", { staticClass: "p-section mt-3" }, [
+              _c("p", { staticClass: "mt-3" }, [
                 _vm._v(
                   "\n                    " +
                     _vm._s(
@@ -3242,9 +3295,8 @@ var render = function() {
           },
           [
             _c(
-              "p",
+              "h4",
               {
-                staticClass: "title",
                 style:
                   _vm.$store.state.lang === "ar"
                     ? "font-family: 'Tajawal', sans-serif;"
@@ -3267,7 +3319,6 @@ var render = function() {
             _c(
               "p",
               {
-                staticClass: "description",
                 style:
                   _vm.$store.state.lang === "ar"
                     ? "font-family: 'Tajawal', sans-serif;"
@@ -3351,7 +3402,7 @@ var render = function() {
             [
               _c("div", { staticClass: "about-content" }, [
                 _c(
-                  "h2",
+                  "h4",
                   {
                     style:
                       _vm.$store.state.lang === "ar"
@@ -3363,13 +3414,13 @@ var render = function() {
                   },
                   [
                     _vm._v(
-                      "\n                       " +
+                      "\n                        " +
                         _vm._s(
                           _vm.$store.state.lang === "en"
                             ? _vm.$store.state.section.section_four_title_en
                             : _vm.$store.state.section.section_four_title_ar
                         ) +
-                        "\n                   "
+                        "\n                    "
                     )
                   ]
                 ),
@@ -3384,7 +3435,7 @@ var render = function() {
                   },
                   [
                     _vm._v(
-                      "\n                       " +
+                      "\n                        " +
                         _vm._s(
                           _vm.$store.state.lang === "en"
                             ? _vm.$store.state.section
@@ -3392,7 +3443,7 @@ var render = function() {
                             : _vm.$store.state.section
                                 .section_four_description_ar
                         ) +
-                        "\n                   "
+                        "\n                    "
                     )
                   ]
                 ),
@@ -3403,7 +3454,7 @@ var render = function() {
                       { staticStyle: { float: "right" } },
                       [
                         _c("router-link", { attrs: { to: "/about-us" } }, [
-                          _vm._v("\n                             اقرأ أكثر "),
+                          _vm._v("\n                            اقرأ أكثر "),
                           _c("i", { staticClass: "bi bi-arrow-right" })
                         ])
                       ],
@@ -3413,7 +3464,7 @@ var render = function() {
                       "div",
                       [
                         _c("router-link", { attrs: { to: "/about-us" } }, [
-                          _vm._v("\n                          Read more    "),
+                          _vm._v("\n                            Read more "),
                           _c("i", { staticClass: "bi bi-arrow-right" })
                         ])
                       ],

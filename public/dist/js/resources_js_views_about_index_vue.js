@@ -515,7 +515,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.section-title h2[data-v-6ba873a1] {\n    color: #0d0d0e;\n}\n.section-title h2[data-v-6ba873a1]::after {\n    left: 48%;\n}\n.card[data-v-6ba873a1] {\n    border: 1px solid rgba(67, 62, 62, 0.06);\n}\nh4[data-v-6ba873a1]{\n    font-size: 1.4rem;\n}\n.card-text[data-v-6ba873a1] {\n    color: #4f5050;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.section-title h2[data-v-6ba873a1] {\n    color: #4f5050;\n}\n.section-title h2[data-v-6ba873a1]::after {\n    left: 48%;\n}\n.card[data-v-6ba873a1] {\n    border: 1px solid rgba(67, 62, 62, 0.06);\n}\nh4[data-v-6ba873a1]{\n    font-size: 1.4rem;\n}\n.card-text[data-v-6ba873a1] {\n    color: #4f5050;\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -1866,8 +1866,9 @@ var render = function() {
                 },
                 [
                   _c(
-                    "h1",
+                    "h4",
                     {
+                      staticStyle: { color: "#B3965A" },
                       style:
                         _vm.$store.state.lang === "ar"
                           ? "font-family: 'Tajawal', sans-serif;"
@@ -1946,9 +1947,9 @@ var render = function() {
                 },
                 [
                   _c(
-                    "h1",
+                    "h4",
                     {
-                      staticStyle: { "margin-top": "70px" },
+                      staticStyle: { "margin-top": "70px", color: "#B3965A" },
                       style:
                         _vm.$store.state.lang === "ar"
                           ? "font-family: 'Tajawal', sans-serif;"

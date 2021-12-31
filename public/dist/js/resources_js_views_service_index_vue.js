@@ -343,7 +343,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.section-title h2[data-v-0a5ada89] {\n    color: #0d0d0e;\n}\n.section-title h2[data-v-0a5ada89]::after {\n    left: 48%;\n}\n.btn.selected[data-v-0a5ada89] {\n    background-color: #B3965A;\n    color: white;\n}\n.icon-service[data-v-0a5ada89] {\n    color: #fff;\n    font-size: 25px;\n    justify-content: center;\n    align-items: center;\n}\n.box-icon[data-v-0a5ada89] {\n    margin: 0 auto;\n    margin-top: 30px;\n    width: 100%;\n    height: 80px;\n    max-width: 80px;\n    background: linear-gradient(90deg, #bc9e6fa6 0%, #b89d6d 40%, rgba(0, 0, 0, 0.28) 60%);\n    border-radius: 100%;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    color: white;\n    transition: all 0.8s ease;\n    background-position: 0px;\n    background-size: 200px;\n}\n.card[data-v-0a5ada89] {\n    border: none;\n    box-shadow: 0 2px 30px -1px hsla(31, 36.8%, 50.4%, 0.08),0 4px 30px 0 hsla(44.4, 61%, 83.9%, 0.35),0 1px 30px 0 hsla(0,0%,100%,0) !important;\n}\n.card-text[data-v-0a5ada89] {\n    color: #4f5050;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.section-title h2[data-v-0a5ada89] {\n    color: #0d0d0e;\n}\n.section-title h2[data-v-0a5ada89]::after {\n    left: 48%;\n}\n.btn.selected[data-v-0a5ada89] {\n    background-color: #B3965A;\n    color: white;\n}\n.icon-service[data-v-0a5ada89] {\n    color: #fff;\n    font-size: 25px;\n    justify-content: center;\n    align-items: center;\n}\n.box-icon[data-v-0a5ada89] {\n    margin: 0 auto;\n    margin-top: 30px;\n    width: 100%;\n    height: 80px;\n    max-width: 80px;\n    background: linear-gradient(90deg, #bc9e6fa6 0%, #b89d6d 40%, rgba(0, 0, 0, 0.28) 60%);\n    border-radius: 100%;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    color: white;\n    transition: all 0.8s ease;\n    background-position: 0px;\n    background-size: 200px;\n}\n.card[data-v-0a5ada89] {\n    border: none;\n    box-shadow: 0 2px 30px -1px hsla(31, 36.8%, 50.4%, 0.08),0 4px 30px 0 hsla(44.4, 61%, 83.9%, 0.35),0 1px 30px 0 hsla(0,0%,100%,0) !important;\n}\n.card-text[data-v-0a5ada89] {\n    color: #808285;\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -1501,7 +1501,7 @@ var render = function() {
                             {
                               staticClass: "text-center",
                               staticStyle: {
-                                "font-size": "22px",
+                                "font-size": "1.4rem",
                                 color: "#B3965A"
                               },
                               style:

@@ -69,11 +69,11 @@
                         <img :src="url+'/images/03.jpg'" style="width: 100%" data-aos="fade-right" data-aos-delay="100">
                     </div>
                     <div class="col-md-7" style="margin-top: 70px">
-                        <h1 :dir="$store.state.lang === 'en' ? 'ltr' : 'rtl'"
+                        <h4 :dir="$store.state.lang === 'en' ? 'ltr' : 'rtl'" style="color: #B3965A"
                             :style="$store.state.lang === 'ar' ?'font-family: \'Tajawal\', sans-serif;' : ''">
                             <span v-if="$store.state.lang === 'ar'">مهمتنا</span>
                             <img v-else src="/images/mission.gif" width="200">
-                        </h1>
+                        </h4>
                         <p v-if="$store.state.lang ==='ar'" dir="rtl" style="font-family:'Tajawal', sans-serif;"
                            data-aos="fade-left" data-aos-delay="300">
                             مهمتنا هي تجاوز توقعات عملائنا ومنحهم تصاميم فخمة ومريحة فى ذات الوقت
@@ -91,11 +91,11 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-7 my-5" :dir="$store.state.lang === 'en' ? 'ltr' : 'rtl'">
-                        <h1  style="margin-top: 70px"
+                        <h4  style="margin-top: 70px;color: #B3965A"
                             :style="$store.state.lang === 'ar' ?'font-family: \'Tajawal\', sans-serif;' : ''">
                             <span v-if="$store.state.lang === 'ar'">رؤيتنا</span>
                             <img v-else src="/images/vision.gif" width="200">
-                        </h1>
+                        </h4>
                         <p v-if="$store.state.lang ==='ar'" dir="rtl" style="font-family:'Tajawal', sans-serif;"
                            data-aos="fade-left" data-aos-delay="300">
                             رؤيتنا هي أن نصمم وننفذ بسلاسة واتقان بالجمع بين أفضل الخامات و أسلوبنا الفني المميز.
@@ -235,7 +235,7 @@ export default {
 
 <style scoped>
 .section-title h2 {
-    color: #0d0d0e;
+    color: #4f5050;
 }
 
 .section-title h2::after {
