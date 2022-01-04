@@ -393,7 +393,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
 
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
@@ -845,7 +844,7 @@ var render = function() {
                       "\n                        " +
                         _vm._s(
                           _vm.$store.state.lang === "ar"
-                            ? "لاجون ديزاين هو استديو تصميم داخلي رفيع المستوى في قطر، مختص في الحلول المبتكرة والجودة وفعالية الأداء."
+                            ? "لاجون ديزاين هو استديو تصميم داخلي رفيع المستوى يعمل في قطر، وهو مختص في الحلول المبتكرة والجودة وفعالية الأداء."
                             : "Lagoon Design is a premium interior design studio in Qatar specialized in quality,innovative solutions and efficient performance."
                         ) +
                         "\n                    "
@@ -1839,7 +1838,7 @@ var render = function() {
                               _vm._s(
                                 _vm.$store.state.lang === "en"
                                   ? "Leave a Message"
-                                  : "اترك لنا رسالة"
+                                  : " تواصل معنا"
                               ) +
                               "\n                            "
                           )
@@ -2062,55 +2061,42 @@ var render = function() {
                               ])
                             ]),
                             _vm._v(" "),
-                            _c(
-                              "div",
-                              { staticClass: "col-12", attrs: { dir: "rtl" } },
-                              [
-                                _vm.$store.state.lang === "ar"
-                                  ? _c(
-                                      "button",
-                                      {
-                                        staticClass:
-                                          "btn btn-primary btn-lg float-end mt-3",
-                                        staticStyle: {
-                                          "font-family": "'Tajawal', sans-serif"
-                                        },
-                                        attrs: {
-                                          disabled: _vm.btnLoading,
-                                          type: "submit"
-                                        }
+                            _c("div", { staticClass: "col-12" }, [
+                              _vm.$store.state.lang === "ar"
+                                ? _c(
+                                    "button",
+                                    {
+                                      staticClass:
+                                        "btn btn-primary btn-lg float-left mt-3",
+                                      staticStyle: {
+                                        "font-family": "'Tajawal', sans-serif",
+                                        float: "left"
                                       },
-                                      [
-                                        !_vm.btnLoading
-                                          ? _c("i", {
-                                              staticClass: "bi bi-arrow-right"
-                                            })
-                                          : _c("span", [_vm._v("...")]),
-                                        _vm._v(
-                                          "\n                                            إرسال\n                                        "
-                                        )
-                                      ]
-                                    )
-                                  : _c(
-                                      "button",
-                                      {
-                                        staticClass:
-                                          "btn btn-primary btn-lg float-end mt-3",
-                                        attrs: { type: "submit" }
-                                      },
-                                      [
-                                        !_vm.btnLoading
-                                          ? _c("i", {
-                                              staticClass: "bi bi-arrow-right"
-                                            })
-                                          : _c("span", [_vm._v("...")]),
-                                        _vm._v(
-                                          "   Send\n                                        "
-                                        )
-                                      ]
-                                    )
-                              ]
-                            )
+                                      attrs: {
+                                        disabled: _vm.btnLoading,
+                                        type: "submit"
+                                      }
+                                    },
+                                    [
+                                      _vm._v(
+                                        "\n                                            إرسال\n                                        "
+                                      )
+                                    ]
+                                  )
+                                : _c(
+                                    "button",
+                                    {
+                                      staticClass:
+                                        "btn btn-primary btn-lg float-end mt-3",
+                                      attrs: { type: "submit" }
+                                    },
+                                    [
+                                      _vm._v(
+                                        "\n                                              Send\n                                        "
+                                      )
+                                    ]
+                                  )
+                            ])
                           ])
                         ]
                       )

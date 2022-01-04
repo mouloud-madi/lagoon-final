@@ -60,7 +60,7 @@
                                 <p style="font-size: 1.4rem;color:#B3965A"
                                    :dir="$store.state.lang === 'en' ? 'ltr' : 'rtl'"
                                    :style="$store.state.lang === 'ar' ?'font-family: \'Tajawal\', sans-serif;' : ''">
-                                     {{$store.state.lang ==='en' ? 'Leave a Message' : 'اترك لنا رسالة'}}
+                                     {{$store.state.lang ==='en' ? 'Leave a Message' : ' تواصل معنا'}}
                                 </p>
                                 <div v-if="successMessages" class="alert alert-success fade show" role="alert"
                                      :dir="$store.state.lang === 'en' ? 'ltr' : 'rtl'"
@@ -109,15 +109,14 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-12" dir="rtl">
+                                        <div class="col-12">
                                             <button v-if="$store.state.lang==='ar'" :disabled="btnLoading" type="submit"
-                                                    style="font-family: 'Tajawal', sans-serif;"
-                                                    class="btn btn-primary btn-lg float-end mt-3">
-                                                <i v-if="!btnLoading" class="bi bi-arrow-right"></i><span v-else>...</span>
+                                                    style="font-family: 'Tajawal', sans-serif;float: left"
+                                                    class="btn btn-primary btn-lg float-left mt-3">
                                                 إرسال
                                             </button>
                                             <button v-else type="submit" class="btn btn-primary btn-lg float-end mt-3">
-                                                <i v-if="!btnLoading" class="bi bi-arrow-right"></i><span v-else>...</span>   Send
+                                                  Send
                                             </button>
                                         </div>
                                     </div>

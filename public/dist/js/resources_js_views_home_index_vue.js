@@ -1793,7 +1793,7 @@ var render = function() {
                       "\n                        " +
                         _vm._s(
                           _vm.$store.state.lang === "ar"
-                            ? "لاجون ديزاين هو استديو تصميم داخلي رفيع المستوى في قطر، مختص في الحلول المبتكرة والجودة وفعالية الأداء."
+                            ? "لاجون ديزاين هو استديو تصميم داخلي رفيع المستوى يعمل في قطر، وهو مختص في الحلول المبتكرة والجودة وفعالية الأداء."
                             : "Lagoon Design is a premium interior design studio in Qatar specialized in quality,innovative solutions and efficient performance."
                         ) +
                         "\n                    "
@@ -3020,7 +3020,7 @@ var render = function() {
                     },
                     [
                       _vm._v(
-                        "\n                    العاطفة والديكور\n                "
+                        "\n                    الشغف والتفاني\n                "
                       )
                     ]
                   )

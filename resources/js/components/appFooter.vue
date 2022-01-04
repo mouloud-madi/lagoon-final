@@ -9,7 +9,7 @@
                            :dir="$store.state.lang === 'en' ? 'ltr' : 'rtl'"
                            :style="$store.state.lang === 'ar' ?'font-family: \'Tajawal\', sans-serif;' : ''">
                             {{
-                                $store.state.lang === 'ar' ? 'لاجون ديزاين هو استديو تصميم داخلي رفيع المستوى في قطر، مختص في الحلول المبتكرة والجودة وفعالية الأداء.' : 'Lagoon Design is a premium interior design studio in Qatar specialized in quality,innovative solutions and efficient performance.'
+                                $store.state.lang === 'ar' ? 'لاجون ديزاين هو استديو تصميم داخلي رفيع المستوى يعمل في قطر، وهو مختص في الحلول المبتكرة والجودة وفعالية الأداء.' : 'Lagoon Design is a premium interior design studio in Qatar specialized in quality,innovative solutions and efficient performance.'
                             }}
                         </p>
                     </div>

@@ -447,12 +447,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
 
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
@@ -876,7 +870,7 @@ var render = function() {
                       "\n                        " +
                         _vm._s(
                           _vm.$store.state.lang === "ar"
-                            ? "لاجون ديزاين هو استديو تصميم داخلي رفيع المستوى في قطر، مختص في الحلول المبتكرة والجودة وفعالية الأداء."
+                            ? "لاجون ديزاين هو استديو تصميم داخلي رفيع المستوى يعمل في قطر، وهو مختص في الحلول المبتكرة والجودة وفعالية الأداء."
                             : "Lagoon Design is a premium interior design studio in Qatar specialized in quality,innovative solutions and efficient performance."
                         ) +
                         "\n                    "
@@ -1676,30 +1670,8 @@ var render = function() {
                       "\n                        " +
                         _vm._s(
                           _vm.$store.state.lang === "ar"
-                            ? "انعكاس لذاتك"
-                            : "A REFLECTION OF YOU"
-                        ) +
-                        "\n                    "
-                    )
-                  ]
-                ),
-                _vm._v(" "),
-                _c(
-                  "p",
-                  {
-                    style:
-                      _vm.$store.state.lang === "ar"
-                        ? "font-family: 'Tajawal', sans-serif;"
-                        : "",
-                    attrs: { "data-aos": "fade-right", "data-aos-delay": "200" }
-                  },
-                  [
-                    _vm._v(
-                      "\n                        " +
-                        _vm._s(
-                          _vm.$store.state.lang === "ar"
-                            ? "تصاميم فريدة واستثنائية"
-                            : "EXCEPTIONAL AND UNIQUE DESIGNS"
+                            ? "    انعكاس لذاتك تصاميم فريدة واستثنائية "
+                            : "A REFLECTION OF YOU EXCEPTIONAL AND UNIQUE DESIGNS"
                         ) +
                         "\n                    "
                     )
@@ -1716,7 +1688,7 @@ var render = function() {
                       "\n                        " +
                         _vm._s(
                           _vm.$store.state.lang === "ar"
-                            ? "لاجون ديزاين هو استديو تصميم داخلي رفيع المستوى في قطر، مختص في الحلول المبتكرة والجودة وفعالية الأداء."
+                            ? "لاجون ديزاين هو استديو تصميم داخلي رفيع المستوى يعمل في قطر، وهو مختص في الحلول المبتكرة والجودة وفعالية الأداء."
                             : "Lagoon Design is a premium interior design studio in Qatar specialized in quality,innovative solutions andefficient performance."
                         ) +
                         "\n                    "
@@ -1810,7 +1782,7 @@ var render = function() {
                       "\n                        " +
                         _vm._s(
                           _vm.$store.state.lang === "ar"
-                            ? "عدد كبير من مزودي المواد"
+                            ? "التعاقد مع أفضل مزودي المواد الخام في السوق"
                             : "  Material suppliers from many reputed firms"
                         ) +
                         "\n                    "
@@ -1901,7 +1873,7 @@ var render = function() {
                         },
                         [
                           _vm._v(
-                            "\n                        مهمتنا هي تجاوز توقعات عملائنا ومنحهم تصاميم فخمة ومريحة فى ذات الوقت\n                    "
+                            "\n                        مهمتنا هي تجاوز توقعات عملائنا ومنحهم تصاميم فخمة ومريحة فى ذات الوقت.\n                    "
                           )
                         ]
                       )
@@ -2038,7 +2010,7 @@ var render = function() {
                     "\n                         " +
                       _vm._s(
                         _vm.$store.state.lang === "ar"
-                          ? "عملية التصميم"
+                          ? "حيوية التصميم"
                           : "Design progress"
                       ) +
                       "\n                    "
@@ -2235,11 +2207,11 @@ var render = function() {
                     },
                     [
                       _vm._v(
-                        "\n                        كل شخص متفرد بذاته ويرى الأشياء بشكل مختلف، ونحن نعمل على فهم الذوق الخاص بكل عميل، حول الكيفية التي يريد أن يكون عليها منزله. "
+                        "\n                        كل شخص متفرد بذاته ويرى الأشياء بشكل مختلف، ونحن نعمل على فهم الذوق الخاص بكل عميل والطريقة التي يحب أن يرى بها منزله. "
                       ),
                       _c("br"),
                       _vm._v(
-                        "\n                        هدفنا الأساسي هو أن نعكس رؤيتك على أرض الواقع، لهذا نهتم بكافة التفاصيل، مهما بلغت ضآلتها. ونعامل كل تفصيلة صغيرة باهتمام كبير، لنقدم لك تجربة متكاملة.\n                    "
+                        "\n                        هدفنا الأساسي هو أن نعكس رؤيتك على أرض الواقع، لهذا نهتم بكافة التفاصيل مهما بلغت ضآلتها، ونعامل كل تفصيلة صغيرة باهتمام كبير لنقدم لك تجربة متكاملة.\n                    "
                       )
                     ]
                   )
@@ -2280,7 +2252,7 @@ var render = function() {
                     "\n                        " +
                       _vm._s(
                         _vm.$store.state.lang === "ar"
-                          ? "عن طريق التصميم و القرارات، التصورية نصنع القيمة لمشاريعنا"
+                          ? "العبرة دائماً في التفاصيل الصغيرة"
                           : "It’s all about Subtle, Discreet, Hidden details."
                       ) +
                       "\n                    "
@@ -2301,7 +2273,7 @@ var render = function() {
                     },
                     [
                       _vm._v(
-                        "\n                        جمالية المظهر هي الأساس. مزيج متوازن ومحسوب بين الشكل والوظيفة، يخدم هدفاً محدداً وينتج عنه مخرجاً نهائياً يتسم بالحداثة والفرادة وجمالية الأسلوب\n                    "
+                        "\n                        جمالية المظهر هي الأساس. مزيج متوازن ومحسوب بين الشكل والوظيفة، يخدم هدفاً محدداً وينتج عنه مخرجاً نهائياً يتسم بالحداثة والفرادة وجمالية الأسلوب.\n                     "
                       )
                     ]
                   )

@@ -15,16 +15,10 @@
                     <div class="col-md-7">
                         <h4 :style="$store.state.lang === 'ar' ?'font-family: \'Tajawal\', sans-serif;' : ''"
                             data-aos="fade-right" style="color:#B3965A">
-                            {{ $store.state.lang === 'ar' ? 'انعكاس لذاتك' : 'A REFLECTION OF YOU' }}
+                            {{ $store.state.lang === 'ar' ? '    انعكاس لذاتك تصاميم فريدة واستثنائية ' : 'A REFLECTION OF YOU EXCEPTIONAL AND UNIQUE DESIGNS' }}
                         </h4>
-                        <p :style="$store.state.lang === 'ar' ?'font-family: \'Tajawal\', sans-serif;' : ''"
-                            data-aos="fade-right" data-aos-delay="200">
-                            {{
-                                $store.state.lang === 'ar' ? 'تصاميم فريدة واستثنائية' : 'EXCEPTIONAL AND UNIQUE DESIGNS'
-                            }}
-                        </p>
                         <p data-aos="fade-right" data-aos-delay="200">
-                            {{ $store.state.lang === 'ar' ? 'لاجون ديزاين هو استديو تصميم داخلي رفيع المستوى في قطر، مختص في الحلول المبتكرة والجودة وفعالية الأداء.' : 'Lagoon Design is a premium interior design studio in Qatar specialized in quality,innovative solutions andefficient performance.' }}
+                            {{ $store.state.lang === 'ar' ? 'لاجون ديزاين هو استديو تصميم داخلي رفيع المستوى يعمل في قطر، وهو مختص في الحلول المبتكرة والجودة وفعالية الأداء.' : 'Lagoon Design is a premium interior design studio in Qatar specialized in quality,innovative solutions andefficient performance.' }}
                         <h4 :style="$store.state.lang === 'ar' ?'font-family: \'Tajawal\', sans-serif;' : ''"
                             data-aos="fade-right" style="color:#B3965A">
                             {{ $store.state.lang === 'ar' ? 'تاريخنا' : 'OUR HISTORY' }}</h4>
@@ -49,7 +43,7 @@
                             {{ $store.state.lang === 'ar' ? 'مشاريع "الفيت أوت" ' : 'Fitout projects' }}
                             <br>
                             {{
-                                $store.state.lang === 'ar' ? 'عدد كبير من مزودي المواد' : '  Material suppliers from many reputed firms'
+                                $store.state.lang === 'ar' ? 'التعاقد مع أفضل مزودي المواد الخام في السوق' : '  Material suppliers from many reputed firms'
                             }}
                         </div>
                         <br>
@@ -76,7 +70,7 @@
                         </h4>
                         <p v-if="$store.state.lang ==='ar'" dir="rtl" style="font-family:'Tajawal', sans-serif;"
                            data-aos="fade-left" data-aos-delay="300">
-                            مهمتنا هي تجاوز توقعات عملائنا ومنحهم تصاميم فخمة ومريحة فى ذات الوقت
+                            مهمتنا هي تجاوز توقعات عملائنا ومنحهم تصاميم فخمة ومريحة فى ذات الوقت.
                         </p>
                         <p v-else data-aos="fade-left" data-aos-delay="300">
                             Our mission is to go
@@ -120,7 +114,7 @@
                         <h4 :style="$store.state.lang === 'ar' ?'font-family: \'Tajawal\', sans-serif;' : ''"
                             :dir="$store.state.lang === 'en' ? 'ltr' : 'rtl'"
                             data-aos="fade-up" data-aos-delay="100" style="color:#B3965A">
-                             {{ $store.state.lang === 'ar' ? 'عملية التصميم' : 'Design progress' }}
+                             {{ $store.state.lang === 'ar' ? 'حيوية التصميم' : 'Design progress' }}
                         </h4>
                         <p :dir="$store.state.lang === 'en' ? 'ltr' : 'rtl'" :style="$store.state.lang === 'ar' ?'font-family: \'Tajawal\', sans-serif;' : ''"
                            data-aos="fade-up" data-aos-delay="100">
@@ -165,8 +159,8 @@
                         <p v-if="$store.state.lang ==='ar'"
                            style="font-family: 'Tajawal', sans-serif"
                            dir="rtl" data-aos="fade-up" data-aos-delay="100">
-                            كل شخص متفرد بذاته ويرى الأشياء بشكل مختلف، ونحن نعمل على فهم الذوق الخاص بكل عميل، حول الكيفية التي يريد أن يكون عليها منزله. <br>
-                            هدفنا الأساسي هو أن نعكس رؤيتك على أرض الواقع، لهذا نهتم بكافة التفاصيل، مهما بلغت ضآلتها. ونعامل كل تفصيلة صغيرة باهتمام كبير، لنقدم لك تجربة متكاملة.
+                            كل شخص متفرد بذاته ويرى الأشياء بشكل مختلف، ونحن نعمل على فهم الذوق الخاص بكل عميل والطريقة التي يحب أن يرى بها منزله. <br>
+                            هدفنا الأساسي هو أن نعكس رؤيتك على أرض الواقع، لهذا نهتم بكافة التفاصيل مهما بلغت ضآلتها، ونعامل كل تفصيلة صغيرة باهتمام كبير لنقدم لك تجربة متكاملة.
                         </p>
                         <p v-else data-aos="fade-up" data-aos-delay="100">
                             Everyone is unique and sees things differently, we work on understanding each client’s
@@ -183,13 +177,13 @@
                         <h4 :style="$store.state.lang === 'ar' ?'font-family: \'Tajawal\', sans-serif;' : ''"
                             :dir="$store.state.lang === 'en' ? 'ltr' : 'rtl'"
                             data-aos="fade-up" data-aos-delay="100" style="color:#B3965A">
-                            {{ $store.state.lang === 'ar' ? 'عن طريق التصميم و القرارات، التصورية نصنع القيمة لمشاريعنا' : 'It’s all about Subtle, Discreet, Hidden details.' }}
+                            {{ $store.state.lang === 'ar' ? 'العبرة دائماً في التفاصيل الصغيرة' : 'It’s all about Subtle, Discreet, Hidden details.' }}
                         </h4>
                         <p v-if="$store.state.lang ==='ar'" dir="rtl" data-aos="fade-up"
                            style="font-family: 'Tajawal', sans-serif"
                            data-aos-delay="100">
-                            جمالية المظهر هي الأساس. مزيج متوازن ومحسوب بين الشكل والوظيفة، يخدم هدفاً محدداً وينتج عنه مخرجاً نهائياً يتسم بالحداثة والفرادة وجمالية الأسلوب
-                        </p>
+                            جمالية المظهر هي الأساس. مزيج متوازن ومحسوب بين الشكل والوظيفة، يخدم هدفاً محدداً وينتج عنه مخرجاً نهائياً يتسم بالحداثة والفرادة وجمالية الأسلوب.
+                         </p>
                         <p v-else data-aos="fade-up" data-aos-delay="100">
                             It’s all about what looks good. A calculated and balanced blend of form and function that serves a specific purpose and ultimately results in an outcome that is modern, stylish, and unique.
                         </p>

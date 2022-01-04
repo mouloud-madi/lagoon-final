@@ -5,7 +5,7 @@
                 <div class="col-lg-6 pt-4" :data-aos="$store.state.lang === 'en' ? 'fade-left' : 'fade-right'">
                     <h4 v-if="$store.state.lang === 'ar'" :dir="$store.state.lang === 'en' ? 'ltr' : 'rtl'"
                         :style="$store.state.lang === 'ar' ?'font-family: \'Tajawal\', sans-serif;' : ''">
-                        العاطفة والديكور
+                        الشغف والتفاني
                     </h4>
                     <img v-else :src="$store.state.lang === 'en' ? $store.state.section.section_one_gif_en : $store.state.section.section_one_gif_ar"
                         class="gif">
